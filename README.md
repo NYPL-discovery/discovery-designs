@@ -1,6 +1,6 @@
 # Discovery Designs
 
-Static designs for NYPL Discovery project. [View the designs here](https://nypl-discovery.github.io/discovery-designs/).
+Static designs for NYPL Discovery project. [View and give feedback on the designs here](https://nypl-discovery.github.io/discovery-designs/).
 
 To run locally:
 
