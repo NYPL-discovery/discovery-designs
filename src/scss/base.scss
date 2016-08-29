@@ -1,0 +1,55 @@
+@import "mixins";
+@import "variables";
+@import "normalize";
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+body {
+  color: $textcolor;
+}
+
+a {
+  &, &:link {
+    color: $linkcolor;
+  }
+
+  &:visited {
+    color: $linkvisitedcolor;
+  }
+
+  &:hover, &:visited:hover {
+    color: $linkhovercolor;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+h1 {
+  font-size: 2.6rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
+h4 {
+  font-size: 1.2rem;
+}
+li {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.container {
+  max-width: $containerWidth;
+  padding: 1em;
+  margin: 0 auto;
+  @include box-sizing();
+}

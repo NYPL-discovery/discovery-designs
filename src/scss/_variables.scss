@@ -1,0 +1,23 @@
+// Grays
+$white: #fff;
+$gray: #7B756F;
+$lightgray: lighten($gray, 40%);
+$darkgray: darken($gray, 40%);
+$black: #000;
+
+// Colors
+$yellow: #FEE24A;
+$orange: #ffb81d;
+$red: #ed1c24;
+$darkgreen: #437529;
+$lightgreen: lighten($darkgreen, 20%);
+$blue: #1DA1D4;
+$bluedark: #1980a9;
+
+// Components
+$textcolor: $black;
+$linkcolor: $blue;
+$linkhovercolor: lighten($linkcolor, 10%);
+$linkvisitedcolor: darken($linkcolor, 10%);
+
+$containerWidth: 960px;
