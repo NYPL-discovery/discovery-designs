@@ -1,0 +1,20 @@
+@import "mixins";
+@import "variables";
+
+.site-header {
+  height: 60px;
+  line-height: 60px;
+  padding: 10px;
+}
+
+.nypl-logo {
+  background: url("../img/nypl-logo.svg") no-repeat $white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  text-indent: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: block;
+  color: $white;
+}
