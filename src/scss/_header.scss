@@ -1,20 +1,146 @@
 @import "mixins";
 @import "variables";
 
-.site-header {
-  height: 60px;
-  line-height: 60px;
-  padding: 10px;
-}
+$headerHeight: 60px;
+$headerComponentHeight: 40px;
+$headerComponentMargin: ($headerHeight - $headerComponentHeight)/2;
+$searchMaxWidth: 600px;
 
 .nypl-logo {
   background: url("../img/nypl-logo.svg") no-repeat $white;
   border: none;
-  width: 40px;
-  height: 40px;
-  text-indent: 40px;
+  width: $headerComponentHeight;
+  height: $headerComponentHeight;
+  text-indent: $headerComponentHeight;
   overflow: hidden;
   white-space: nowrap;
   display: block;
   color: $white;
+  margin-top: $headerComponentMargin;
+}
+
+.site-header {
+  line-height: $headerHeight;
+
+  .nypl-logo,
+  .site-title {
+    float: left;
+    display: block;
+  }
+
+  .site-title {
+    color: $textcolor;
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin-left: 0.35rem;
+
+    &:hover {
+      color: lighten($textcolor, 20%);
+    }
+  }
+
+  .container {
+    padding-top: 0;
+    padding-bottom: 0;
+    @include clearfix();
+  }
+}
+
+.main-nav {
+  margin-left: 270px;
+  @include clearfix();
+
+  > ul > li {
+    float: left;
+    margin-left: 1rem;
+    position: relative;
+
+    &.search {
+      width: 384px;
+      overflow: visible;
+      z-index: 1;
+      position: relative;
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  .nav-link {
+    text-decoration: none;
+    white-space: nowrap;
+    position: relative;
+
+    &.has-children:after {
+      content: "▾";
+      display: inline-block;
+      margin: 0 0 0 0.3rem;
+    }
+
+    &.has-children:focus + ul {
+      display: block;
+    }
+  }
+
+  ul ul {
+    display: none;
+    position: absolute;
+    top: $headerComponentHeight + 10px;
+    left: 0;
+    width: auto;
+    background: $white;
+    border: 1px solid $lightgray;
+    border-top: 0;
+    line-height: normal;
+
+    .nav-link {
+      padding: 0.35em;
+      display: block;
+    }
+  }
+}
+
+.search-form {
+  white-space: nowrap;
+
+  .search-input,
+  .search-button {
+    height: $headerComponentHeight;
+    line-height: $headerComponentHeight;
+    display: inline-block;
+    padding: 0 0.35rem;
+    vertical-align: middle;
+    @include box-sizing();
+  }
+  .search-input {
+    padding-right: 0;
+    border: 1px solid $lightgray;
+    border-right: 0;
+    margin-right: -5px;
+    width: 320px;
+    @include transition(width 0.5s);
+    &:focus {
+      width: $searchMaxWidth;
+    }
+  }
+  .search-input {
+
+  }
+}
+
+.auto-search {
+  display: none;
+  position: absolute;
+  top: $headerComponentHeight + 10px;
+  left: 0;
+  width: $searchMaxWidth;
+  background: $white;
+  border: 1px solid $lightgray;
+  border-top: 0;
+  @include box-sizing();
+}
+.search.active .auto-search {
+  display: block;
+  @include animation(fadeIn 1s);
 }

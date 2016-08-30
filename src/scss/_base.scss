@@ -26,6 +26,17 @@ a {
   }
 }
 
+button {
+  color: $white;
+  background: $linkcolor;
+  border: 1px solid $linkcolor;
+
+  &:hover {
+    background: $linkhovercolor;
+    border-color: $linkhovercolor;
+  }
+}
+
 h1, h2, h3, h4, h5, h6, p, ol, ul {
   margin-bottom: 1.5rem;
   margin-top: 0;
@@ -47,9 +58,75 @@ li {
   margin-top: 0;
 }
 
+nav {
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+
+  .tab {
+    flex-grow: 1;
+    text-align: center;
+    background: $linkcolor;
+    color: $white;
+    text-decoration: none;
+    height: auto;
+    line-height: normal;
+    padding: 0.35rem 0;
+    border-left: 1px solid darken($linkcolor, 5%);
+    border-top: 1px solid darken($linkcolor, 5%);
+
+    &:first-child {
+      border-left: 0;
+    }
+
+    &:hover {
+      background: $linkhovercolor;
+      color: $white;
+    }
+
+    &[aria-selected="true"] {
+      background: $white;
+      color: $darkgray;
+      cursor: default;
+      border-top: 1px solid $lightgray;
+    }
+  }
+}
+
+.tabpanel {
+  display: none;
+  min-height: 100px;
+
+  &.active {
+    display: block;
+  }
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 .container {
   max-width: $containerWidth;
-  padding: 1em;
+  padding: 0.35rem;
   margin: 0 auto;
   @include box-sizing();
 }

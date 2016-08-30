@@ -12,17 +12,61 @@
 <body>
 
   <header class="site-header">
+    <div class="container">
+      <a href="https://nypl.org" class="nypl-logo" title="Go to NYPL.org">The New York Public Library</a>
+      <a href="#home" class="site-title">NYPL Research Catalog</a>
+      <nav class="main-nav">
+        <ul>
+          <li class="search">
+            <form action="" class="search-form" method="GET">
+              <label for="search-query" class="visuallyhidden">Search keyword</label>
+              <input id="search-query" class="search-input" name="q" placeholder="Keyword, title, name, or id" value="Alexander Hamilton" />
+              <button type="submit" class="search-button">Search</button>
+            </form>
+            <div class="auto-search">
+              <div id="tabs" role="tablist" class="tabs">
+                <a id="everything-tab" class="tab" href="#" role="tab" aria-controls="everything-panel" aria-selected="true">Everything</a>
+                <a id="resources-tab" class="tab" href="#" role="tab" aria-controls="resources-panel" aria-selected="false">Resources</a>
+                <a id="people-tab" class="tab" href="#" role="tab" aria-controls="people-panel" aria-selected="false">People</a>
+                <a id="subjects-tab" class="tab" href="#" role="tab" aria-controls="subjects-panel" aria-selected="false">Subjects</a>
+              </div>
+              <div id="everything-panel" role="tabpanel" aria-labelledby="everything-tab" class="tabpanel active">
 
-    <a href="https://nypl.org" class="nypl-logo" title="Go to NYPL.org">The New York Public Library</a>
+              </div>
+              <div id="resources-panel" role="tabpanel" aria-labelledby="resources-tab" class="tabpanel">
 
-    <!-- <nav class="main-nav">
-      <ul>
-        <li class="search"></li>
-        <li></li>
-        <li></li>
-      </ul>
-    </nav> -->
+              </div>
+              <div id="people-panel" role="tabpanel" aria-labelledby="people-tab" class="tabpanel">
+
+              </div>
+              <div id="subjects-panel" role="tabpanel" aria-labelledby="subjects-tab" class="tabpanel">
+                
+              </div>
+            </div>
+          </li>
+          <li><a href="#advanced" class="nav-link">Advanced search</a></li>
+          <li>
+            <a href="#browse" class="nav-link has-children">Browse</a>
+            <ul>
+              <li><a href="#browse-people" class="nav-link">People</a></li>
+              <li><a href="#browse-subjects" class="nav-link">Subjects</a></li>
+              <li><a href="#browse-resources" class="nav-link">Resources</a></li>
+            </ul>
+          </li>
+          <li><a href="#login" class="nav-link">Login</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="#home" class="breadcrumb">Home</a>
+        <span class="breadcrumb">Search results for "Alexander Hamilton"</span>
+      </div>
+    </div>
+  </div>
 
   <div class="container">
 

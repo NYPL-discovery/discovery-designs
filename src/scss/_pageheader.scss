@@ -1,0 +1,23 @@
+@import "mixins";
+@import "variables";
+
+.page-header {
+  background: $lightergray;
+}
+
+.breadcrumbs {
+  font-size: 0.9rem;
+
+  .breadcrumb {
+    display: inline-block;
+    &:after {
+      content: "»";
+      display: inline-block;
+      margin: 0 0.5rem;
+      color: $darkgray;
+    }
+    &:last-child:after {
+      content: none;
+    }
+  }
+}
