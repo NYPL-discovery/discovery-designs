@@ -29,6 +29,9 @@ var Header = (function() {
     $(document).on('click', function(e){
       var $search = $(e.target).closest('.search');
       if (!$search.length) $('.search').removeClass('active');
+
+      var $li = $(e.target).closest('li.active');
+      if (!$li.length) $('.main-nav li').removeClass('active');
     });
   };
 

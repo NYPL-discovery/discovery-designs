@@ -78,9 +78,9 @@ $searchMaxWidth: 600px;
       margin: 0 0 0 0.3rem;
     }
 
-    &.has-children:focus + ul {
-      display: block;
-    }
+    // &.has-children:focus + ul {
+    //   display: block;
+    // }
   }
 
   ul ul {
@@ -98,6 +98,10 @@ $searchMaxWidth: 600px;
       padding: 0.35em;
       display: block;
     }
+  }
+
+  ul li.active ul {
+    display: block;
   }
 }
 
@@ -124,9 +128,9 @@ $searchMaxWidth: 600px;
       width: $searchMaxWidth;
     }
   }
-  .search-input {
-
-  }
+}
+.search.active .search-input {
+  width: $searchMaxWidth;
 }
 
 .auto-search {
