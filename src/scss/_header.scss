@@ -4,45 +4,81 @@
 $headerHeight: 60px;
 $headerComponentHeight: 40px;
 $headerComponentMargin: ($headerHeight - $headerComponentHeight)/2;
-$searchMaxWidth: 600px;
+$searchMaxWidth: 615px;
 
-.nypl-logo {
-  background: url("../img/nypl-logo.svg") no-repeat $white;
-  border: none;
-  width: $headerComponentHeight;
-  height: $headerComponentHeight;
-  text-indent: $headerComponentHeight;
-  overflow: hidden;
-  white-space: nowrap;
+a.site-title {
   display: block;
-  color: $white;
+  color: $textcolor;
+  text-decoration: none;
+  background: url("../img/nypl-logo.svg") no-repeat $white;
+  height: $headerComponentHeight;
+  padding: 0 0 0 ($headerComponentHeight + 10px);
   margin-top: $headerComponentMargin;
+
+  &:hover {
+    color: lighten($textcolor, 20%);
+  }
+
+  .site-title-org,
+  .site-title-name {
+    display: block;
+    line-height: normal;
+  }
+
+  .site-title-org {
+    font-size: 0.8rem;
+  }
+  .site-title-name {
+    font-size: 1.3rem;
+  }
 }
 
 .site-header {
   line-height: $headerHeight;
 
-  .nypl-logo,
   .site-title {
     float: left;
-    display: block;
-  }
-
-  .site-title {
-    color: $textcolor;
-    text-decoration: none;
-    font-size: 1.1rem;
-    margin-left: 0.35rem;
-
-    &:hover {
-      color: lighten($textcolor, 20%);
-    }
   }
 
   .container {
     padding-top: 0;
     padding-bottom: 0;
     @include clearfix();
+  }
+}
+
+.top-nav-container {
+  background: $darkergray;
+  color: $white;
+  line-height: normal;
+  margin-bottom: 0.5rem;
+
+  a {
+    color: $white;
+    text-decoration: none;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.9rem;
+    display: block;
+
+    &:hover {
+      color: $black;
+      background: $white;
+    }
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .top-nav {
+    ul {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+    }
+    li.nypl-item {
+      margin-right: auto;
+    }
   }
 }
 
@@ -56,7 +92,7 @@ $searchMaxWidth: 600px;
     position: relative;
 
     &.search {
-      width: 384px;
+      width: 454px;
       overflow: visible;
       z-index: 1;
       position: relative;
@@ -122,7 +158,7 @@ $searchMaxWidth: 600px;
     border: 1px solid $lightgray;
     border-right: 0;
     margin-right: -5px;
-    width: 320px;
+    width: 390px;
     @include transition(width 0.5s);
     &:focus {
       width: $searchMaxWidth;
