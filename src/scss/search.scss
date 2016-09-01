@@ -7,3 +7,122 @@
 @import "tabs";
 @import "header";
 @import "pageheader";
+
+$facetsWidth: 220px;
+
+.search-results-container {
+  @include clearfix();
+}
+.facets {
+  width: $facetsWidth;
+  float: left;
+  margin-top: 60px;
+}
+.results {
+  margin-left: ($facetsWidth + 30px);
+  margin-top: 20px;
+}
+
+.facets-form {
+  fieldset {
+    margin: 0;
+    padding: 0.35rem 0;
+    border: 0;
+  }
+  label {
+    font-weight: bold;
+    display: block;
+  }
+  input,
+  select {
+    width: 100%;
+    display: block;
+    @include box-sizing();
+  }
+  select {
+    height: 2rem;
+  }
+}
+
+.results-tabs {
+  border-bottom: 1px solid $lightgray;
+  padding-left: 20px;
+
+  .tab {
+    background: $white;
+    color: $linkcolor;
+    border-color: transparent;
+
+    small {
+      color: $gray;
+      padding-left: 0.2rem;
+    }
+
+    &:hover {
+      background: $white;
+      color: $linkhovercolor;
+    }
+
+    &[aria-selected="true"] {
+      color: $darkgray;
+      border-color: $lightgray;
+      border-bottom: 1px solid $white;
+      margin-bottom: -1px;
+    }
+  }
+
+}
+
+.results-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 1rem;
+
+  .pagination-total {
+    font-weight: bold;
+    padding-right: 0.5rem;
+  }
+
+  .paginate {
+    display: inline-block;
+    padding: 0 0.35rem;
+    text-decoration: none;
+
+    &.prev:before {
+      content: '‹';
+      display: inline-block;
+      margin-right: 0.2rem;
+      font-size: 1.2rem;
+      line-height: 1rem;
+    }
+
+    &.next:after {
+      content: '›';
+      display: inline-block;
+      margin-left: 0.2rem;
+      font-size: 1.2rem;
+      line-height: 1rem;
+    }
+  }
+
+  .sort {
+    margin-left: auto;
+
+    form {
+      white-space: nowrap;
+      // padding-right: 0.9rem;
+    }
+
+    label,
+    select {
+      display: inline-block;
+    }
+
+    label {
+      margin-right: 0.35rem;
+    }
+
+
+  }
+}

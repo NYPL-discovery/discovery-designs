@@ -14,7 +14,8 @@ $red: #ed1c24;
 $darkgreen: #437529;
 $lightgreen: lighten($darkgreen, 20%);
 $blue: #1DA1D4;
-$bluedark: #1980a9;
+$darkblue: #1980a9;
+$lightblue: lighten($blue, 40%);
 
 // Components
 $textcolor: $black;

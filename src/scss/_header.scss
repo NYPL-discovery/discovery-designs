@@ -179,6 +179,14 @@ a.site-title {
   border: 1px solid $lightgray;
   border-top: 0;
   @include box-sizing();
+
+  .tab {
+    border-right: 0;
+  }
+
+  .tab:first-child {
+    border-left: 0;
+  }
 }
 .search.active .auto-search {
   display: block;
