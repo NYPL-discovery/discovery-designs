@@ -8,7 +8,7 @@
 @import "header";
 @import "pageheader";
 
-$facetsWidth: 220px;
+$facetsWidth: 200px;
 
 .search-results-container {
   @include clearfix();
@@ -124,5 +124,74 @@ $facetsWidth: 220px;
     }
 
 
+  }
+}
+
+.result-item {
+  padding: 0.35rem;
+  border-top: 1px solid $lightgray;
+  display: flex;
+  flex-direction: row;
+
+  &:first-child {
+    border-top: 0;
+  }
+
+  .result-image {
+    flex: 0 0 60px;
+    max-height: 100px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+    }
+  }
+
+  .result-text {
+    text-decoration: none;
+    flex-grow: 1;
+    padding-left: 1rem;
+
+    .type,
+    .title,
+    .description {
+      display: block;
+    }
+
+    .type,
+    .description {
+      color: $gray;
+      font-size: 0.8rem;
+    }
+
+    .title {
+      font-size: 1.1rem;
+    }
+
+    .description {
+      color: $textcolor;
+    }
+  }
+
+  .result-select {
+    flex: 0 0 70px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .select-label {
+      input,
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      span {
+        padding-left: 0.35rem;
+        color: $gray;
+      }
+    }
   }
 }
