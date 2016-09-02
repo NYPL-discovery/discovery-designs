@@ -80,6 +80,10 @@
       font-size: 0.7rem;
     }
 
+    .type {
+      text-transform: uppercase;
+    }
+
     .title {
       font-size: 0.9rem;
     }
@@ -87,5 +91,18 @@
     .description {
       color: $textcolor;
     }
+  }
+}
+
+a.tabpanel-link-full {
+  display: block;
+  background: $linkcolor;
+  color: $white;
+  text-align: center;
+  text-decoration: none;
+  line-height: 2rem;
+  &:hover {
+    background: $linkhovercolor;
+    color: $white;
   }
 }

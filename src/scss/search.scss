@@ -8,7 +8,7 @@
 @import "header";
 @import "pageheader";
 
-$facetsWidth: 200px;
+$facetsWidth: 190px;
 
 .search-results-container {
   @include clearfix();
@@ -16,14 +16,21 @@ $facetsWidth: 200px;
 .facets {
   width: $facetsWidth;
   float: left;
-  margin-top: 60px;
+  margin-top: 36px;
 }
 .results {
-  margin-left: ($facetsWidth + 30px);
+  margin-left: ($facetsWidth + 20px);
   margin-top: 20px;
 }
 
 .facets-form {
+  h2 {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: $gray;
+    font-weight: normal;
+    margin: 0;
+  }
   fieldset {
     margin: 0;
     padding: 0.35rem 0;
@@ -41,6 +48,40 @@ $facetsWidth: 200px;
   }
   select {
     height: 2rem;
+
+    &.selected {
+      background-color: $darkgray;
+      color: $white;
+    }
+  }
+  .button-selected {
+    width: 100%;
+    background: $darkgray;
+    color: $white;
+    display: block;
+    border-color: $darkgray;
+    text-align: left;
+    padding-right: 2rem;
+    position: relative;
+    font-size: 0.9rem;
+    @include box-sizing();
+
+    &:hover {
+      background: lighten($darkgray, 10%);
+      border-color: lighten($darkgray, 10%);
+    }
+
+    &:after {
+      display: block;
+      content: "+";
+      position: absolute;
+      top: 0px;
+      right: 6px;
+      font-weight: bold;
+      font-size: 1rem;
+
+      @include transform(rotate(45deg));
+    }
   }
 }
 
@@ -68,6 +109,7 @@ $facetsWidth: 200px;
       border-color: $lightgray;
       border-bottom: 1px solid $white;
       margin-bottom: -1px;
+      @include box-shadow(0 -1px 1px rgba($black, 0.1));
     }
   }
 
@@ -127,9 +169,12 @@ $facetsWidth: 200px;
   }
 }
 
+.results-list {
+  margin-bottom: 4rem;
+}
 .result-item {
-  padding: 0.35rem;
-  border-top: 1px solid $lightgray;
+  padding: 0.5rem 0;
+  border-top: 1px solid darken($lightgray, 10%);
   display: flex;
   flex-direction: row;
 
@@ -166,12 +211,49 @@ $facetsWidth: 200px;
       font-size: 0.8rem;
     }
 
+    .type {
+      text-transform: uppercase;
+    }
+
     .title {
       font-size: 1.1rem;
     }
 
     .description {
       color: $textcolor;
+    }
+
+    .label {
+      color: $gray;
+    }
+  }
+
+  .result-info {
+    flex: 0 0 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .result-info-row {
+      @include clearfix();
+      border-top: 1px solid $lightgray;
+      &:first-child {
+        border-top: 0;
+      }
+    }
+
+    .label {
+      width: 76px;
+      float: left;
+      text-transform: uppercase;
+      color: $gray;
+      font-size: 0.8rem;
+    }
+    .value {
+      font-size: 0.9rem;
+      margin-left: 76px;
+      padding-left: 10px;
+      @include box-sizing();
     }
   }
 
