@@ -34,197 +34,70 @@
         <ul>
           <li class="search">
             <form action="" class="search-form" method="GET">
+              <label for="search-by-field" class="visuallyhidden">Search by field</label>
+              <select id="search-by-field" class="search-select">
+                <option value="all">All fields</option>
+                <option value="title">Title</option>
+                <option value="contributor">Author/Contributor</option>
+                <option value="subject">Subject</option>
+                <option value="call_number">Call number</option>
+              </select>
               <label for="search-query" class="visuallyhidden">Search keyword</label>
               <input id="search-query" class="search-input" name="q" placeholder="Keyword, title, name, or id" value="Alexander Hamilton" />
               <button type="submit" class="search-button">Search</button>
             </form>
-            <div class="auto-search">
-              <div id="tabs" role="tablist" class="tabs">
-                <a id="everything-tab" class="tab" href="#everything-panel" role="tab" aria-controls="everything-panel" aria-selected="true">Everything</a>
-                <a id="resources-tab" class="tab" href="#resources-panel" role="tab" aria-controls="resources-panel" aria-selected="false">Resources</a>
-                <a id="people-tab" class="tab" href="#people-panel" role="tab" aria-controls="people-panel" aria-selected="false">People</a>
-                <a id="subjects-tab" class="tab" href="#subjects-panel" role="tab" aria-controls="subjects-panel" aria-selected="false">Subjects</a>
+            <div class="autosearch">
+              <div class="autosearch-item">
+                <div class="image">
+                  <img src="../img/alexander_hamilton.png" alt="Alexander Hamilton" />
+                </div>
+                <a href="#" class="link">
+                  <span class="type">Person</span>
+                  <span class="title">Hamilton, Alexander, 1757-1804</span>
+                  <span class="description">Founding Father of the United States</span>
+                </a>
               </div>
-              <div class="tabpanels">
-                <div id="everything-panel" role="tabpanel" aria-labelledby="everything-tab" class="tabpanel active">
-                  <div class="tabpanel-item">
-                    <div class="tabpanel-image">
-                      <img src="../img/alexander_hamilton.png" alt="Alexander Hamilton" />
-                    </div>
-                    <a href="#" class="tabpanel-link">
-                      <span class="type">Person</span>
-                      <span class="title">Hamilton, Alexander, 1757-1804</span>
-                      <span class="description">Founding Father of the United States</span>
-                      <span class="description">Author, Attributed name, Appellant</span>
-                    </a>
-                  </div>
-                  <div class="tabpanel-item">
-                    <div class="tabpanel-image">
-                      <img src="../img/federalist_papers.jpg" alt="The Federalist papers"/>
-                    </div>
-                    <a href="#" class="tabpanel-link">
-                      <span class="type">Item</span>
-                      <span class="title">The Federalist papers: Alexander Hamilton, James Madison, John Jay</span>
-                      <span class="description">Constitutional history, United States, Sources, Constitutional law</span>
-                    </a>
-                  </div>
-                  <div class="tabpanel-item">
-                    <div class="tabpanel-image">
-                      <img src="../img/alexander_hamilton_papers.jpg" alt="Alexander Hamilton papers"/>
-                    </div>
-                    <a href="#" class="tabpanel-link">
-                      <span class="type">Collection</span>
-                      <span class="title">Alexander Hamilton papers</span>
-                      <span class="description">Finance, Records and correspondence</span>
-                    </a>
-                  </div>
-                  <div class="tabpanel-item">
-                    <div class="tabpanel-image">
-                      <img src="../img/alexander_hamilton_chernow.jpg" alt="Alexander Hamilton" />
-                    </div>
-                    <a href="#" class="tabpanel-link">
-                      <span class="type">Item</span>
-                      <span class="title">Alexander Hamilton</span>
-                      <span class="description">Chernow, Ron</span>
-                      <span class="description">United States, Statesmen, Politics and government, Biography</span>
-                    </a>
-                  </div>
-                  <div class="tabpanel-item">
-                    <div class="tabpanel-image">
-                      <img src="../img/alexander_hamilton_american.jpg" alt="Alexander Hamilton, American" />
-                    </div>
-                    <a href="#" class="tabpanel-link">
-                      <span class="type">Item</span>
-                      <span class="title">Alexander Hamilton, American</span>
-                      <span class="description">Brookhiser, Richard</span>
-                      <span class="description">United States, Statesmen, Biography, Politics and government</span>
-                    </a>
-                  </div>
-                  <a href="#" class="tabpanel-link-full">See all 59,411 results</a>
+              <div class="autosearch-item">
+                <div class="image">
+                  <img src="../img/federalist_papers.jpg" alt="The Federalist papers"/>
                 </div>
-                <div id="resources-panel" role="tabpanel" aria-labelledby="resources-tab" class="tabpanel">
-                  <div class="tabpanel-item">
-                    <div class="tabpanel-image">
-                      <img src="../img/federalist_papers.jpg" alt="The Federalist papers"/>
-                    </div>
-                    <a href="#" class="tabpanel-link">
-                      <span class="type">Item</span>
-                      <span class="title">The Federalist papers: Alexander Hamilton, James Madison, John Jay</span>
-                      <span class="description">Constitutional history, United States, Sources, Constitutional law</span>
-                    </a>
-                  </div>
-                  <div class="tabpanel-item">
-                    <div class="tabpanel-image">
-                      <img src="../img/alexander_hamilton_papers.jpg" alt="Alexander Hamilton papers"/>
-                    </div>
-                    <a href="#" class="tabpanel-link">
-                      <span class="type">Collection</span>
-                      <span class="title">Alexander Hamilton papers</span>
-                      <span class="description">Finance, Records and correspondence</span>
-                    </a>
-                  </div>
-                  <div class="tabpanel-item">
-                    <div class="tabpanel-image">
-                      <img src="../img/alexander_hamilton_chernow.jpg" alt="Alexander Hamilton" />
-                    </div>
-                    <a href="#" class="tabpanel-link">
-                      <span class="type">Item</span>
-                      <span class="title">Alexander Hamilton</span>
-                      <span class="description">Chernow, Ron</span>
-                      <span class="description">United States, Statesmen, Politics and government, Biography</span>
-                    </a>
-                  </div>
-                  <div class="tabpanel-item">
-                    <div class="tabpanel-image">
-                      <img src="../img/alexander_hamilton_american.jpg" alt="Alexander Hamilton, American" />
-                    </div>
-                    <a href="#" class="tabpanel-link">
-                      <span class="type">Item</span>
-                      <span class="title">Alexander Hamilton, American</span>
-                      <span class="description">Brookhiser, Richard</span>
-                      <span class="description">United States, Statesmen, Biography, Politics and government</span>
-                    </a>
-                  </div>
-                  <div class="tabpanel-item">
-                    <div class="tabpanel-image">
-                      <img src="../img/the_duel.jpg" alt="The duel: the parallel lives of Alexander Hamilton & Aaron Burr" />
-                    </div>
-                    <a href="#" class="tabpanel-link">
-                      <span class="type">Item</span>
-                      <span class="title">The duel: the parallel lives of Alexander Hamilton &amp; Aaron Burr</span>
-                      <span class="description">St. George, Judith, 1931-</span>
-                      <span class="description">Biography, Juvenile works</span>
-                    </a>
-                  </div>
-                  <a href="#" class="tabpanel-link-full">See all 59,144 resources</a>
-                </div>
-                <div id="people-panel" role="tabpanel" aria-labelledby="people-tab" class="tabpanel">
-                  <div class="tabpanel-item">
-                    <div class="tabpanel-image">
-                      <img src="../img/alexander_hamilton.png" alt="Alexander Hamilton" />
-                    </div>
-                    <a href="#" class="tabpanel-link">
-                      <span class="title">Hamilton, Alexander, 1757-1804</span>
-                      <span class="description">Founding Father of the United States</span>
-                      <span class="description">Author, Attributed name, Appellant</span>
-                    </a>
-                  </div>
-                  <div class="tabpanel-item">
-                    <div class="tabpanel-image">
-                      <img src="../img/james_madison.jpg" alt="James Madison" />
-                    </div>
-                    <a href="#" class="tabpanel-link">
-                      <span class="title">Madison, James, 1751-1836</span>
-                      <span class="description">4th president of the United States (1809 to 1817)</span>
-                      <span class="description">Author, Creator, Attributed name</span>
-                    </a>
-                  </div>
-                  <div class="tabpanel-item">
-                    <div class="tabpanel-image">
-                      <img src="../img/john_jay.jpg" alt="John Jay" />
-                    </div>
-                    <a href="#" class="tabpanel-link">
-                      <span class="title">Jay, John, 1745-1829</span>
-                      <span class="description">American politician and a founding father of the United States</span>
-                      <span class="description">Author, Addressee, Dedicatee</span>
-                    </a>
-                  </div>
-                  <div class="tabpanel-item">
-                    <div class="tabpanel-image">
-                      <img src="../img/john_adams.jpg" alt="John Adams" />
-                    </div>
-                    <a href="#" class="tabpanel-link">
-                      <span class="title">Adams, John, 1735-1826</span>
-                      <span class="description">2nd President of the United States</span>
-                      <span class="description">Dedicatee, Author, Correspondent, Compiler, Former owner</span>
-                    </a>
-                  </div>
-                  <a href="#" class="tabpanel-link-full">See all 173 people</a>
-                </div>
-                <div id="subjects-panel" role="tabpanel" aria-labelledby="subjects-tab" class="tabpanel">
-                  <div class="tabpanel-item">
-                    <a href="#" class="tabpanel-link">
-                      <span class="title">United States</span>
-                    </a>
-                  </div>
-                  <div class="tabpanel-item">
-                    <a href="#" class="tabpanel-link">
-                      <span class="title">Politics and government</span>
-                    </a>
-                  </div>
-                  <div class="tabpanel-item">
-                    <a href="#" class="tabpanel-link">
-                      <span class="title">Biography</span>
-                    </a>
-                  </div>
-                  <div class="tabpanel-item">
-                    <a href="#" class="tabpanel-link">
-                      <span class="title">History</span>
-                    </a>
-                  </div>
-                  <a href="#" class="tabpanel-link-full">See all 94 subjects</a>
-                </div>
+                <a href="#" class="link">
+                  <span class="type">Item</span>
+                  <span class="title">The Federalist papers: Alexander Hamilton, James Madison, John Jay</span>
+                  <span class="description">New Haven: Yale University Press, 2009</span>
+                </a>
               </div>
+              <div class="autosearch-item">
+                <div class="image">
+                  <img src="../img/alexander_hamilton_papers.jpg" alt="Alexander Hamilton papers"/>
+                </div>
+                <a href="#" class="link">
+                  <span class="type">Collection</span>
+                  <span class="title">Alexander Hamilton papers</span>
+                  <span class="description">Primary source</span>
+                </a>
+              </div>
+              <div class="autosearch-item">
+                <div class="image">
+                  <img src="../img/alexander_hamilton_chernow.jpg" alt="Alexander Hamilton" />
+                </div>
+                <a href="#" class="link">
+                  <span class="type">Item</span>
+                  <span class="title">Alexander Hamilton</span>
+                  <span class="description">Chernow, Ron <span class="divider"></span> New York: Penguin Press, 2004</span>
+                </a>
+              </div>
+              <div class="autosearch-item">
+                <div class="image">
+                  <img src="../img/alexander_hamilton_american.jpg" alt="Alexander Hamilton, American" />
+                </div>
+                <a href="#" class="link">
+                  <span class="type">Item</span>
+                  <span class="title">Alexander Hamilton, American</span>
+                  <span class="description">Brookhiser, Richard <span class="divider"></span> New York: Free Press, 1999</span>
+                </a>
+              </div>
+              <a href="#" class="link-full">See all 59,411 results</a>
             </div>
           </li>
           <li><a href="#advanced" class="nav-link">Advanced search</a></li>
@@ -256,7 +129,7 @@
         <form class="facets-form">
           <h2>Filter by</h2>
           <fieldset>
-            <label for="select-type">Keyword</label>
+            <label for="select-type">Keywords</label>
             <button class="button-selected" title="Remove keyword filter: Alexander Hamilton">"Alexander Hamilton"</button>
           </fieldset>
           <fieldset>
@@ -317,7 +190,7 @@
               <option value="Electronic books">Electronic books (378)</option>
             </select>
           </fieldset>
-          <fieldset>
+          <!-- <fieldset>
             <label for="select-author">Author</label>
             <select id="select-author" name="author">
               <option value="all">All</option>
@@ -332,7 +205,7 @@
               <option value="Madison, James, 1751-1836">Madison, James, 1751-1836 (85)</option>
               <option value="Jay, John, 1745-1829">Jay, John, 1745-1829 (78)</option>
             </select>
-          </fieldset>
+          </fieldset> -->
           <fieldset>
             <label for="select-location">Location</label>
             <select id="select-location" name="location">
@@ -352,17 +225,20 @@
         </form>
       </div>
       <div class="results">
-        <div id="tabs" role="tablist" class="tabs results-tabs">
+        <!-- <div id="tabs" role="tablist" class="tabs results-tabs">
           <a class="tab" href="#everything" role="tab" aria-controls="everything-panel" aria-selected="true">Everything <small>59,411</small></a>
           <a class="tab" href="#resources" role="tab">Resources <small>59,144</small></a>
           <a class="tab" href="#people" role="tab">People <small>173</small></a>
           <a class="tab" href="#subjects" role="tab">Subjects <small>94</small></a>
+        </div> -->
+        <div class="results-message">
+          <p>Found <strong>59,411</strong> results with keywords <strong>"Alexander Hamilton"</strong>.</p>
         </div>
         <div class="results-nav">
-          <div class="pagination-total">1 - 100 of 59,411</div>
-          <div class="pagination-controls">
-            <a href="#prev" class="paginate prev">Prev</a>
-            <a href="#next" class="paginate next">Next</a>
+          <div class="pagination">
+            <!-- <a href="#prev" class="paginate prev">Previous page</a> -->
+            <span class="pagination-total">1 - 100 of 59,411</span>
+            <a href="#next" class="paginate next">Next page</a>
           </div>
           <div class="sort">
             <form class="sort-form">
@@ -387,8 +263,7 @@
             <div class="result-text">
               <div class="type">Person</div>
               <a href="#" class="title">Hamilton, Alexander, 1757-1804</a>
-              <div class="description">Founding Father of the United States</div>
-              <div class="description">Author, Attributed name, Appellant</div>
+              <div class="description">Founding Father of the United States <span class="divider"></span> Author, Attributed name, Appellant</div>
               <label class="select-label" for="select_001">
                 <input type="checkbox" class="select-checkbox" id="select_001">
                 <span>Save</span>

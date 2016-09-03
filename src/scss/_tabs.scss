@@ -91,6 +91,19 @@
     .description {
       color: $textcolor;
     }
+
+    .divider {
+      display: inline-block;
+      margin: 0 0.2rem;
+      font-size: 2rem;
+      line-height: 0.8rem;
+      vertical-align: middle;
+      color: $gray;
+
+      &:before {
+        content: "·";
+      }
+    }
   }
 }
 

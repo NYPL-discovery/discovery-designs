@@ -4,7 +4,7 @@
 @import "animations";
 
 @import "base";
-@import "tabs";
+@import "searchbox";
 @import "header";
 @import "pageheader";
 
@@ -39,6 +39,7 @@ $facetsWidth: 190px;
   label {
     font-weight: bold;
     display: block;
+    font-size: 0.9rem;
   }
   input,
   select {
@@ -63,7 +64,8 @@ $facetsWidth: 190px;
     text-align: left;
     padding-right: 2rem;
     position: relative;
-    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
     @include box-sizing();
 
     &:hover {
@@ -121,14 +123,23 @@ $facetsWidth: 190px;
   align-items: flex-start;
   margin-top: 1rem;
 
-  .pagination-total {
-    font-weight: bold;
-    padding-right: 0.5rem;
+  .pagination {
+    *:first-child {
+      padding-left: 0;
+    }
   }
 
+  .pagination-total,
   .paginate {
     display: inline-block;
     padding: 0 0.35rem;
+  }
+
+  .pagination-total {
+    font-weight: bold;
+  }
+
+  .paginate {
     text-decoration: none;
 
     &.prev:before {
@@ -149,11 +160,12 @@ $facetsWidth: 190px;
   }
 
   .sort {
-    margin-left: auto;
+    flex-grow: 1;
 
     form {
       white-space: nowrap;
       // padding-right: 0.9rem;
+      text-align: right;
     }
 
     label,
@@ -165,11 +177,11 @@ $facetsWidth: 190px;
       margin-right: 0.35rem;
     }
 
-
   }
 }
 
 .results-list {
+  margin-top: 0.35rem;
   margin-bottom: 4rem;
 }
 .result-item {
@@ -177,10 +189,6 @@ $facetsWidth: 190px;
   border-top: 1px solid darken($lightgray, 10%);
   display: flex;
   flex-direction: row;
-
-  &:first-child {
-    border-top: 0;
-  }
 
   .result-image {
     flex: 0 0 60px;

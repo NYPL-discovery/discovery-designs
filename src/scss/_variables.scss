@@ -24,4 +24,8 @@ $linkcolor: darken($blue, 10%);
 $linkhovercolor: lighten($linkcolor, 10%);
 $linkvisitedcolor: darken($linkcolor, 12%);
 
+// Layout
 $containerWidth: 1024px;
+$headerHeight: 60px;
+$headerComponentHeight: 40px;
+$headerComponentMargin: ($headerHeight - $headerComponentHeight)/2;

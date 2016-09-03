@@ -1,12 +1,7 @@
 @import "mixins";
 @import "variables";
 
-$headerHeight: 60px;
-$headerComponentHeight: 40px;
-$headerComponentMargin: ($headerHeight - $headerComponentHeight)/2;
 $searchContainerWidth: 518px;
-$searchMinWidth: $searchContainerWidth - 64px;
-$searchMaxWidth: $searchContainerWidth + 162px;
 
 a.site-title {
   display: block;
@@ -141,57 +136,4 @@ a.site-title {
   ul li.active ul {
     display: block;
   }
-}
-
-.search-form {
-  white-space: nowrap;
-
-  .search-input,
-  .search-button {
-    height: $headerComponentHeight;
-    line-height: $headerComponentHeight;
-    display: inline-block;
-    padding: 0 0.35rem;
-    vertical-align: middle;
-    @include box-sizing();
-  }
-  .search-input {
-    padding-right: 0;
-    border: 1px solid $lightgray;
-    border-right: 0;
-    margin-right: -5px;
-    width: $searchMinWidth;
-    @include transition(width 0.5s);
-    &:focus {
-      width: $searchMaxWidth;
-    }
-  }
-}
-.search.active .search-input {
-  width: $searchMaxWidth;
-}
-
-.auto-search {
-  display: none;
-  position: absolute;
-  top: $headerComponentHeight + 10px;
-  left: 0;
-  width: $searchMaxWidth;
-  background: $white;
-  border: 1px solid $gray;
-  border-top: 0;
-  @include box-sizing();
-  @include box-shadow(0px 3px 3px rgba($black, 0.2));
-
-  .tab {
-    border-right: 0;
-  }
-
-  .tab:first-child {
-    border-left: 0;
-  }
-}
-.search.active .auto-search {
-  display: block;
-  @include animation(fadeIn 1s);
 }
