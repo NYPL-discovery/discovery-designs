@@ -25,81 +25,84 @@
         </nav>
       </div>
     </div>
-    <div class="container">
-      <a href="#home" class="site-title">
-        <span class="site-title-org">The New York Public Library</span>
-        <span class="site-title-name">Research Catalog</span>
-      </a>
+    <div class="main-nav-container container">
+      <div class="site-title-container">
+        <a href="#home" class="site-title">
+          <span class="site-title-org">The New York Public Library</span>
+          <span class="site-title-name">Research Catalog</span>
+        </a>
+      </div>
+      <div class="search">
+        <form action="" class="search-form" method="GET">
+          <label for="search-by-field" class="visuallyhidden">Search by field</label>
+          <select id="search-by-field" class="search-select">
+            <option value="all">All fields</option>
+            <option value="title">Title</option>
+            <option value="contributor">Author/Contributor</option>
+            <option value="subject">Subject</option>
+            <option value="series">Series</option>
+            <option value="call_number">Call number</option>
+          </select>
+          <label for="search-query" class="visuallyhidden">Search keyword</label>
+          <input id="search-query" class="search-input" name="q" placeholder="Keyword, title, name, or id" value="Alexander Hamilton" />
+          <button type="submit" class="search-button">Search</button>
+        </form>
+        <div class="autosearch">
+          <div class="autosearch-item">
+            <div class="image">
+              <img src="../img/alexander_hamilton.png" alt="Alexander Hamilton" />
+            </div>
+            <a href="#" class="link">
+              <span class="type">Person</span>
+              <span class="title">Hamilton, Alexander, 1757-1804</span>
+              <span class="description">Founding Father of the United States</span>
+            </a>
+          </div>
+          <div class="autosearch-item">
+            <div class="image">
+              <img src="../img/federalist_papers.jpg" alt="The Federalist papers"/>
+            </div>
+            <a href="#" class="link">
+              <span class="type">Book</span>
+              <span class="title">The Federalist papers: Alexander Hamilton, James Madison, John Jay</span>
+              <span class="description">New Haven: Yale University Press, 2009</span>
+            </a>
+          </div>
+          <div class="autosearch-item">
+            <div class="image">
+              <img src="../img/alexander_hamilton_papers.jpg" alt="Alexander Hamilton papers"/>
+            </div>
+            <a href="#" class="link">
+              <span class="type">Collection / Legal documents</span>
+              <span class="title">Alexander Hamilton papers</span>
+              <span class="description">Primary source</span>
+            </a>
+          </div>
+          <div class="autosearch-item">
+            <div class="image">
+              <img src="../img/alexander_hamilton_chernow.jpg" alt="Alexander Hamilton" />
+            </div>
+            <a href="#" class="link">
+              <span class="type">Book / Biography</span>
+              <span class="title">Alexander Hamilton</span>
+              <span class="description">Chernow, Ron <span class="divider"></span> New York: Penguin Press, 2004</span>
+            </a>
+          </div>
+          <div class="autosearch-item">
+            <div class="image">
+              <img src="../img/alexander_hamilton_american.jpg" alt="Alexander Hamilton, American" />
+            </div>
+            <a href="#" class="link">
+              <span class="type">Book / Biography</span>
+              <span class="title">Alexander Hamilton, American</span>
+              <span class="description">Brookhiser, Richard <span class="divider"></span> New York: Free Press, 1999</span>
+            </a>
+          </div>
+          <a href="#" class="link-full">See all 59,411 results</a>
+        </div>
+      </div>
       <nav class="main-nav">
         <ul>
-          <li class="search">
-            <form action="" class="search-form" method="GET">
-              <label for="search-by-field" class="visuallyhidden">Search by field</label>
-              <select id="search-by-field" class="search-select">
-                <option value="all">All fields</option>
-                <option value="title">Title</option>
-                <option value="contributor">Author/Contributor</option>
-                <option value="subject">Subject</option>
-                <option value="call_number">Call number</option>
-              </select>
-              <label for="search-query" class="visuallyhidden">Search keyword</label>
-              <input id="search-query" class="search-input" name="q" placeholder="Keyword, title, name, or id" value="Alexander Hamilton" />
-              <button type="submit" class="search-button">Search</button>
-            </form>
-            <div class="autosearch">
-              <div class="autosearch-item">
-                <div class="image">
-                  <img src="../img/alexander_hamilton.png" alt="Alexander Hamilton" />
-                </div>
-                <a href="#" class="link">
-                  <span class="type">Person</span>
-                  <span class="title">Hamilton, Alexander, 1757-1804</span>
-                  <span class="description">Founding Father of the United States</span>
-                </a>
-              </div>
-              <div class="autosearch-item">
-                <div class="image">
-                  <img src="../img/federalist_papers.jpg" alt="The Federalist papers"/>
-                </div>
-                <a href="#" class="link">
-                  <span class="type">Item</span>
-                  <span class="title">The Federalist papers: Alexander Hamilton, James Madison, John Jay</span>
-                  <span class="description">New Haven: Yale University Press, 2009</span>
-                </a>
-              </div>
-              <div class="autosearch-item">
-                <div class="image">
-                  <img src="../img/alexander_hamilton_papers.jpg" alt="Alexander Hamilton papers"/>
-                </div>
-                <a href="#" class="link">
-                  <span class="type">Collection</span>
-                  <span class="title">Alexander Hamilton papers</span>
-                  <span class="description">Primary source</span>
-                </a>
-              </div>
-              <div class="autosearch-item">
-                <div class="image">
-                  <img src="../img/alexander_hamilton_chernow.jpg" alt="Alexander Hamilton" />
-                </div>
-                <a href="#" class="link">
-                  <span class="type">Item</span>
-                  <span class="title">Alexander Hamilton</span>
-                  <span class="description">Chernow, Ron <span class="divider"></span> New York: Penguin Press, 2004</span>
-                </a>
-              </div>
-              <div class="autosearch-item">
-                <div class="image">
-                  <img src="../img/alexander_hamilton_american.jpg" alt="Alexander Hamilton, American" />
-                </div>
-                <a href="#" class="link">
-                  <span class="type">Item</span>
-                  <span class="title">Alexander Hamilton, American</span>
-                  <span class="description">Brookhiser, Richard <span class="divider"></span> New York: Free Press, 1999</span>
-                </a>
-              </div>
-              <a href="#" class="link-full">See all 59,411 results</a>
-            </div>
-          </li>
           <li><a href="#advanced" class="nav-link">Advanced search</a></li>
           <li>
             <a href="#browse" class="nav-link has-children">Browse</a>
@@ -129,12 +132,12 @@
         <form class="facets-form">
           <h2>Filter by</h2>
           <fieldset>
-            <label for="select-type">Keywords</label>
-            <button class="button-selected" title="Remove keyword filter: Alexander Hamilton">"Alexander Hamilton"</button>
+            <label for="select-keywords">Keywords</label>
+            <button id="select-keywords" class="button-selected" title="Remove keyword filter: Alexander Hamilton">"Alexander Hamilton"</button>
           </fieldset>
           <fieldset>
-            <label for="select-type">Access</label>
-            <select id="select-type" name="type">
+            <label for="select-access">Access</label>
+            <select id="select-access" name="access">
               <option value="All">All</option>
               <option value="Item">At the library (11,758)</option>
               <option value="Component">Online (2,914)</option>
@@ -142,8 +145,8 @@
             </select>
           </fieldset>
           <fieldset>
-            <label for="select-type">Status</label>
-            <select id="select-type" name="type">
+            <label for="select-status">Status</label>
+            <select id="select-status" name="status">
               <option value="All">All</option>
               <option value="Item">Available (11,758)</option>
               <option value="Component">Missing (2,914)</option>
@@ -151,12 +154,21 @@
             </select>
           </fieldset>
           <fieldset>
-            <label for="select-type">Type</label>
-            <select id="select-type" name="type">
+            <label for="select-resource">Resource Type</label>
+            <select id="select-resource" name="resource-type">
               <option value="All">All</option>
-              <option value="Item">Item (11,758)</option>
-              <option value="Component">Component (2,914)</option>
-              <option value="Collection">Collection (1,266)</option>
+              <option value="Item">Book (11,758)</option>
+              <option value="Component">Archive/Manuscript (2,914)</option>
+              <option value="Collection">Journal/Periodical (1,266)</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label for="select-media">Media Type</label>
+            <select id="select-media" name="media-type">
+              <option value="All">All</option>
+              <option value="Item">Microfilm (1,758)</option>
+              <option value="Component">DVD (914)</option>
+              <option value="Collection">Audiocassette (266)</option>
             </select>
           </fieldset>
           <fieldset>
@@ -256,14 +268,15 @@
           </div>
         </div>
         <div class="results-list">
-          <div class="result-item">
+          <div class="result-item person">
             <div class="result-image">
               <img src="../img/alexander_hamilton.png" alt="Alexander Hamilton" />
             </div>
             <div class="result-text">
               <div class="type">Person</div>
               <a href="#" class="title">Hamilton, Alexander, 1757-1804</a>
-              <div class="description">Founding Father of the United States <span class="divider"></span> Author, Attributed name, Appellant</div>
+              <div class="description">Founding Father of the United States</div>
+              <div class="description">There are <strong>463</strong> resources created by this person and <strong>351</strong> resources about this person</div>
               <label class="select-label" for="select_001">
                 <input type="checkbox" class="select-checkbox" id="select_001">
                 <span>Save</span>
@@ -275,7 +288,7 @@
               <img src="../img/federalist_papers.jpg" alt="The Federalist papers"/>
             </div>
             <div class="result-text">
-              <div class="type">Item</div>
+              <div class="type">Book</div>
               <a href="#"  class="title">The Federalist papers: Alexander Hamilton, James Madison, John Jay / edited and with an introduction by Ian Shapiro ; with essays by John Dunn, Donald L. Horowitz, Eileen Hunt Botting.</a>
               <div class="description">New Haven: Yale University Press, 2009</div>
               <div class="bib-items">
@@ -294,9 +307,9 @@
               <img src="../img/alexander_hamilton_papers.jpg" alt="Alexander Hamilton papers"/>
             </div>
             <div class="result-text">
-              <div class="type">Collection</div>
+              <div class="type">Collection / Legal documents</div>
               <a href="#" class="title">Alexander Hamilton papers</a>
-              <div class="description"><span class="label">Subjects:</span> Finance, Records and correspondence</div>
+              <div class="description">Primary source</div>
               <div class="bib-items">
                 <div class="bib-item">
                   <span class="status new-in-process">New-In Process</span> at <span class="location">SASB - Manuscripts &amp; Archives Rm 328</span> with call no. <a href="#" class="call-no">MssCol 1297  Box 1</a> (adv request)
@@ -313,7 +326,7 @@
               <img src="../img/alexander_hamilton_chernow.jpg" alt="Alexander Hamilton" />
             </div>
             <div class="result-text">
-              <div class="type">Item</div>
+              <div class="type">Book / Biography</div>
               <a href="#"  class="title">Alexander Hamilton</a>
               <div class="description">Chernow, Ron <span class="divider"></span> New York: Penguin Press, 2004</div>
               <div class="bib-items">
@@ -335,7 +348,7 @@
               <img src="../img/alexander_hamilton_american.jpg" alt="Alexander Hamilton, American" />
             </div>
             <div class="result-text">
-              <div class="type">Item</div>
+              <div class="type">Book / Biography</div>
               <a href="#"  class="title">Alexander Hamilton, American</a>
               <div class="description">Brookhiser, Richard <span class="divider"></span> New York: Free Press, 1999</div>
               <div class="bib-items">
@@ -357,7 +370,7 @@
               <img src="../img/the_duel.jpg" alt="The duel: the parallel lives of Alexander Hamilton & Aaron Burr" />
             </div>
             <div class="result-text">
-              <div class="type">Item</div>
+              <div class="type">Book / Biography</div>
               <a href="#" class="title">The duel: the parallel lives of Alexander Hamilton &amp; Aaron Burr</a>
               <div class="description">St. George, Judith, 1931- <span class="divider"></span> New York: Viking, 2009</div>
               <div class="bib-items">

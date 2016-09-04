@@ -16,11 +16,11 @@ $facetsWidth: 190px;
 .facets {
   width: $facetsWidth;
   float: left;
-  margin-top: 36px;
+  margin-top: 1rem;
 }
 .results {
   margin-left: ($facetsWidth + 20px);
-  margin-top: 20px;
+  margin-top: 1rem;
 }
 
 .facets-form {
@@ -199,6 +199,23 @@ $facetsWidth: 190px;
       width: 100%;
       margin: 0 auto;
       display: block;
+    }
+  }
+
+  &.person {
+    padding: 0.65rem;
+    margin: 0.65rem 0;
+    // background: $lightergreen;
+    border: 1px solid darken($lightgray, 10%);
+    @include box-shadow(0px 1px 2px rgba($black, 0.2));
+
+    & + .result-item {
+      border-top: 0;
+    }
+
+    .result-image {
+      flex: 0 0 80px;
+      max-height: 120px;
     }
   }
 

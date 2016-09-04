@@ -3,13 +3,32 @@
 
 $searchContainerWidth: 518px;
 
+.main-nav-container {
+  display: flex;
+  flex-direction: row;
+  line-height: $headerHeight;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  .site-title-container {
+
+  }
+  .search {
+    flex-grow: 1;
+    position: relative;
+  }
+  .main-nav {
+
+  }
+}
+
 a.site-title {
   display: block;
   color: $textcolor;
   text-decoration: none;
   background: url("../img/nypl-logo.svg") no-repeat $white;
   height: $headerComponentHeight;
-  padding: 0 0 0 ($headerComponentHeight + 10px);
+  padding: 0 1rem 0 ($headerComponentHeight + 10px);
   margin-top: $headerComponentMargin;
 
   &:hover {
@@ -20,6 +39,8 @@ a.site-title {
   .site-title-name {
     display: block;
     line-height: normal;
+    white-space: nowrap;
+    overflow: visible;
   }
 
   .site-title-org {
@@ -27,20 +48,6 @@ a.site-title {
   }
   .site-title-name {
     font-size: 1.3rem;
-  }
-}
-
-.site-header {
-  line-height: $headerHeight;
-
-  .site-title {
-    float: left;
-  }
-
-  .container {
-    padding-top: 0;
-    padding-bottom: 0;
-    @include clearfix();
   }
 }
 
@@ -80,24 +87,15 @@ a.site-title {
 }
 
 .main-nav {
-  margin-left: 270px;
-  @include clearfix();
+
+  > ul {
+    display: flex;
+    flex-direction: row;
+  }
 
   > ul > li {
-    float: left;
-    margin-left: 1rem;
+    padding: 0 1rem;
     position: relative;
-
-    &.search {
-      width: $searchContainerWidth;
-      overflow: visible;
-      z-index: 1;
-      position: relative;
-    }
-
-    &:first-child {
-      margin-left: 0;
-    }
   }
 
   .nav-link {
