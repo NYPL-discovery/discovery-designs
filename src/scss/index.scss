@@ -3,3 +3,23 @@
 @import "normalize";
 
 @import "base";
+
+body {
+  background: lighten($lightergray, 5%);
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+}
+
+.intro,
+.toc {
+  padding: 1rem;
+}
+
+.toc {
+  flex: 0 0 500px;
+  background: $white;
+  border: 1px solid $lightgray;
+}

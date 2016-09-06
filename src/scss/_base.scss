@@ -110,3 +110,15 @@ nav {
   margin: 0 auto;
   @include box-sizing();
 }
+
+.feedback {
+  background: $yellow;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  font-size: 0.8rem;
+  @include box-sizing();
+}
