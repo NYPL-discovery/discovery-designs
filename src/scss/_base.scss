@@ -24,6 +24,18 @@ a {
   &:hover, &:visited:hover {
     color: $linkhovercolor;
   }
+
+  &.button {
+    color: $white;
+    background: $linkcolor;
+    padding: 0.35rem 0.65rem;
+    text-decoration: none;
+
+    &:hover {
+      color: $white;
+      background: $linkhovercolor;
+    }
+  }
 }
 
 button {
@@ -94,7 +106,7 @@ nav {
 
 .container {
   max-width: $containerWidth;
-  padding: 0.35rem;
+  padding: 0.5rem 1rem;
   margin: 0 auto;
   @include box-sizing();
 }

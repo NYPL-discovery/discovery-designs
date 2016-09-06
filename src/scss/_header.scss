@@ -71,7 +71,8 @@ a.site-title {
   }
 
   .container {
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .top-nav {
@@ -82,6 +83,13 @@ a.site-title {
     }
     li.nypl-item {
       margin-right: auto;
+
+      a {
+        padding-left: 0;
+      }
+    }
+    li:last-child a {
+      padding-right: 0;
     }
   }
 }
@@ -96,6 +104,10 @@ a.site-title {
   > ul > li {
     padding: 0 1rem;
     position: relative;
+
+    &:last-child {
+      padding-right: 0;
+    }
   }
 
   .nav-link {

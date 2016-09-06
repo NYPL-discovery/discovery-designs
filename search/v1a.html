@@ -234,6 +234,53 @@
               <option value="Jerome Robbins Dance Division">Jerome Robbins Dance Division (325)</option>
             </select>
           </fieldset>
+          <fieldset>
+            <label for="select-date-range">Date</label>
+            <div id="select-date-range" class="date-range">
+              <input id="input-date-start" name="date-start" type="text" value="1750" />
+              <div class="divider">to</div>
+              <input id="input-date-end" name="date-end" type="text" value="2016" />
+            </div>
+            <div class="timeline">
+              <div id="timeline-select" class="years">
+                <div class="year"><div class="label">1750</div><div class="value">25</div><div class="bar" style="height: 5%"></div></div>
+                <div class="year"><div class="label">1760</div><div class="value">28</div><div class="bar" style="height: 5%"></div></div>
+                <div class="year"><div class="label">1770</div><div class="value">53</div><div class="bar" style="height: 10%"></div></div>
+                <div class="year"><div class="label">1780</div><div class="value">119</div><div class="bar" style="height: 22%"></div></div>
+                <div class="year"><div class="label">1790</div><div class="value">150</div><div class="bar" style="height: 28%"></div></div>
+                <div class="year"><div class="label">1800</div><div class="value">116</div><div class="bar" style="height: 22%"></div></div>
+                <div class="year"><div class="label">1810</div><div class="value">52</div><div class="bar" style="height: 10%"></div></div>
+                <div class="year"><div class="label">1820</div><div class="value">41</div><div class="bar" style="height: 8%"></div></div>
+                <div class="year"><div class="label">1830</div><div class="value">51</div><div class="bar" style="height: 9%"></div></div>
+                <div class="year"><div class="label">1840</div><div class="value">69</div><div class="bar" style="height: 13%"></div></div>
+                <div class="year"><div class="label">1850</div><div class="value">137</div><div class="bar" style="height: 26%"></div></div>
+                <div class="year"><div class="label">1860</div><div class="value">184</div><div class="bar" style="height: 34%"></div></div>
+                <div class="year"><div class="label">1870</div><div class="value">138</div><div class="bar" style="height: 26%"></div></div>
+                <div class="year"><div class="label">1880</div><div class="value">195</div><div class="bar" style="height: 36%"></div></div>
+                <div class="year"><div class="label">1890</div><div class="value">184</div><div class="bar" style="height: 34%"></div></div>
+                <div class="year"><div class="label">1900</div><div class="value">235</div><div class="bar" style="height: 44%"></div></div>
+                <div class="year"><div class="label">1910</div><div class="value">234</div><div class="bar" style="height: 44%"></div></div>
+                <div class="year"><div class="label">1920</div><div class="value">204</div><div class="bar" style="height: 38%"></div></div>
+                <div class="year"><div class="label">1930</div><div class="value">342</div><div class="bar" style="height: 64%"></div></div>
+                <div class="year"><div class="label">1940</div><div class="value">297</div><div class="bar" style="height: 55%"></div></div>
+                <div class="year"><div class="label">1950</div><div class="value">291</div><div class="bar" style="height: 54%"></div></div>
+                <div class="year"><div class="label">1960</div><div class="value">418</div><div class="bar" style="height: 78%"></div></div>
+                <div class="year"><div class="label">1970</div><div class="value">537</div><div class="bar" style="height: 100%"></div></div>
+                <div class="year"><div class="label">1980</div><div class="value">347</div><div class="bar" style="height: 65%"></div></div>
+                <div class="year"><div class="label">1990</div><div class="value">256</div><div class="bar" style="height: 48%"></div></div>
+                <div class="year"><div class="label">2000</div><div class="value">203</div><div class="bar" style="height: 38%"></div></div>
+                <div class="year"><div class="label">2010</div><div class="value">62</div><div class="bar" style="height: 12%"></div></div>
+                <div class="year"><div class="label">2016</div><div class="value">0</div><div class="bar" style="height: 0%"></div></div>
+                <div id="timeline-handle-left" class="handle left" data-value="0"></div>
+                <div id="timeline-handle-right" class="handle right" data-value="100"></div>
+              </div>
+              <div class="labels">
+                <div class="label">1800</div>
+                <div class="label">1900</div>
+                <div class="label">2000</div>
+              </div>
+            </div>
+          </fieldset>
         </form>
       </div>
       <div class="results">
@@ -400,6 +447,8 @@
       </div>
     </div>
   </main>
+
+  <a href="#" class="saved-items button">0 saved items</a>
 
   <script src="../js/search.js"></script>
 
