@@ -120,6 +120,17 @@ var Search = (function() {
     this.maxYear = parseInt(this.$dateEnd.val());
     this.yearRange = this.maxYear - this.minYear;
 
+    $('.date-range input').on('change', function(e){
+      _this.updateTimeline();
+    });
+
+    $('#timeline-select .bar').on('click', function(e){
+      e.preventDefault();
+      var year = $(this).attr('data-year');
+      $('.date-range input').val(year);
+      _this.updateTimeline();
+    });
+
     righthandle.on('panstart', function(e){
       mode = 'right';
     });
@@ -145,6 +156,7 @@ var Search = (function() {
     timeline.on('panend', function(e) {
       // console.log(e);
       mode = 'normal';
+      $('.apply-changes').addClass('active');
     });
   };
 
@@ -199,6 +211,29 @@ var Search = (function() {
     if (d2 > this.maxYear) d2 = this.maxYear;
     this.$dateStart.val(d1);
     this.$dateEnd.val(d2);
+  };
+
+  Search.prototype.updateTimeline = function(){
+    var start = parseInt($('#input-date-start').val());
+    var end = parseInt($('#input-date-end').val());
+    if (!start || start < this.minYear) start = this.minYear;
+    if (!end || end > this.maxYear) end = this.maxYear;
+
+    if (start > end) {
+      var tmp = start;
+      start = end;
+      end = tmp;
+    }
+
+    var w1 = (start - this.minYear) / this.yearRange * 100;
+    var w2 = (end - this.minYear) / this.yearRange * 100;
+
+    this.$lefthandle.width(w1+'%').attr('data-value', w1);
+    this.$righthandle.width((100-w2)+'%').attr('data-value', w2);
+
+    $('#input-date-start').val(start);
+    $('#input-date-end').val(end);
+    $('.apply-changes').addClass('active');
   };
 
   return Search;
