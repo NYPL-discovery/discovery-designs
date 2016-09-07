@@ -22,4 +22,12 @@ body {
   flex: 0 0 500px;
   background: $white;
   border: 1px solid $lightgray;
+
+  ol {
+    list-style-type: upper-roman;
+  }
+
+  ol ol {
+    list-style-type: lower-alpha;
+  }
 }

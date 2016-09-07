@@ -21,9 +21,14 @@ $darkorange: darken($orange, 20%);
 
 // Components
 $textcolor: $black;
-$linkcolor: darken($blue, 10%);
+$linkcolor: $red;
 $linkhovercolor: lighten($linkcolor, 10%);
-$linkvisitedcolor: darken($linkcolor, 12%);
+$linkvisitedcolor: darken($linkcolor, 20%);
+$searchcolor: $blue;
+$searchcolordark: $darkblue;
+$searchcolorlight: lighten($searchcolor, 20%);
+$focuswidth: 3px;
+$focuscolor: $orange;
 
 // Layout
 $containerWidth: 1200px;

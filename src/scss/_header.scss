@@ -52,20 +52,22 @@ a.site-title {
 }
 
 .top-nav-container {
-  background: $darkergray;
+  background: $red;
   color: $white;
   line-height: normal;
   margin-bottom: 0.5rem;
+  text-transform: uppercase;
 
   a {
     color: $white;
     text-decoration: none;
     padding: 0.2rem 0.5rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     display: block;
+    font-weight: bold;
 
     &:hover {
-      color: $black;
+      color: $linkcolor;
       background: $white;
     }
   }
@@ -85,11 +87,11 @@ a.site-title {
       margin-right: auto;
 
       a {
-        padding-left: 0;
+        margin-left: -0.5rem;
       }
     }
     li:last-child a {
-      padding-right: 0;
+      margin-right: -0.5rem;
     }
   }
 }
