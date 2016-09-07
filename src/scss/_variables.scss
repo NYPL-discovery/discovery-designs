@@ -5,7 +5,7 @@ $lightergray: lighten($gray, 45%);
 $lightgray: lighten($gray, 40%);
 $darkgray: darken($gray, 10%);
 $darkergray: darken($gray, 15%);
-$black: #000;
+$black: darken($gray, 40%);
 
 // Colors
 $yellow: #FEE24A;

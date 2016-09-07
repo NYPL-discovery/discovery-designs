@@ -113,6 +113,10 @@
       line-height: 1.65;
     }
 
+    &:hover .title {
+      text-decoration: underline;
+    }
+
     .description {
       color: $textcolor;
     }
