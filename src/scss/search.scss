@@ -314,7 +314,7 @@ $facetsWidth: 200px;
   .result-text {
     text-decoration: none;
     flex-grow: 1;
-    padding-left: 1rem;
+    padding: 0 1rem;
     position: relative;
 
     .type,
@@ -376,6 +376,7 @@ $facetsWidth: 200px;
         color: $white;
         text-decoration: none;
         padding: 0.1rem 0.35rem;
+        margin-right: 0.35rem;
 
         &:hover {
           background: $linkhovercolor;
@@ -416,15 +417,29 @@ $facetsWidth: 200px;
     }
   }
 
-  .result-select {
-    flex: 0 0 70px;
+  .result-actions {
+    flex: 0 0 110px;
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    // justify-content: right;
+    // text-align: right;
 
     .select-label {
+      white-space: nowrap;
+      display: block;
+      margin-top: 1rem;
+      padding-left: 0.35rem;
 
+      input,
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      span {
+        padding-left: 0.35rem;
+        color: $gray;
+      }
     }
   }
 }
