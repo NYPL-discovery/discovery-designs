@@ -98,7 +98,7 @@ $facetsWidth: 200px;
 
   input {
     height: 2rem;
-    background: $lightergray;
+    background: $lightgray;
     border: 0;
     text-indent: 0.2rem;
   }
@@ -329,7 +329,7 @@ $facetsWidth: 200px;
     .description,
     .bib-item {
       color: $gray;
-      font-size: 0.85rem;
+      font-size: 0.95rem;
     }
 
     .type {
@@ -338,7 +338,7 @@ $facetsWidth: 200px;
 
     .title {
       font-size: 1rem;
-      line-height: 1.2;
+      line-height: 1.35;
       font-weight: bold;
     }
 
