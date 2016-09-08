@@ -354,6 +354,9 @@ $facetsWidth: 200px;
 
     .bib-item {
 
+      line-height: 1.2;
+      padding: 0.2rem 0;
+
       &.more {
         display: none;
       }
@@ -382,6 +385,12 @@ $facetsWidth: 200px;
           background: $linkhovercolor;
           color: $white;
         }
+      }
+
+      .message {
+        white-space: nowrap;
+        font-weight: normal;
+        color: $gray;
       }
     }
 
