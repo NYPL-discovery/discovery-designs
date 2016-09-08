@@ -9,19 +9,22 @@ body {
 }
 
 .main {
-  display: flex;
-  flex-direction: row;
+  @include clearfix();
 }
 
 .intro,
 .toc {
   padding: 1rem;
+  float: left;
+  width: 60%;
+  @include box-sizing();
 }
 
 .toc {
-  flex: 0 0 500px;
+  width: 40%;
   background: $white;
   border: 1px solid $lightgray;
+  min-height: 80vh;
 
   ol {
     list-style-type: upper-roman;
