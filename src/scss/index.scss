@@ -26,11 +26,32 @@ body {
   border: 1px solid $lightgray;
   min-height: 80vh;
 
+  ol, ul {
+    margin: 0 0 1rem 1rem;
+    padding: 0;
+  }
+
   ol {
     list-style-type: upper-roman;
   }
 
   ol ol {
     list-style-type: lower-alpha;
+  }
+
+  li {
+    margin: 0 0 1rem;
+  }
+
+  ol ol ul {
+    margin-top: 0.35rem;
+  }
+
+  ol ol ul li {
+    margin: 0;
+  }
+
+  h3 {
+    margin: 0 0 0.5rem;
   }
 }

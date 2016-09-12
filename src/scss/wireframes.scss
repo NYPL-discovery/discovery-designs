@@ -1,0 +1,195 @@
+@import "mixins";
+@import "variables";
+@import "normalize";
+
+@import "base";
+
+html {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body {
+  padding: 0 0.5rem 4rem;
+}
+
+a {
+  &, &:link, &:visited, &:hover, &:visited:hover {
+    color: $linkcolor;
+  }
+}
+
+input, select {
+  border: 4px solid $black;
+  padding: 0.3rem 0.4rem;
+}
+
+select {
+  background-color: $white;
+  color: $black;
+  width: 220px;
+  padding: 0.05rem 0.35rem;
+  padding-right: 20px;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+button,
+a.button {
+  color: $white;
+  background: $linkcolor;
+  border: 4px solid $black;
+  padding: 0.05rem 0.4rem;
+
+  &:hover {
+    background: $linkcolor;
+    border-color: $black;
+    text-decoration: underline;
+  }
+}
+
+p {
+  margin: 1rem 0;
+}
+
+nav {
+  li {
+    display: inline-block;
+    padding: 0.2rem 0.5rem 0.2rem 0;
+
+    &.user {
+      display: none;
+    }
+  }
+}
+
+.clearfix {
+  @include clearfix();
+}
+
+.container {
+  max-width: 960px;
+  position: relative;
+  border: 4px solid $black;
+  margin-top: 1rem;
+  @include clearfix();
+}
+.container-label {
+  color: $white;
+  background: $black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.2rem 0.5rem;
+}
+
+/* search form */
+
+.search-form {
+  select, input, button {
+    margin-bottom: 0.2rem;
+  }
+}
+#search-keyword {
+  width: 20rem;
+  max-width: 96%;
+}
+
+
+/* search results */
+
+.facets {
+  width: 20%;
+  float: left;
+  @include box-sizing();
+  h2 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  input, select {
+    width: 100%;
+    @include box-sizing();
+  }
+}
+
+.search-results {
+  margin-left: 22%;
+  border-left: 4px solid $black;
+  min-height: 800px;
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem;
+  padding: 0.5rem;
+  @include box-sizing();
+
+  *:first-child {
+    margin-top: 0;
+  }
+}
+
+.results-nav {
+  //  @include clearfix();
+  .pagination {
+    float: left;
+  }
+  .sort {
+    float: right;
+  }
+}
+
+.results-list {
+  @include clearfix();
+  margin-top: 2rem;
+}
+
+.result-item {
+  border-top: 4px dashed $black;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.result-image {
+  flex: 0 0 60px;
+  width: 60px;
+  height: 80px;
+  background: $black;
+  img {
+    display: none;
+  }
+}
+
+.result-text {
+  flex-grow: 1;
+  padding: 0 0.5rem;
+  font-size: 0.8rem;
+
+  .title {
+    font-size: 1rem;
+  }
+}
+
+.result-actions {
+  flex: 0 0 130px;
+}
+
+.bib-items {
+  border: 4px solid $black;
+  padding: 0 0.5rem;
+  margin-top: 0.5rem;
+
+  .bib-item {
+    border-top: 4px dashed $black;
+    padding: 0.5rem 0;
+
+    &:first-child {
+      border: 0;
+    }
+    &.more {
+      display: none;
+    }
+  }
+}

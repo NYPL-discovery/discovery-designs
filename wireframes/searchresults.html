@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Discovery Designs - Homepage Wireframe</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../css/wireframes.css">
+</head>
+<body>
+
+  <nav class="container navigation">
+    <form class="search-form" action="searchresults.html">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="advancedsearch.html">Advanced search</a></li>
+        <li><a href="browse.html">Browse</a></li>
+        <li class="user"><a href="account.html">Account</a></li>
+        <li class="user"><a href="#" class="log-out">Log out</a></li>
+        <li class="no-user"><a href="signin.html">Sign in</a></li>
+      </ul>
+      <select id="search-by-field" class="search-select">
+        <option value="all">All fields</option>
+        <option value="title">Title</option>
+        <option value="contributor">Author/Contributor</option>
+        <option value="subject">Subject</option>
+        <option value="series">Series</option>
+        <option value="call_number">Call number</option>
+      </select>
+      <input id="search-keyword" name="q" placeholder="Keyword, title, name, or identifier" value="Alexander Hamilton" />
+      <button type="submit" class="search-submit">Search</button>
+    </form>
+    <div class="container-label">Navigation</div>
+  </nav>
+
+  <div class="container main">
+
+    <div class="facets">
+      <form class="facets-form">
+        <h2>Filter results by</h2>
+        <fieldset>
+          <label for="select-access">Access</label>
+          <select id="select-access" name="access">
+            <option value="All">All</option>
+            <option value="Item">At the library (11,758)</option>
+            <option value="Component">Online (2,914)</option>
+            <option value="Collection">On order (1,266)</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="select-status">Status</label>
+          <select id="select-status" name="status">
+            <option value="All">All</option>
+            <option value="Item">Available (11,758)</option>
+            <option value="Component">Missing (2,914)</option>
+            <option value="Collection">Missing in transit (1,266)</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="select-resource">Resource Type</label>
+          <select id="select-resource" name="resource-type">
+            <option value="All">All</option>
+            <option value="Item">Book (11,758)</option>
+            <option value="Component">Archive/Manuscript (2,914)</option>
+            <option value="Collection">Journal/Periodical (1,266)</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="select-media">Media Type</label>
+          <select id="select-media" name="media-type">
+            <option value="All">All</option>
+            <option value="Item">Microfilm (1,758)</option>
+            <option value="Component">DVD (914)</option>
+            <option value="Collection">Audiocassette (266)</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="select-language">Language</label>
+          <select id="select-language" name="language">
+            <option value="all">All</option>
+            <option value="English">English (8,983)</option>
+            <option value="German">German (807)</option>
+            <option value="French">French (99)</option>
+            <option value="No linguistic content">No linguistic content (91)</option>
+            <option value="Spanish">Spanish (54)</option>
+            <option value="Portuguese">Portuguese (46)</option>
+            <option value="Italian">Italian (45)</option>
+            <option value="Russian">Russian (45)</option>
+            <option value="Latin">Latin (37)</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="select-subject">Subject</label>
+          <select id="select-subject" name="subject">
+            <option value="all">All</option>
+            <option value="Biography">Biography (1,845)</option>
+            <option value="History">History (1,501)</option>
+            <option value="United States">United States (1,310)</option>
+            <option value="New York (State)">New York (State) (581)</option>
+            <option value="Fiction">Fiction (554)</option>
+            <option value="Hamilton, Alexander, 1757-1804">Hamilton, Alexander, 1757-1804 (473)</option>
+            <option value="Politics and government">Politics and government (458)</option>
+            <option value="Early works to 1800">Early works to 1800. (442)</option>
+            <option value="Great Britain">Great Britain (382)</option>
+            <option value="Electronic books">Electronic books (378)</option>
+          </select>
+        </fieldset>
+        <!-- <fieldset>
+          <label for="select-author">Author</label>
+          <select id="select-author" name="author">
+            <option value="all">All</option>
+            <option value="Hamilton, Alexander, 1757-1804">Hamilton, Alexander, 1757-1804 (458)</option>
+            <option value="Gale (Firm)">Gale (Firm) (368)</option>
+            <option value="Pope, Alexander, 1688-1744">Pope, Alexander, 1688-1744 (251)</option>
+            <option value="United States. Farm Security Administration">United States. Farm Security Administration (168)</option>
+            <option value="Mydans, Carl">Mydans, Carl (122)</option>
+            <option value="Finlay, Ian Hamilton">Finlay, Ian Hamilton (110)</option>
+            <option value="New York public library">New York public library (97)</option>
+            <option value="Alexander Hamilton Institute">Alexander Hamilton Institute (U.S.) (92)</option>
+            <option value="Madison, James, 1751-1836">Madison, James, 1751-1836 (85)</option>
+            <option value="Jay, John, 1745-1829">Jay, John, 1745-1829 (78)</option>
+          </select>
+        </fieldset> -->
+        <fieldset>
+          <label for="select-location">Location</label>
+          <select id="select-location" name="location">
+            <option value="all">All</option>
+            <option value="Stephen A. Schwarzman Building">Stephen A. Schwarzman Building (6,143)</option>
+            <option value="Manuscripts and Archives Division">Manuscripts and Archives Division (2,014)</option>
+            <option value="General Research Division">General Research Division (1,590)</option>
+            <option value="Billy Rose Theatre Division">Billy Rose Theatre Division (1,209)</option>
+            <option value="Irma and Paul Milstein Division of United States History, Local History and Genealogy">Irma and Paul Milstein Division of United States History, Local History and Genealogy (746)</option>
+            <option value="The Miriam and Ira D. Wallach Division of Art, Prints and Photographs: Photography Collection">The Miriam and Ira D. Wallach Division of Art, Prints and Photographs: Photography Collection (607)</option>
+            <option value="Music Division">Music Division (443)</option>
+            <option value="The Miriam and Ira D. Wallach Division of Art, Prints and Photographs: Print Collection">The Miriam and Ira D. Wallach Division of Art, Prints and Photographs: Print Collection (367)</option>
+            <option value="The Miriam and Ira D. Wallach Division of Art, Prints and Photographs: Art & Architecture Collection">The Miriam and Ira D. Wallach Division of Art, Prints and Photographs: Art &amp; Architecture Collection (344)</option>
+            <option value="Jerome Robbins Dance Division">Jerome Robbins Dance Division (325)</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="input-date-end">After Date</label>
+          <input id="input-date-start" name="date-start" type="text" value="1750" size="9" />
+        </fieldset>
+        <fieldset>
+          <label for="select-date-end">Before Date</label>
+          <input id="select-date-end" name="date-end" type="text" value="2016" size="9" />
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="search-results">
+      <p>Found <strong>59,411</strong> results with keywords <strong>"Alexander Hamilton"</strong>.</p>
+      <div class="results-nav">
+        <div class="pagination">
+          <span class="pagination-total">1 - 100 of 59,411</span>
+          <a href="#next" class="paginate next">Next page</a>
+        </div>
+        <div class="sort">
+          <form class="sort-form">
+            <label for="sort-by">Sort by</label>
+            <select id="sort-by" name="sort">
+              <option value="relevance">Relevance</option>
+              <option value="title_asc">Title (a - z)</option>
+              <option value="title_desc">Title (z - a)</option>
+              <option value="author_asc">Author (a - z)</option>
+              <option value="author_desc">Author (z - a)</option>
+              <option value="date_asc">Date (old to new)</option>
+              <option value="date_desc">Date (new to old)</option>
+            </select>
+          </form>
+        </div>
+      </div>
+      <br class="clearfix" />
+      <div class="results-list">
+        <div class="result-item person">
+          <div class="result-image">
+            <img src="../img/alexander_hamilton.png" alt="Alexander Hamilton" />
+          </div>
+          <div class="result-text">
+            <div class="type">Person</div>
+            <a href="#alexander-hamilton" class="title">Hamilton, Alexander, 1757-1804</a>
+            <div class="description">Founding Father of the United States</div>
+            <div class="description">There are <strong>463</strong> resources created by this person and <strong>351</strong> resources about this person</div>
+          </div>
+          <div class="result-actions">
+            <div>
+              <label class="select-label" for="select_001">
+                <input type="checkbox" class="select-checkbox" id="select_001">
+                <span>Save</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="result-item">
+          <div class="result-image">
+            <img src="../img/federalist_papers.jpg" alt="The Federalist papers"/>
+          </div>
+          <div class="result-text">
+            <div class="type">Book</div>
+            <a href="#federalist-papers"  class="title">The Federalist papers: Alexander Hamilton, James Madison, John Jay / edited and with an introduction by Ian Shapiro ; with essays by John Dunn, Donald L. Horowitz, Eileen Hunt Botting.</a>
+            <div class="description">New Haven: Yale University Press, 2009</div>
+            <div class="bib-items">
+              <div class="bib-item">
+                <span class="status available">Available</span> at <span class="location"><a href="https://www.nypl.org/locations/schwarzman">SASB</a> M1 - Milstein Division Rm 121</span> with call no. <a href="#IB 09-5067" class="call-no">IB 09-5067</a> <span class="message">(use in library)</span>
+              </div>
+            </div>
+          </div>
+          <div class="result-actions">
+            <div>
+              <a href="#place-hold" class="button">Place hold</a>
+              <label class="select-label" for="select_002">
+                <input type="checkbox" class="select-checkbox" id="select_002">
+                <span>Save</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="result-item">
+          <div class="result-image">
+            <img src="../img/alexander_hamilton_papers.jpg" alt="Alexander Hamilton papers"/>
+          </div>
+          <div class="result-text">
+            <div class="type">Collection / Legal documents</div>
+            <a href="#alexander-hamilton-papers" class="title">Alexander Hamilton papers</a>
+            <div class="description">Primary source</div>
+            <div class="bib-items">
+              <div class="bib-item">
+                <span class="status new-in-process">New-In Process</span> at <span class="location"><a href="https://www.nypl.org/locations/schwarzman">SASB</a> - Manuscripts &amp; Archives Rm 328</span> with call no. <a href="#MssCol 1297  Box 1" class="call-no">MssCol 1297  Box 1</a> <span class="message">(adv request)</span>
+              </div>
+            </div>
+          </div>
+          <div class="result-actions">
+            <div>
+              <label class="select-label" for="select_003">
+                <input type="checkbox" class="select-checkbox" id="select_003">
+                <span>Save</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="result-item">
+          <div class="result-image">
+            <img src="../img/alexander_hamilton_chernow.jpg" alt="Alexander Hamilton" />
+          </div>
+          <div class="result-text">
+            <div class="type">Book / Biography</div>
+            <a href="#hamilton-chernow"  class="title">Alexander Hamilton</a>
+            <div class="description">Chernow, Ron <span class="divider"></span> New York: Penguin Press, 2004</div>
+            <div class="bib-items">
+              <div class="bib-item">
+                <a href="#view-online" class="view-online">View online</a> at ebooks.nypl.org
+              </div>
+              <div class="bib-item">
+                <span class="status available">Available</span> at <span class="location"><a href="https://www.nypl.org/locations/schwarzman">SASB</a> - General Research - Room 217</span> with call no. <a href="#R-RMRR E302.6.H2 .C48 2004" class="call-no">*R-RMRR E302.6.H2 .C48 2004</a>
+              </div>
+            </div>
+          </div>
+          <div class="result-actions">
+            <div>
+              <a href="#place-hold" class="button">Place hold</a>
+              <label class="select-label" for="select_004">
+                <input type="checkbox" class="select-checkbox" id="select_004">
+                <span>Save</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="result-item">
+          <div class="result-image">
+            <img src="../img/alexander_hamilton_american.jpg" alt="Alexander Hamilton, American" />
+          </div>
+          <div class="result-text">
+            <div class="type">Book / Biography</div>
+            <a href="#hamilton-american"  class="title">Alexander Hamilton, American</a>
+            <div class="description">Brookhiser, Richard <span class="divider"></span> New York: Free Press, 1999</div>
+            <div class="bib-items">
+              <div class="bib-item">
+                <span class="status available">Available</span> at <span class="location"><a href="https://www.nypl.org/locations/schwarzman">SASB</a> M1 - Milstein Division Rm 121</span> with call no. <a href="#II 99-4791" class="call-no">II 99-4791</a> <span class="message">(use in library)</span>
+              </div>
+              <div class="bib-item">
+                <span class="status available">Available</span> at <span class="location"><a href="https://www.nypl.org/locations/schwarzman">SASB</a> M1 - Milstein Division Rm 121</span> with call no. <a href="#IBM 05-1653" class="call-no">IBM 05-1653</a> <span class="message">(use in library)</span>
+              </div>
+            </div>
+          </div>
+          <div class="result-actions">
+            <div>
+              <a href="#place-hold" class="button">Place hold</a>
+              <label class="select-label" for="select_005">
+                <input type="checkbox" class="select-checkbox" id="select_005">
+                <span>Save</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="result-item">
+          <div class="result-image">
+            <img src="../img/the_duel.jpg" alt="The duel: the parallel lives of Alexander Hamilton & Aaron Burr" />
+          </div>
+          <div class="result-text">
+            <div class="type">Book / Biography</div>
+            <a href="#the-duel" class="title">The duel: the parallel lives of Alexander Hamilton &amp; Aaron Burr</a>
+            <div class="description">St. George, Judith, 1931- <span class="divider"></span> New York: Viking, 2009</div>
+            <div class="bib-items">
+              <div class="bib-item">
+                <span class="status available">Available</span> at <span class="location"><a href="https://www.nypl.org/about/locations/battery-park-city">Battery Park</a> YA Non-Fiction</span> with call no. <a href="#the-duel" class="call-no">J 973.46 S</a>
+              </div>
+              <div class="bib-item">
+                <span class="status available">Available</span> at <span class="location"><a href="https://www.nypl.org/locations/schwarzman">SASB</a> (Children's Center at 42nd St.) - Non-Fiction Rm 84	</span> with call no. <a href="#J 973.46 S" class="call-no">J 973.46 S</a>
+              </div>
+              <div class="bib-item">
+                <span class="status available">Available</span> at <span class="location"><a href="https://www.nypl.org/locations/schwarzman">SASB</a> M1 - General Research - Room 217</span> with call no. <a href="#JFE 10-1762" class="call-no">JFE 10-1762</a> <span class="message">(use in library)</span>
+              </div>
+              <div class="bib-item">
+                <a href="#see-more" class="bib-item-more-link">See 1 more</a>
+              </div>
+              <div class="bib-item more">
+                <span class="status in-transit">In transit +1 hold</span> at <span class="location"><a href="https://www.nypl.org/locations/schwarzman">SASB</a> (Children's Center at 42nd St.) - Non-Fiction Rm 84</span> with call no. <a href="#J 973.46 S" class="call-no">J 973.46 S</a>
+              </div>
+            </div>
+          </div>
+          <div class="result-actions">
+            <div>
+              <a href="#place-hold" class="button">Place hold</a>
+              <label class="select-label" for="select_006">
+                <input type="checkbox" class="select-checkbox" id="select_006">
+                <span>Save</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="feedback">
+    This is a <strong>wireframe mock-up</strong> of the new research discovery system. <a href="https://docs.google.com/a/nypl.org/document/d/16YFZjyHRlpOOGWR-eHG4uRHL38lwYBbW3sdSaQK4gJM/edit?usp=sharing">Visit this document for more info or to contribute feedback</a>. Or <a href="../index.html">Return to the table of contents</a>
+  </div>
+
+  <script src="../js/wireframes.js"></script>
+
+</body>
+</html>
