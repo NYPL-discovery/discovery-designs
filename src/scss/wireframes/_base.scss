@@ -104,13 +104,26 @@ dd {
   width: 75%;
 }
 
+.user,
+.no-user {
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
 nav {
   li {
     display: inline-block;
     padding: 0.2rem 0.5rem 0.2rem 0;
 
-    &.user {
+    &.user,
+    &.no-user {
       display: none;
+
+      &.active {
+        display: inline-block;
+      }
     }
   }
 }
