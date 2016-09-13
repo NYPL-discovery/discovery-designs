@@ -1,0 +1,104 @@
+@import "mixins";
+@import "variables";
+
+/* search results */
+
+.facets {
+  width: 20%;
+  float: left;
+  @include box-sizing();
+  h2 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  input, select {
+    width: 100%;
+    @include box-sizing();
+  }
+}
+
+.search-results {
+  margin-left: 22%;
+  border-left: 4px solid $black;
+  min-height: 800px;
+  margin-top: -0.5rem;
+  margin-bottom: -0.5rem;
+  padding: 0.5rem;
+  @include box-sizing();
+
+  *:first-child {
+    margin-top: 0;
+  }
+}
+
+.results-nav {
+  //  @include clearfix();
+  .pagination {
+    float: left;
+  }
+  .sort {
+    float: right;
+  }
+}
+
+.results-list {
+  @include clearfix();
+  margin-top: 2rem;
+}
+
+.result-item {
+  border-top: 4px dashed $black;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  &.more .result-image {
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+.result-image {
+  flex: 0 0 60px;
+  width: 60px;
+  height: 80px;
+  background: $black;
+  img {
+    display: none;
+  }
+}
+
+.result-text {
+  flex-grow: 1;
+  padding: 0 0.5rem;
+  font-size: 0.8rem;
+
+  .title {
+    font-size: 1rem;
+  }
+}
+
+.result-actions {
+  flex: 0 0 130px;
+}
+
+.bib-items {
+  border: 4px solid $black;
+  padding: 0 0.5rem;
+  margin-top: 0.5rem;
+
+  .bib-item {
+    border-top: 4px dashed $black;
+    padding: 0.5rem 0;
+
+    a {
+      white-space: nowrap;
+    }
+
+    &:first-child {
+      border: 0;
+    }
+    &.more {
+      display: none;
+    }
+  }
+}

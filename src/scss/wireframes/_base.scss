@@ -1,0 +1,122 @@
+@import "mixins";
+@import "variables";
+
+html {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body {
+  padding: 0 0.5rem 4rem;
+}
+
+a {
+  &, &:link, &:visited, &:hover, &:visited:hover {
+    color: $linkcolor;
+  }
+}
+
+input, select {
+  border: 4px solid $black;
+  padding: 0.3rem 0.4rem;
+}
+
+select {
+  background-color: $white;
+  color: $black;
+  width: 220px;
+  padding: 0.05rem 0.35rem;
+  padding-right: 20px;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+button,
+a.button {
+  color: $white;
+  background: $linkcolor;
+  border: 4px solid $black;
+  padding: 0.05rem 0.4rem;
+
+  &:hover {
+    background: $linkcolor;
+    border-color: $black;
+    text-decoration: underline;
+    color: $white;
+  }
+}
+
+p {
+  margin: 1rem 0;
+}
+
+dl {
+  @include clearfix();
+  font-size: 0.8rem;
+  // padding: 0.2rem 0.4rem;
+  // border: 4px solid $black;
+}
+
+dt,
+dd {
+  padding: 0.2rem 0;
+  float: left;
+  margin: 0;
+  @include box-sizing();
+}
+
+dt {
+  width: 25%;
+  clear: left;
+}
+
+dd {
+  width: 75%;
+}
+
+nav {
+  li {
+    display: inline-block;
+    padding: 0.2rem 0.5rem 0.2rem 0;
+
+    &.user {
+      display: none;
+    }
+  }
+}
+
+.clearfix {
+  @include clearfix();
+}
+
+.container {
+  max-width: 960px;
+  position: relative;
+  border: 4px solid $black;
+  margin-top: 1rem;
+  @include clearfix();
+}
+.container-label {
+  color: $white;
+  background: $black;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0.2rem 0.5rem;
+}
+
+/* search form */
+
+.search-form {
+  select, input, button {
+    margin-bottom: 0.2rem;
+  }
+}
+#search-keyword {
+  width: 20rem;
+  max-width: 96%;
+}
