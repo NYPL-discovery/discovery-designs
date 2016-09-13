@@ -36,9 +36,58 @@
   </nav>
 
   <div class="container main">
-    <h1>Place a hold</h1>
+    <div class="page-header">
+      <h1><small>Place a hold for</small><br /><a href="item-federalist.html">The Federalist papers</a></h1>
+      <h2>New Haven: Yale University Press, 2009</h2>
+    </div>
 
-    <p>Coming soon.</p>
+    <form class="place-hold-form" action="holdconfirmation.html">
+
+      <fieldset class="select-location-fieldset">
+        <h3>Select a location</h3>
+        <label class="group selected" for="location1">
+          <input id="available-every" type="radio" name="location" value="IB 09-5067" checked="checked">
+          <span class="text-block">
+            <a href="https://www.nypl.org/locations/schwarzman">Stephen A. Schwarzman Building</a>, <a href="https://www.google.com/maps/place/New+York+Public+Library+-+Stephen+A.+Schwarzman+Building/@40.7536903,-73.9858051,17z/data=!3m1!5s0x89c259006f811e69:0xdf9c5a032104b840!4m13!1m7!3m6!1s0x89c259aa982c98b1:0x82f102a365e99b51!2s476+5th+Ave,+New+York,+NY+10018!3b1!8m2!3d40.7536863!4d-73.9836111!3m4!1s0x0:0x3b51df6e509a734c!8m2!3d40.7531821!4d-73.9822534">476 Fifth Avenue</a> (42nd St and Fifth Ave), New York, NY 10018<br />
+            <a href="https://www.nypl.org/locations/divisions/milstein">Milstein Division</a>, First Floor, Room 121
+            with call number: IB 09-5067
+          </span>
+        </label>
+        <label class="group" for="location2">
+          <input id="available-home" type="radio" name="location" value="JFE 10-1744">
+          <span class="text-block">
+            <a href="https://www.nypl.org/locations/schwarzman">Stephen A. Schwarzman Building</a>, <a href="https://www.google.com/maps/place/New+York+Public+Library+-+Stephen+A.+Schwarzman+Building/@40.7536903,-73.9858051,17z/data=!3m1!5s0x89c259006f811e69:0xdf9c5a032104b840!4m13!1m7!3m6!1s0x89c259aa982c98b1:0x82f102a365e99b51!2s476+5th+Ave,+New+York,+NY+10018!3b1!8m2!3d40.7536863!4d-73.9836111!3m4!1s0x0:0x3b51df6e509a734c!8m2!3d40.7531821!4d-73.9822534">476 Fifth Avenue</a> (42nd St and Fifth Ave), New York, NY 10018<br />
+            <a href="https://www.nypl.org/locations/divisions/general-research-division">General Research Division</a>, Third Floor, Room 315
+            with call number: JFE 10-1744
+          </span>
+        </label>
+        <label class="group" for="location3">
+          <input id="available-library" type="radio" name="location" value="IBC+ (Federalist) v. 1 c.2">
+          <span class="text-block">
+            <a href="https://www.nypl.org/help/request-research-materials">Request from Princeton</a> for use in <a href="https://www.nypl.org/locations/schwarzman">Stephen A. Schwarzman Building</a><br />
+            with call number: IBC+ (Federalist) v. 1 c.2
+          </span>
+        </label>
+      </fieldset>
+
+      <fieldset class="login-fieldset logged-out">
+        <label for="barcode-username">Your barcode or username <small><a href="#help">(what is this?)</a></small></label>
+        <input id="barcode-username" name="barcode-username" />
+
+        <label for="barcode-username">Your PIN <small><a href="#help">(what is this?)</a></small></label>
+        <input id="barcode-username" name="barcode-username" />
+
+        <label for="remember">
+          <input type="checkbox" name="remember" value="1" /> Remember this login information
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit and place a hold</button>
+
+    </form>
+
+    <p>New to the library? <a href="#create">Create an account</a></p>
+    <p>Forgot your PIN?  <a href="#reset">Reset your PIN</a></p>
 
   </div>
 
