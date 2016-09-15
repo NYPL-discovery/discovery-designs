@@ -1,0 +1,31 @@
+@import "mixins";
+@import "variables";
+
+#text-about,
+#collections {
+  dt {
+    width: 8%;
+  }
+  dd {
+    width: 92%;
+  }
+  .image {
+    float: left;
+    width: 40px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0;
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.agent-secondary {
+  h3 {
+    margin: 1rem 0 0.5rem;
+  }
+
+  h3:first-child {
+    margin-top: 0;
+  }
+}
