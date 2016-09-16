@@ -10,6 +10,10 @@ body {
   padding: 0 0.5rem 4rem;
 }
 
+h2, h3 {
+  font-size: 1.2rem;
+}
+
 a {
   &, &:link, &:visited, &:hover, &:visited:hover {
     color: $linkcolor;
@@ -76,8 +80,15 @@ a.button {
   }
 }
 
-p {
+p,
+.p {
   margin: 0.5rem 0;
+}
+
+hr {
+  border: 0;
+  border-top: 4px solid $black;
+  margin: 1rem 0;
 }
 
 dl {
