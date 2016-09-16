@@ -10,8 +10,6 @@ var Index = (function() {
   }
 
   Index.prototype.loadListeners = function(){
-    var _this = this;
-
     $('.toggle-sublist').on('click', function(e){
       e.preventDefault();
       var $link = $(this);

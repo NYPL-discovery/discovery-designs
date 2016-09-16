@@ -1,0 +1,50 @@
+@import "mixins";
+@import "variables";
+
+.advanced-fieldset {
+  select,
+  input,
+  .divider {
+    display: inline-block;
+    font-size: 0.9rem;
+  }
+
+  select {
+    max-width: 23%;
+  }
+
+  input {
+    max-width: 22%;
+  }
+}
+
+.advanced-form {
+  h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+    margin-top: 1rem;
+  }
+
+  button {
+    margin-top: 1rem;
+  }
+}
+
+.advanced-filters {
+  fieldset {
+    display: inline-block;
+    width: 28%;
+  }
+  label {
+    display: block;
+  }
+  select,
+  label,
+  input {
+    font-size: 0.9rem;
+  }
+  input {
+    display: block;
+    width: 198px;
+  }
+}

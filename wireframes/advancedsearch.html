@@ -40,7 +40,153 @@
       <h1>Advanced search</h1>
     </div>
 
-    <p>Coming soon</p>
+    <form class="advanced-form" action="searchresults.html">
+
+      <fieldset class="advanced-fieldset">
+        <select class="select-contains" name="contains[]">
+          <option value="1">Does contain</option>
+          <option value="0">Does not contain</option>
+        </select>
+        <select class="select-words" name="words[]">
+          <option value="any">any of these words</option>
+          <option value="all">all of these words</option>
+          <option value="exactly">exactly this phrase</option>
+        </select>
+        <input class="input-keyword" name="keyword[]" placeholder="keyword(s) or phrase">
+        <span class="divider">in</span>
+        <select class="select-fields" name="fields[]">
+          <option value="all">All fields</option>
+          <option value="title">Title</option>
+          <option value="contributor">Author/Contributor</option>
+          <option value="subject">Subject</option>
+          <option value="series">Series</option>
+          <option value="call_number">Call number</option>
+        </select>
+      </fieldset>
+
+      <p>
+        Add a row: <a href="#add-and">And</a>, <a href="#add-or">Or</a>
+      </p>
+
+      <h3>Limit results by</h3>
+      <div class="advanced-filters">
+        <fieldset>
+          <label for="select-access">Access</label>
+          <select id="select-access" name="access">
+            <option value="All">All</option>
+            <option value="Item">At the library (11,758)</option>
+            <option value="Component">Online (2,914)</option>
+            <option value="Collection">On order (1,266)</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="select-status">Status</label>
+          <select id="select-status" name="status">
+            <option value="All">All</option>
+            <option value="Item">Available (11,758)</option>
+            <option value="Component">Missing (2,914)</option>
+            <option value="Collection">Missing in transit (1,266)</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="select-resource">Resource Type</label>
+          <select id="select-resource" name="resource-type">
+            <option value="All">All</option>
+            <option value="Item">Book (11,758)</option>
+            <option value="Component">Archive/Manuscript (2,914)</option>
+            <option value="Collection">Journal/Periodical (1,266)</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="select-media">Media Type</label>
+          <select id="select-media" name="media-type">
+            <option value="All">All</option>
+            <option value="Item">Microfilm (1,758)</option>
+            <option value="Component">DVD (914)</option>
+            <option value="Collection">Audiocassette (266)</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="select-language">Language</label>
+          <select id="select-language" name="language">
+            <option value="all">All</option>
+            <option value="English">English (8,983)</option>
+            <option value="German">German (807)</option>
+            <option value="French">French (99)</option>
+            <option value="No linguistic content">No linguistic content (91)</option>
+            <option value="Spanish">Spanish (54)</option>
+            <option value="Portuguese">Portuguese (46)</option>
+            <option value="Italian">Italian (45)</option>
+            <option value="Russian">Russian (45)</option>
+            <option value="Latin">Latin (37)</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="select-subject">Subject</label>
+          <select id="select-subject" name="subject">
+            <option value="all">All</option>
+            <option value="Biography">Biography (1,845)</option>
+            <option value="History">History (1,501)</option>
+            <option value="United States">United States (1,310)</option>
+            <option value="New York (State)">New York (State) (581)</option>
+            <option value="Fiction">Fiction (554)</option>
+            <option value="Hamilton, Alexander, 1757-1804">Hamilton, Alexander, 1757-1804 (473)</option>
+            <option value="Politics and government">Politics and government (458)</option>
+            <option value="Early works to 1800">Early works to 1800. (442)</option>
+            <option value="Great Britain">Great Britain (382)</option>
+            <option value="Electronic books">Electronic books (378)</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="select-location">Location</label>
+          <select id="select-location" name="location">
+            <option value="all">All</option>
+            <option value="Stephen A. Schwarzman Building">Stephen A. Schwarzman Building (6,143)</option>
+            <option value="Manuscripts and Archives Division">Manuscripts and Archives Division (2,014)</option>
+            <option value="General Research Division">General Research Division (1,590)</option>
+            <option value="Billy Rose Theatre Division">Billy Rose Theatre Division (1,209)</option>
+            <option value="Irma and Paul Milstein Division of United States History, Local History and Genealogy">Irma and Paul Milstein Division of United States History, Local History and Genealogy (746)</option>
+            <option value="The Miriam and Ira D. Wallach Division of Art, Prints and Photographs: Photography Collection">The Miriam and Ira D. Wallach Division of Art, Prints and Photographs: Photography Collection (607)</option>
+            <option value="Music Division">Music Division (443)</option>
+            <option value="The Miriam and Ira D. Wallach Division of Art, Prints and Photographs: Print Collection">The Miriam and Ira D. Wallach Division of Art, Prints and Photographs: Print Collection (367)</option>
+            <option value="The Miriam and Ira D. Wallach Division of Art, Prints and Photographs: Art & Architecture Collection">The Miriam and Ira D. Wallach Division of Art, Prints and Photographs: Art &amp; Architecture Collection (344)</option>
+            <option value="Jerome Robbins Dance Division">Jerome Robbins Dance Division (325)</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="input-date-end">After Date</label>
+          <input id="input-date-start" name="date-start" type="text" value="1750" size="9" />
+        </fieldset>
+        <fieldset>
+          <label for="select-date-end">Before Date</label>
+          <input id="select-date-end" name="date-end" type="text" value="2016" size="9" />
+        </fieldset>
+      </div>
+
+      <h3>Sort results by</h3>
+
+      <fieldset class="advanced-fieldset">
+        <select name="sort">
+          <option value="relevance">Relevance</option>
+          <option value="title_desc">Title</option>
+          <option value="author_asc">Author</option>
+          <option value="date_asc">Date published</option>
+          <option value="date_asc">Date aquired by library</option>
+          <option value="date_asc">Call number</option>
+        </select>
+        <select name="asc">
+          <option value="1">Ascending</option>
+          <option value="0">Descending</option>
+        </select>
+      </fieldset>
+
+      <p>
+        <a href="#sort-by">Then sort similar results again by..</a>
+      </p>
+
+      <button type="submit">Submit</button>
+
+    </form>
 
   </div>
 
