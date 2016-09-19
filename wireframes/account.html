@@ -40,12 +40,18 @@
       <h1>Your item holds</h1>
     </div>
 
+    <form>
+      <label>Search your holds</label>
+      <input type="text" placeholder="Title, location, or status" />
+    </form>
+
     <table>
       <tr>
-        <th>Date requested</th>
-        <th>Item</th>
-        <th>Location</th>
-        <th>Status</th>
+        <th>Date requested ↓</th>
+        <th><a href="#">Item</a></th>
+        <th><a href="#">Location</a></th>
+        <th><a href="#">Status</a></th>
+        <th><a href="#">ETA</a></th>
       </tr>
       <tr>
         <td>Sep 1, 2016</td>
@@ -56,12 +62,18 @@
         </td>
         <td>
           <a href="https://www.nypl.org/locations/schwarzman">Stephen A. Schwarzman Building</a><br />
-          <a href="https://www.google.com/maps/place/New+York+Public+Library+-+Stephen+A.+Schwarzman+Building/@40.7536903,-73.9858051,17z/data=!3m1!5s0x89c259006f811e69:0xdf9c5a032104b840!4m13!1m7!3m6!1s0x89c259aa982c98b1:0x82f102a365e99b51!2s476+5th+Ave,+New+York,+NY+10018!3b1!8m2!3d40.7536863!4d-73.9836111!3m4!1s0x0:0x3b51df6e509a734c!8m2!3d40.7531821!4d-73.9822534">476 Fifth Avenue</a> (42nd St and Fifth Ave)<br />New York, NY 10018<br />
-          <a href="https://www.nypl.org/locations/divisions/milstein">Milstein Division</a>, First Floor, Room 121
+          <a href="https://www.google.com/maps/place/New+York+Public+Library+-+Stephen+A.+Schwarzman+Building/@40.7536903,-73.9858051,17z/data=!3m1!5s0x89c259006f811e69:0xdf9c5a032104b840!4m13!1m7!3m6!1s0x89c259aa982c98b1:0x82f102a365e99b51!2s476+5th+Ave,+New+York,+NY+10018!3b1!8m2!3d40.7536863!4d-73.9836111!3m4!1s0x0:0x3b51df6e509a734c!8m2!3d40.7531821!4d-73.9822534">476 Fifth Avenue</a> at 42nd St<br />
+          <!-- New York, NY 10018<br /> -->
+          <a href="https://www.nypl.org/locations/divisions/milstein">Milstein Division</a>, 1st Floor, Room 121
         </td>
         <td class="centered">
-          Requested <a href="#help" title="For offsite materials, requests made before 2:30 PM will be delivered the following business day. Requests made after 2:30 PM on Fridays or over the weekend will be delivered the following Tuesday. We will hold books for up to seven days, so you can request materials up to a week in advance.">(?)</a><br />
+          Requested
+          <!-- <a href="#help" title="For offsite materials, requests made before 2:30 PM will be delivered the following business day. Requests made after 2:30 PM on Fridays or over the weekend will be delivered the following Tuesday. We will hold books for up to seven days, so you can request materials up to a week in advance.">(?)</a> -->
+          <br />
           <a href="#cancel">Cancel request</a>
+        </td>
+        <td class="centered">
+          Sep 3, 2016
         </td>
       </tr>
       <tr>
@@ -74,12 +86,18 @@
         <td>
           Off-site request from Princeton for use at<br />
           <a href="https://www.nypl.org/locations/schwarzman">Stephen A. Schwarzman Building</a><br />
-          <a href="https://www.google.com/maps/place/New+York+Public+Library+-+Stephen+A.+Schwarzman+Building/@40.7536903,-73.9858051,17z/data=!3m1!5s0x89c259006f811e69:0xdf9c5a032104b840!4m13!1m7!3m6!1s0x89c259aa982c98b1:0x82f102a365e99b51!2s476+5th+Ave,+New+York,+NY+10018!3b1!8m2!3d40.7536863!4d-73.9836111!3m4!1s0x0:0x3b51df6e509a734c!8m2!3d40.7531821!4d-73.9822534">476 Fifth Avenue</a> (42nd St and Fifth Ave)<br />New York, NY 10018<br />
-          <a href="https://www.nypl.org/locations/divisions/milstein">Milstein Division</a>, First Floor, Room 121
+          <a href="https://www.google.com/maps/place/New+York+Public+Library+-+Stephen+A.+Schwarzman+Building/@40.7536903,-73.9858051,17z/data=!3m1!5s0x89c259006f811e69:0xdf9c5a032104b840!4m13!1m7!3m6!1s0x89c259aa982c98b1:0x82f102a365e99b51!2s476+5th+Ave,+New+York,+NY+10018!3b1!8m2!3d40.7536863!4d-73.9836111!3m4!1s0x0:0x3b51df6e509a734c!8m2!3d40.7531821!4d-73.9822534">476 Fifth Avenue</a> at 42nd St<br />
+          <!-- New York, NY 10018<br /> -->
+          <a href="https://www.nypl.org/locations/divisions/milstein">Milstein Division</a>, 2nd Floor, Room 121
         </td>
         <td class="centered">
-          In transit <a href="#help" title="Approximately 90% of research requests are delivered on the day they are requested. If you request a book when you are at the library and the catalog record indicates that it is stored on-site, the average delivery time is 45 minutes.">(?)</a><br />
+          In transit
+          <!-- <a href="#help" title="Approximately 90% of research requests are delivered on the day they are requested. If you request a book when you are at the library and the catalog record indicates that it is stored on-site, the average delivery time is 45 minutes.">(?)</a> -->
+          <br />
           <a href="#cancel">Cancel request</a>
+        </td>
+        <td class="centered">
+          Sep 2, 2016
         </td>
       </tr>
       <tr>
@@ -91,10 +109,14 @@
         </td>
         <td>
           <a href="https://www.nypl.org/locations/schwarzman">Stephen A. Schwarzman Building</a><br />
-          <a href="https://www.google.com/maps/place/New+York+Public+Library+-+Stephen+A.+Schwarzman+Building/@40.7536903,-73.9858051,17z/data=!3m1!5s0x89c259006f811e69:0xdf9c5a032104b840!4m13!1m7!3m6!1s0x89c259aa982c98b1:0x82f102a365e99b51!2s476+5th+Ave,+New+York,+NY+10018!3b1!8m2!3d40.7536863!4d-73.9836111!3m4!1s0x0:0x3b51df6e509a734c!8m2!3d40.7531821!4d-73.9822534">476 Fifth Avenue</a> (42nd St and Fifth Ave)<br />New York, NY 10018<br />
-          <a href="https://www.nypl.org/locations/divisions/general-research-division">General Research Division</a>, Second Floor, Room 217
+          <a href="https://www.google.com/maps/place/New+York+Public+Library+-+Stephen+A.+Schwarzman+Building/@40.7536903,-73.9858051,17z/data=!3m1!5s0x89c259006f811e69:0xdf9c5a032104b840!4m13!1m7!3m6!1s0x89c259aa982c98b1:0x82f102a365e99b51!2s476+5th+Ave,+New+York,+NY+10018!3b1!8m2!3d40.7536863!4d-73.9836111!3m4!1s0x0:0x3b51df6e509a734c!8m2!3d40.7531821!4d-73.9822534">476 Fifth Avenue</a> at 42nd St<br />
+          <!-- New York, NY 10018<br /> -->
+          <a href="https://www.nypl.org/locations/divisions/general-research-division">General Research Division</a>, 2nd Floor, Room 217
         </td>
         <td class="centered">Ready for use<br /><a href="instructions.html">View instructions</a></td>
+        <td class="centered">
+          Now<br />(use before Sep 5, 2016)
+        </td>
       </tr>
       <tr>
         <td>Aug 20, 2016</td>
@@ -105,10 +127,14 @@
         </td>
         <td>
           <a href="https://www.nypl.org/locations/schwarzman">Stephen A. Schwarzman Building</a><br />
-          <a href="https://www.google.com/maps/place/New+York+Public+Library+-+Stephen+A.+Schwarzman+Building/@40.7536903,-73.9858051,17z/data=!3m1!5s0x89c259006f811e69:0xdf9c5a032104b840!4m13!1m7!3m6!1s0x89c259aa982c98b1:0x82f102a365e99b51!2s476+5th+Ave,+New+York,+NY+10018!3b1!8m2!3d40.7536863!4d-73.9836111!3m4!1s0x0:0x3b51df6e509a734c!8m2!3d40.7531821!4d-73.9822534">476 Fifth Avenue</a> (42nd St and Fifth Ave)<br />New York, NY 10018<br />
-          <a href="https://www.nypl.org/about/divisions/manuscripts-division">Manuscripts &amp; Archives Division</a>, Third Floor, Room 328
+          <a href="https://www.google.com/maps/place/New+York+Public+Library+-+Stephen+A.+Schwarzman+Building/@40.7536903,-73.9858051,17z/data=!3m1!5s0x89c259006f811e69:0xdf9c5a032104b840!4m13!1m7!3m6!1s0x89c259aa982c98b1:0x82f102a365e99b51!2s476+5th+Ave,+New+York,+NY+10018!3b1!8m2!3d40.7536863!4d-73.9836111!3m4!1s0x0:0x3b51df6e509a734c!8m2!3d40.7531821!4d-73.9822534">476 Fifth Avenue</a> at 42nd St<br />
+          <!-- New York, NY 10018<br /> -->
+          <a href="https://www.nypl.org/about/divisions/manuscripts-division">Manuscripts &amp; Archives Division</a>, 3rd Floor, Room 328
         </td>
         <td class="centered">Completed</td>
+        <td>
+          &nbsp;
+        </td>
       </tr>
     </table>
 
