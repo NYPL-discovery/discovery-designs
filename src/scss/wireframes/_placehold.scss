@@ -3,6 +3,15 @@
 
 .place-hold-form {
   margin: 1rem 0 2rem;
+
+  h3 {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  button {
+    margin-top: 1rem;
+  }
 }
 
 .select-location-fieldset {
@@ -10,14 +19,17 @@
   padding: 0 1rem;
   margin-bottom: 1rem;
 
-  h3 {
-    margin: 0;
-    font-size: 1.1rem;
-  }
-
   label.group {
     margin: 0 -1rem;
     padding: 0.35rem 1rem;
+  }
+}
+
+.select-date-fieldset {
+  margin-bottom: 1rem;
+  label {
+    display: inline-block;
+    margin-right: 1rem;
   }
 }
 
