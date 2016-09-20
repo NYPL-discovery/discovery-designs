@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Discovery Designs - Serial wireframe</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../css/wireframes.css">
+</head>
+<body>
+
+  <nav class="container navigation">
+    <form class="search-form" action="searchresults.html">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="advancedsearch.html">Advanced search</a></li>
+        <li><a href="browse.html">Browse</a></li>
+        <li class="user"><a href="account.html">Account</a></li>
+        <li class="user"><a href="#" class="log-out">Log out</a></li>
+        <li class="no-user"><a href="signin.html">Sign in</a></li>
+      </ul>
+      <select id="search-by-field" class="search-select">
+        <option value="all">All fields</option>
+        <option value="title">Title</option>
+        <option value="contributor">Author/Contributor</option>
+        <option value="subject">Subject</option>
+        <option value="series">Series</option>
+        <option value="call_number">Call number</option>
+      </select>
+      <input id="search-keyword" name="q" placeholder="Keyword, title, name, or identifier" />
+      <button type="submit" class="search-submit">Search</button>
+    </form>
+    <div class="container-label">Navigation</div>
+  </nav>
+
+  <div class="container main">
+    <div class="image left quarter">Image</div>
+
+    <div class="page-header">
+      <h1>The Paris Review</h1>
+      <h2>Collection / Literary Magazine</h2>
+    </div>
+
+    <p>A quarterly English language literary magazine established in Paris in 1953. There are <a href="#online">107 issues online</a> (1989-2016), <a href="#onsite">218 issues</a> (1953-2016) available for use at the library, and <a href="serial-paris-review.html#circ">4 issues</a> (2015-2016) available to borrow.
+    </p>
+
+    <br class="clear" />
+
+    <hr />
+
+    <div class="clear">
+      <div class="facets">
+        <form class="facets-form">
+          <h2>Filter results by</h2>
+          <fieldset>
+            <label for="input-keyword">Keyword</label>
+            <input type="text" id="input-keyword" name="keyword" />
+          </fieldset>
+          <fieldset>
+            <label for="select-access">Access</label>
+            <select id="select-access" name="access">
+              <option value="All">All</option>
+              <option value="Item">At the library (218)</option>
+              <option value="Component">Online (107)</option>
+              <option value="Collection">Borrow (4)</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label for="select-status">Status</label>
+            <select id="select-status" name="status">
+              <option value="All">All</option>
+              <option value="Item">Available (200)</option>
+              <option value="Component">Unavailable (8)</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label for="select-media">Media Type</label>
+            <select id="select-media" name="media-type">
+              <option value="All">All</option>
+              <option value="Component">Book (218)</option>
+              <option value="Item">Microfilm (3)</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label for="select-location">Location</label>
+            <select id="select-location" name="location">
+              <option value="all">All</option>
+              <option value="Stephen A. Schwarzman Building">Stephen A. Schwarzman Building (143)</option>
+              <option value="Manuscripts and Archives Division">Manuscripts and Archives Division (114)</option>
+              <option value="General Research Division">General Research Division (90)</option>
+              <option value="Billy Rose Theatre Division">Billy Rose Theatre Division (9)</option>
+              <option value="53rd Street">53rd Street (4)</option>
+              <option value="Battery Park">Battery Park (4)</option>
+              <option value="53rd Street">Jefferson Market (2)</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <label for="input-date-end">After Date</label>
+            <input id="input-date-start" name="date-start" type="text" value="1953" size="9" />
+          </fieldset>
+          <fieldset>
+            <label for="select-date-end">Before Date</label>
+            <input id="select-date-end" name="date-end" type="text" value="2016" size="9" />
+          </fieldset>
+        </form>
+      </div>
+
+      <div class="search-results">
+        <p>There are <strong>218</strong> issues of <strong>The Paris Review</strong> available at the Library.</p>
+        <div class="results-nav">
+          <div class="pagination">
+            <span class="pagination-total">1 - 100 of 218</span>
+            <a href="#next" class="paginate next">Next page</a>
+          </div>
+          <div class="sort">
+            <form class="sort-form">
+              <label for="sort-by">Sort by</label>
+              <select id="sort-by" name="sort">
+                <option value="date_desc">Date (new to old)</option>
+                <option value="date_asc">Date (old to new)</option>
+                <option value="title_asc">Title (a - z)</option>
+                <option value="title_desc">Title (z - a)</option>
+              </select>
+            </form>
+          </div>
+        </div>
+        <br class="clearfix" />
+        <div class="results-list">
+          <div class="result-item">
+            <div class="result-text">
+              <a href="#paris-review-planes"  class="title">The Paris Review No. 218, Fall 2016</a>
+              <div class="bib-items">
+                <div class="bib-item">
+                  <a href="#">View online</a> at proquest.com
+                </div>
+                <div class="bib-item">
+                  <span class="status available">Available</span> to borrow at <span class="location"><a href="#">53rd Street </a> Non-Fiction</span> with call no. <a href="#PER" class="call-no">PER</a>
+                </div>
+                <div class="bib-item">
+                  <span class="status available">Available</span> at <span class="location"><a href="https://www.nypl.org/locations/schwarzman">SASB</a> M1 - General Research - Room 217</span> with call no. <a href="#*DA (Paris review) " class="call-no">*DA (Paris review)</a> <span class="message">(use in library)</span>
+                </div>
+                <div class="bib-item">
+                  <a href="#see-more" class="bib-item-more-link">See 3 more</a>
+                </div>
+              </div>
+            </div>
+            <div class="result-actions">
+              <div>
+                <a href="#place-hold" class="button">Place hold</a>
+                <label class="select-label" for="select_001">
+                  <input type="checkbox" class="select-checkbox" id="select_001">
+                  <span>Save</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="result-item">
+            <div class="result-text">
+              <a href="#paris-review-planes"  class="title">The Paris Review No. 217, Summer 2016</a>
+              <div class="bib-items">
+                <div class="bib-item">
+                  <a href="#">View online</a> at proquest.com
+                </div>
+                <div class="bib-item">
+                  <span class="status available">Available</span> at <span class="location"><a href="https://www.nypl.org/locations/schwarzman">SASB</a> M1 - General Research - Room 217</span> with call no. <a href="#*DA (Paris review) " class="call-no">*DA (Paris review)</a> <span class="message">(use in library)</span>
+                </div>
+              </div>
+            </div>
+            <div class="result-actions">
+              <div>
+                <a href="#place-hold" class="button">Place hold</a>
+                <label class="select-label" for="select_002">
+                  <input type="checkbox" class="select-checkbox" id="select_002">
+                  <span>Save</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="result-item">
+            <div class="result-text">
+              <a href="#paris-review-planes"  class="title">The Paris Review No. 216, Spring 2016</a>
+              <div class="bib-items">
+                <div class="bib-item">
+                  <a href="#">View online</a> at proquest.com
+                </div>
+                <div class="bib-item">
+                  <span class="status available">Available</span> at <span class="location"><a href="https://www.nypl.org/locations/schwarzman">SASB</a> M1 - General Research - Room 217</span> with call no. <a href="#*DA (Paris review) " class="call-no">*DA (Paris review)</a> <span class="message">(use in library)</span>
+                </div>
+              </div>
+            </div>
+            <div class="result-actions">
+              <div>
+                <a href="#place-hold" class="button">Place hold</a>
+                <label class="select-label" for="select_003">
+                  <input type="checkbox" class="select-checkbox" id="select_003">
+                  <span>Save</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="result-item">
+            <div class="result-text">
+              <a href="#paris-review-planes"  class="title">The Paris Review No. 215, Winter 2015</a>
+              <div class="bib-items">
+                <div class="bib-item">
+                  <a href="#">View online</a> at proquest.com
+                </div>
+                <div class="bib-item">
+                  <span class="status available">Available</span> at <span class="location"><a href="https://www.nypl.org/locations/schwarzman">SASB</a> M1 - General Research - Room 217</span> with call no. <a href="#*DA (Paris review) " class="call-no">*DA (Paris review)</a> <span class="message">(use in library)</span>
+                </div>
+              </div>
+            </div>
+            <div class="result-actions">
+              <div>
+                <a href="#place-hold" class="button">Place hold</a>
+                <label class="select-label" for="select_004">
+                  <input type="checkbox" class="select-checkbox" id="select_004">
+                  <span>Save</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="result-item">
+            <div class="result-text">
+              <a href="#paris-review-planes"  class="title">The Paris Review No. 214, Fall 2015</a>
+              <div class="bib-items">
+                <div class="bib-item">
+                  <a href="#">View online</a> at proquest.com
+                </div>
+                <div class="bib-item">
+                  <span class="status available">Available</span> at <span class="location"><a href="https://www.nypl.org/locations/schwarzman">SASB</a> M1 - General Research - Room 217</span> with call no. <a href="#*DA (Paris review) " class="call-no">*DA (Paris review)</a> <span class="message">(use in library)</span>
+                </div>
+              </div>
+            </div>
+            <div class="result-actions">
+              <div>
+                <a href="#place-hold" class="button">Place hold</a>
+                <label class="select-label" for="select_005">
+                  <input type="checkbox" class="select-checkbox" id="select_005">
+                  <span>Save</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="feedback">
+    This is a <strong>wireframe mock-up</strong> of the new research discovery system. <a href="https://docs.google.com/a/nypl.org/document/d/16YFZjyHRlpOOGWR-eHG4uRHL38lwYBbW3sdSaQK4gJM/edit?usp=sharing">Visit this document for more info or to contribute feedback</a>. Or <a href="../index.html">Return to the table of contents</a>
+  </div>
+
+  <script src="../js/wireframes.js"></script>
+
+</body>
+</html>

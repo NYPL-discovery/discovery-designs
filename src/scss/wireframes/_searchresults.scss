@@ -55,6 +55,17 @@
     height: 0;
     visibility: hidden;
   }
+  .divider {
+    display: inline-block;
+    margin: 0 0.35rem;
+    font-size: 2rem;
+    line-height: 0.8rem;
+    vertical-align: text-top;
+
+    &:before {
+      content: "·";
+    }
+  }
 }
 
 .result-image {
