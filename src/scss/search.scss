@@ -325,7 +325,7 @@ $facetsWidth: 200px;
 
     .type,
     .description,
-    .bib-item {
+    .sub-item {
       color: $gray;
       font-size: 0.95rem;
     }
@@ -348,11 +348,11 @@ $facetsWidth: 200px;
       color: $gray;
     }
 
-    .bib-items {
+    .sub-items {
       padding: 0.35rem 0 0.35rem 0.35rem;
     }
 
-    .bib-item {
+    .sub-item {
 
       line-height: 1.2;
       padding: 0.2rem 0;

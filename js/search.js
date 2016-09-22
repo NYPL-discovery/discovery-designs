@@ -92,10 +92,10 @@ var Search = (function() {
   Search.prototype.loadListeners = function(){
     var _this = this;
 
-    $('.bib-item-more-link').on('click', function(e){
+    $('.sub-item-more-link').on('click', function(e){
       e.preventDefault();
       $(this).hide();
-      $(this).closest('.bib-items').find('.bib-item').removeClass('more');
+      $(this).closest('.sub-items').find('.sub-item').removeClass('more');
     });
 
     $('.select-checkbox').on('change', function(){
