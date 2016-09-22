@@ -37,10 +37,47 @@
 
   <div class="container main">
     <div class="page-header">
-      <h1>Manage your hold</h1>
+      <h1>Manage your item hold</h1>
     </div>
 
-    <p>Coming soon</p>
+    <ul class="generic-list">
+      <li>You have placed a hold on <a href="item-federalist.html">The Federalist papers</a> with call number <a href="#">IB 09-5067</a></li>
+      <li>Ready for use by approximately Thursday, September 2nd, 9:00am</li>
+      <li>At <a href="https://www.nypl.org/locations/schwarzman">Stephen A. Schwarzman Building</a>, <a href="https://www.nypl.org/locations/divisions/milstein">Milstein Division</a>, First Floor, Room 121</li>
+      <li>Book will be held until Wednesday, September 8th, 5:00pm</li>
+    </ul>
+
+    <hr />
+
+    <form class="generic-form">
+      <label for="select-date">Specify a date to retrieve this item</label>
+      <input id="select-date" type="date" value="2016-09-02" />
+
+      <label for="select-room">Specify a room to use this item in</label>
+      <select id="select-room">
+        <option value="SASB, Milstein Division, 1st Floor, Room 121">SASB, Milstein Division, 1st Floor, Room 121</option>
+        <option value="SASB, General Research Division, 2nd Floor, Room 217">SASB, General Research Division, 2nd Floor, Room 217</option>
+      </select>
+
+      <button type="submit">Save changes to your item hold</button>
+    </form>
+
+    <hr />
+
+    <h3 class="p">Cancel this hold</h3>
+
+    <a href="#cancel" class="button">Cancel this hold immediately</a>
+
+    <form class="generic-form">
+      <label for="select-cancel-date">Or, cancel if not filled by date:</label>
+      <select id="select-cancel-date">
+        <option value="2016-09-08">Wednesday, September 8, 2016</option>
+        <option value="2016-09-07">Tuesday, September 7, 2016</option>
+        <option value="2016-09-06">Monday, September 6, 2016</option>
+        <option value="2016-09-03">Friday, September 3, 2016</option>
+      </select>
+      <button type="submit">Save changes to item cancellation date</button>
+    </form>
 
   </div>
 
