@@ -374,6 +374,10 @@ $facetsWidth: 200px;
         }
       }
 
+      .call-no {
+        white-space: nowrap;
+      }
+
       .view-online {
         background: $linkcolor;
         color: $white;
