@@ -296,6 +296,10 @@ nav {
   @include clearfix();
   border-bottom: 4px solid $black;
 
+  &.small {
+    font-size: 0.9rem;
+  }
+
   .tab {
     float: left;
     display: block;

@@ -4,8 +4,10 @@
 /* search results */
 
 .facets {
-  width: 20%;
+  width: 22%;
   float: left;
+  padding-right: 1rem;
+  padding-top: 1rem;
   @include box-sizing();
   h2 {
     font-size: 1rem;
@@ -18,12 +20,14 @@
 }
 
 .search-results {
-  margin-left: 22%;
+  width: 78%;
+  float: right;
   border-left: 4px solid $black;
   min-height: 800px;
   margin-top: -0.5rem;
   margin-bottom: -0.5rem;
-  padding: 0.5rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
   @include box-sizing();
 
   *:first-child {
