@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Discovery Designs - Place a hold wireframe</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../css/wireframes.css">
+</head>
+<body>
+
+  <nav class="container navigation">
+    <form class="search-form" action="searchresults.html">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="advancedsearch.html">Advanced search</a></li>
+        <li><a href="browse.html">Browse</a></li>
+        <li class="user"><a href="account.html">Account</a></li>
+        <li class="user"><a href="#" class="log-out">Log out</a></li>
+        <li class="no-user"><a href="signin.html">Sign in</a></li>
+      </ul>
+      <select id="search-by-field" class="search-select">
+        <option value="all">All fields</option>
+        <option value="title">Title</option>
+        <option value="contributor">Author/Contributor</option>
+        <option value="subject">Subject</option>
+        <option value="series">Series</option>
+        <option value="call_number">Call number</option>
+      </select>
+      <input id="search-keyword" name="q" placeholder="Keyword, title, name, or identifier" />
+      <button type="submit" class="search-submit">Search</button>
+    </form>
+    <div class="container-label">Navigation</div>
+  </nav>
+
+  <div class="container main">
+    <div class="page-header">
+      <h1><small>Place a hold for</small><br /><a href="item-hathi.html">A political register, setting forth the principles of the Whig and Locofoco Parties in the United States, with the life and public services of Henry Clay.</a></h1>
+      <!-- <h2>Brownlow, William Gannaway, 1805-1877</h2> -->
+    </div>
+
+    <form class="generic-form" action="holdconfirmation-recap.html">
+
+      <ul class="generic-list">
+        <li>There is 1 copy available to request from Princeton <a href="#help">(?)</a> for use in one of three library locations</li>
+        <li>This item will be ready to use by approximately Monday, September 5th, 9am.</li>
+      </ul>
+
+      <label for="select-room">Specify a location for use of this item</label>
+      <select id="select-room">
+        <option value="Stephen A. Schwarzman Building, 476 Fifth Avenue at 42nd Street">
+          Stephen A. Schwarzman Building, 476 Fifth Avenue at 42nd Street
+        </option>
+        <option value="Schomburg Center, 515 Malcolm X Boulevard at 135th Street">
+          Schomburg Center, 515 Malcolm X Boulevard at 135th Street
+        </option>
+        <option value="Library for the Performing Arts, 40 Lincoln Center Plaza near 63rd Street">
+          Library for the Performing Arts, 40 Lincoln Center Plaza near 63rd Street
+        </option>
+      </select>
+
+      <fieldset>
+        <label>When do you need this item?</label>
+        <input id="date-asap" type="radio" name="date" value="asap" checked="checked">
+        As soon as possible
+        <input id="date-specific" type="radio" name="date" value="specific">
+        On a specific date
+      </fieldset>
+
+      <fieldset class="login-fieldset no-user">
+        <label for="barcode-username">Your barcode or username <small><a href="#help">(what is this?)</a></small></label>
+        <input id="barcode-username" name="barcode-username" />
+
+        <label for="barcode-username">Your PIN <small><a href="#help">(what is this?)</a></small></label>
+        <input id="barcode-username" name="pin" />
+
+        <label for="remember">
+          <input type="checkbox" name="remember" value="1" /> Remember this login information
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit and place a hold</button>
+
+    </form>
+
+    <p>New to the library? <a href="#create">Create an account</a></p>
+    <p>Forgot your PIN?  <a href="#reset">Reset your PIN</a></p>
+
+  </div>
+
+  <div class="feedback">
+    This is a <strong>wireframe mock-up</strong> of the new research discovery system. <a href="https://docs.google.com/a/nypl.org/document/d/16YFZjyHRlpOOGWR-eHG4uRHL38lwYBbW3sdSaQK4gJM/edit?usp=sharing">Visit this document for more info or to contribute feedback</a>. Or <a href="../index.html">Return to the table of contents</a>
+  </div>
+
+  <script src="../js/wireframes.js"></script>
+
+</body>
+</html>
