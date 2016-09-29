@@ -103,6 +103,9 @@
 
     a {
       white-space: nowrap;
+      &.wrap {
+        white-space: normal;
+      }
     }
 
     &:first-child {
