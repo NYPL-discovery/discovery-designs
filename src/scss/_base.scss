@@ -11,6 +11,7 @@ html {
 
 body {
   color: $textcolor;
+  padding-bottom: 100px;
 }
 
 a {
@@ -31,6 +32,7 @@ a {
     background: $linkcolor;
     padding: 0.35rem 0.65rem;
     text-decoration: none;
+    white-space: nowrap;
 
     &:hover {
       color: $white;
@@ -92,6 +94,36 @@ select {
   padding-left: 0.35rem;
 }
 
+dl {
+  @include clearfix();
+  // padding: 0.2rem 0.4rem;
+  // border: 4px solid $black;
+}
+dt,
+dd {
+  padding: 0.2rem 0;
+  float: left;
+  margin: 0;
+  @include box-sizing();
+}
+dt {
+  width: 25%;
+  clear: left;
+  font-weight: bold;
+}
+dd {
+  width: 75%;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin: 0 0 0.35rem;
+    }
+  }
+}
+
 nav {
   ul {
     list-style: none;
@@ -101,6 +133,28 @@ nav {
   li {
     margin: 0;
     padding: 0;
+  }
+}
+
+table.generic-table {
+  width: 100%;
+  th {
+    text-align: left;
+  }
+  tr {
+    border-bottom: 1px solid $lightgray;
+    &.more {
+      border-bottom: 0;
+    }
+  }
+  td {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+  }
+  .align-right {
+    text-align: right;
+  }
+  .hidden {
+    display: none;
   }
 }
 
@@ -120,6 +174,26 @@ nav {
   padding: 0.5rem 1rem;
   margin: 0 auto;
   @include box-sizing();
+}
+
+.status {
+  font-weight: bold;
+  color: $darkorange;
+
+  &.available {
+    color: $darkgreen;
+  }
+}
+
+.saved-items {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  &.active {
+    display: block;
+  }
 }
 
 .feedback {

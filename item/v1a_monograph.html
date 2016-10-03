@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Discovery Designs - Search v1</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../css/item.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="top-nav-container">
+      <div class="container">
+        <nav class="top-nav">
+          <ul>
+            <li class="nypl-item"><a href="http://nypl.org">Visit NYPL.org</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Log in</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="main-nav-container container">
+      <div class="site-title-container">
+        <a href="#home" class="site-title">
+          <span class="site-title-org">The New York Public Library</span>
+          <span class="site-title-name">Research Catalog</span>
+        </a>
+      </div>
+      <div class="search">
+        <form action="../search/v1a.html" class="search-form" method="GET">
+          <label for="search-by-field" class="visuallyhidden">Search by field</label>
+          <select id="search-by-field" class="search-select">
+            <option value="all">All fields</option>
+            <option value="title">Title</option>
+            <option value="contributor">Author/Contributor</option>
+            <option value="subject">Subject</option>
+            <option value="series">Series</option>
+            <option value="call_number">Call number</option>
+          </select>
+          <label for="search-query" class="visuallyhidden">Search keyword</label>
+          <input id="search-query" class="search-input" name="q" placeholder="Keyword, title, name, or id" value="Alexander Hamilton" />
+          <button type="submit" class="search-button">Search</button>
+        </form>
+        <div class="autosearch">
+          <div class="autosearch-item">
+            <div class="image">
+              <img src="../img/alexander_hamilton.png" alt="Alexander Hamilton" />
+            </div>
+            <a href="#alexander-hamilton" class="link">
+              <span class="type">Person</span>
+              <span class="title">Hamilton, Alexander, 1757-1804</span>
+              <span class="description">Founding Father of the United States</span>
+            </a>
+          </div>
+          <div class="autosearch-item">
+            <div class="image">
+              <img src="../img/federalist_papers.jpg" alt="The Federalist papers"/>
+            </div>
+            <a href="#federalist_papers" class="link">
+              <span class="type">Book</span>
+              <span class="title">The Federalist papers: Alexander Hamilton, James Madison, John Jay</span>
+              <span class="description">New Haven: Yale University Press, 2009</span>
+            </a>
+          </div>
+          <div class="autosearch-item">
+            <div class="image">
+              <img src="../img/alexander_hamilton_papers.jpg" alt="Alexander Hamilton papers"/>
+            </div>
+            <a href="#alexander_hamilton_papers" class="link">
+              <span class="type">Collection / Legal documents</span>
+              <span class="title">Alexander Hamilton papers</span>
+              <span class="description">Primary source</span>
+            </a>
+          </div>
+          <div class="autosearch-item">
+            <div class="image">
+              <img src="../img/alexander_hamilton_chernow.jpg" alt="Alexander Hamilton" />
+            </div>
+            <a href="#alexander_hamilton_chernow" class="link">
+              <span class="type">Book / Biography</span>
+              <span class="title">Alexander Hamilton</span>
+              <span class="description">Chernow, Ron <span class="divider"></span> New York: Penguin Press, 2004</span>
+            </a>
+          </div>
+          <div class="autosearch-item">
+            <div class="image">
+              <img src="../img/alexander_hamilton_american.jpg" alt="Alexander Hamilton, American" />
+            </div>
+            <a href="#alexander_hamilton_american" class="link">
+              <span class="type">Book / Biography</span>
+              <span class="title">Alexander Hamilton, American</span>
+              <span class="description">Brookhiser, Richard <span class="divider"></span> New York: Free Press, 1999</span>
+            </a>
+          </div>
+          <a href="#full-results" class="link-full">See all 59,411 results</a>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#advanced" class="nav-link">Advanced search</a></li>
+          <li>
+            <a href="#browse" class="nav-link has-children">Browse</a>
+            <ul>
+              <li><a href="#browse-people" class="nav-link">People</a></li>
+              <li><a href="#browse-subjects" class="nav-link">Subjects</a></li>
+              <li><a href="#browse-resources" class="nav-link">Resources</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="#home" class="breadcrumb">Home</a>
+        <a href="/search/v1a.html" class="breadcrumb">Items</a>
+        <span class="breadcrumb">Item page for "The Federalist papers"</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container item-container">
+    <div class="item-header">
+      <div class="item-image">
+        <img src="../img/federalist_papers.jpg" alt="The Federalist papers"/>
+      </div>
+      <div class="item-info">
+        <h1>The Federalist papers</h1>
+        <div class="description author">By <a href="#">Alexander Hamilton</a>, <a href="#james-madison">James Madison</a>, <a href="#john-jay">John Jay</a></div>
+        <div class="description">
+          Edited and with an introduction by <a href="#ian-shapiro">Ian Shapiro</a>. Essays by <a href="#john-dunn">John Dunn</a>, <a href="#donald-horowitz">Donald L. Horowitz</a>, <a href="#eileen-botting">Eileen Hunt Botting</a>
+        </div>
+        <div class="description">
+          This is a <a href="#book">book</a> written in <a href="#english">English</a> published by <a href="#yale">New Haven : Yale University Press</a> in <a href="#year">2009</a>. The library has <a href="#editions">23 more editions</a> of this book.
+        </div>
+      </div>
+    </div>
+    <div class="item-holdings">
+      <h2>2 physical copies and 1 digital version of this item is available at the following locations:</h2>
+      <table class="generic-table holdings-table">
+        <tr>
+          <th>Status</th>
+          <th>Location</th>
+          <th>Call number</th>
+          <th>&nbsp;</th>
+        </tr>
+        <tr>
+          <td><span class="status available">Available</span> to use at the library</td>
+          <td><a href="https://www.nypl.org/locations/schwarzman">Stephen A. Schwarzman Building</a>, Milstein Division Rm 121</td>
+          <td><a href="#IB 09-5067" class="call-no">IB 09-5067</a></td>
+          <td class="align-right"><a href="#" class="button">Place a hold</a></td>
+        </tr>
+        <tr>
+          <td><span class="status available">Available</span> online</td>
+          <td><a href="https://www.hathitrust.org/">Hathi Trust</a></td>
+          <td>&nbsp;</td>
+          <td class="align-right"><a href="https://catalog.hathitrust.org/Record/006171799" class="button" target="_blank">View online</a></td>
+        </tr>
+        <tr>
+          <td><span class="status available">Available</span> to borrow</td>
+          <td><a href="https://www.nypl.org/locations/58th-street">58th Street Non-Fiction</a></td>
+          <td><a href="#342.73 F" class="call-no">342.73 F</a></td>
+          <td class="align-right"><a href="#" class="button">Place a request in our circulating catalog</a></td>
+        </tr>
+        <tr class="hidden">
+          <td><span class="status">Hold placed, in transit</span></td>
+          <td><a href="https://www.nypl.org/locations/schwarzman">125th Street Non-Fiction</a></td>
+          <td><a href="#342.7302 F " class="call-no">342.7302 F </a></td>
+          <td class="align-right">&nbsp;</td>
+        </tr>
+        <tr class="hidden">
+          <td><span class="status">Due 10/14/2016</span></td>
+          <td><a href="https://www.nypl.org/locations/58th-street">58th Street Non-Fiction</a></td>
+          <td><a href="#342.73 F " class="call-no">342.73 F </a></td>
+          <td class="align-right">&nbsp;</td>
+        </tr>
+        <tr class="more">
+          <td colspan="4">
+            <a href="#see-more" class="more-link">See 2 more copies</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="item-details">
+      <h2>Item details</h2>
+
+      <dl>
+        <dt>Title</dt>
+        <dd>The Federalist papers : Alexander Hamilton, James Madison, John Jay / edited and with an introduction by Ian Shapiro ; with essays by John Dunn, Donald L. Horowitz, Eileen Hunt Botting.</dd>
+
+        <dt>Uniform title</dt>
+        <dd>Federalist.</dd>
+
+        <dt>Format</dt>
+        <dd><a href="#book">Book</a></dd>
+
+        <dt>Language</dt>
+        <dd><a href="#english">English</a></dd>
+
+        <dt>Published</dt>
+        <dd><a href="#yale">New Haven: Yale University Press</a>, <a href="#2009">2009</a>.</dd>
+
+        <dt>Description</dt>
+        <dd>xxii, 579 p. ; 21 cm.</dd>
+
+        <dt>Series</dt>
+        <dd><a href="#series">Rethinking the Western tradition.</a></dd>
+
+        <dt>Subjects</dt>
+        <dd>
+          <div class="hiearchy">
+            <a href="#contitutional-history">Constitutional history</a>
+            <a href="#contitutional-history-us">United States</a>
+            <a href="#contitutional-history-us-sources">Sources</a>
+          </div>
+          <div class="hiearchy">
+            <a href="#contitutional-law">Constitutional law</a>
+            <a href="#contitutional-law-us">United States</a>
+          </div>
+        </dd>
+
+        <dt>Contributors</dt>
+        <dd>
+          <ul>
+            <li><a href="agent.html">Hamilton, Alexander, 1757-1804</a></li>
+            <li><a href="#james-madison">Madison, James, 1751-1836</a></li>
+            <li><a href="#john-jay">Jay, John, 1745-1829</a></li>
+            <li><a href="#ian-shapiro">Shapiro, Ian</a></li>
+          </ul>
+        </dd>
+
+        <dt>Bibliography</dt>
+        <dd>Includes bibliographical references and index.</dd>
+
+        <dt>Contents</dt>
+        <dd class="contents">
+          <ul>
+            <li>Introduction: The Federalist then and now / Ian Shapiro</li>
+            <li>The Federalist papers</li>
+            <li>The Articles of Confederation</li>
+            <li>The Constitution of the United States of America</li>
+            <li>Amendments to the Constitution of the United States</li>
+            <li>Unmanifest destiny / John Dunn</li>
+            <li>The Federalist abroad in the world / Donal L. Horowitz</li>
+            <li>Protofeminist responses to the Federalist-Antifederalist debate / Eileen Hunt Botting.</li>
+          </ul>
+        </dd>
+
+        <dt>ISBN</dt>
+        <dd>
+          <ul>
+            <li>9780300118902 (pbk.)</li>
+            <li>0300118902 (pbk.)</li>
+          </ul>
+        </dd>
+
+        <dt>Research call number</dt>
+        <dd>IB 09-5067</dd>
+
+      </dl>
+
+      <h3><a name="editions"></a>Other editions of "The Federalist papers"</h3>
+
+      <div class="result-list">
+        <div class="result-item">
+          <div class="result-image">
+            <img src="../img/federalist_papers_macmillan.jpg" alt="The Federalist papers"/>
+          </div>
+          <div class="result-text">
+            <a href="#federalist-papers1" class="title">The Federalist papers: edited by and with an introduction by Michael A. Genovese</a>
+            <div class="description">Palgrave Macmillan <span class="divider"></span> 2009 <span class="divider"></span> 1st ed.</div>
+          </div>
+        </div>
+        <div class="result-item">
+          <div class="result-image">
+            <img src="../img/federalist_papers_oxford.jpg" alt="The Federalist papers" />
+          </div>
+          <div class="result-text">
+            <a href="#federalist-papers2" class="title">The Federalist papers: edited with an introduction and notes by Lawrance Goldman</a>
+            <div class="description"> Oxford University Press <span class="divider"></span> 2008</div>
+          </div>
+        </div>
+        <div class="result-item">
+          <div class="result-image">
+            <img src="../img/federalist_papers_penguin.jpg" alt="The Federalist papers" />
+          </div>
+          <div class="result-text">
+            <a href="#federalist-papers3" class="title">The Federalist papers: with an introduction, table of contents, and index of ideas by Clinton Rossiter</a>
+            <div class="description">Penguin <span class="divider"></span> 1961</div>
+          </div>
+        </div>
+        <div class="result-item more">
+          <div class="result-image">
+
+          </div>
+          <div class="result-text">
+            <a href="#more">See all of the Library's 24 editions of "The Federalist papers"</a>
+          </div>
+
+        </div>
+      </div>
+
+      <h3>External data</h3>
+
+      <dl>
+        <dt>Publisher's summary</dt>
+        <dd>
+          <ul>
+            <li>This authoritative edition of the complete texts of the "Federalist Papers", the Articles of Confederation, the U.S. Constitution, and the Amendments to the U.S. Constitution features supporting essays in which leading scholars provide historical context and analysis. An introduction by Ian Shapiro offers an overview of the publication of the "Federalist Papers" and their importance. In three additional essays, John Dunn explores the composition of the "Federalist Papers" and the conflicting agendas of its authors; Eileen Hunt Botting explains how early advocates of women's rights, most prominently Mercy Otis Warren, Judith Sargent Murray, and Charles Brockden Brown, responded to the Federalist-Antifederalist debates; and Donald Horowitz discusses the "Federalist Papers" from the perspective of recent experiments with democracy and constitution-making around the world. These essays both illuminate the original texts and encourage active engagement with them.</li>
+            <li>Source: <a href="#">Nielsen Book Data</a></li>
+          </ul>
+        </dd>
+
+        <dt>Wikipedia summary</dt>
+        <dd>
+          <ul>
+            <li>The Federalist is a collection of 85 articles and essays written by Alexander Hamilton, James Madison, and John Jay promoting the ratification of the United States Constitution.</li>
+            <li>Source: <a href="https://en.wikipedia.org/wiki/The_Federalist_Papers">Wikipedia</a></li>
+          </ul>
+        </dd>
+      </dl>
+
+      <h3>External links</h3>
+
+      <dl>
+        <dt><a href="http://billi.nypl.org/">NYPL B.I.L.L.I.</a></dt>
+        <dd><a href="http://billi.nypl.org/classmark/KF4501-4515">KF4501-4515</a></dd>
+
+        <dt><a href="http://worldcat.org/">Worldcat</a></dt>
+        <dd><a href="http://worldcat.org/oclc/262432319">262432319</a></dd>
+
+        <dt><a href="http://worldcat.org/">Worldcat</a></dt>
+        <dd><a href="http://worldcat.org/oclc/305151457">305151457</a></dd>
+
+        <dt><a href="http://classify.oclc.org/">OCLC Classification</a></dt>
+        <dd><a href="http://classify.oclc.org/classify2/ClassifyDemo?owi=1090692939">1090692939</a></dd>
+      </dl>
+
+      <!-- <h3>Other data formats</h3>
+
+      <ul>
+        <li><a href="#">JSON-LD</a></li>
+        <li><a href="#">MARC</a></li>
+        <li><a href="#">N-Triples</a></li>
+      </ul> -->
+
+      <h3>Cite this book</h3>
+
+      <dl>
+        <dt>APA</dt>
+        <dd>Hamilton, A., Madison, J., Jay, J., &amp; Shapiro, I. (2009). The Federalist papers: Alexander Hamilton, James Madison, John Jay. New Haven: Yale University Press.</dd>
+
+        <dt>MLA</dt>
+        <dd>Hamilton, Alexander, James Madison, John Jay, and Ian Shapiro. The Federalist Papers: Alexander Hamilton, James Madison, John Jay. New Haven: Yale University Press, 2009. Print.</dd>
+
+        <dt>CHICAGO</dt>
+        <dd>Hamilton, Alexander, James Madison, John Jay, and Ian Shapiro. 2009. The Federalist papers: Alexander Hamilton, James Madison, John Jay. New Haven: Yale University Press.</dd>
+
+        <dt>HARVARD</dt>
+        <dd>HAMILTON, A., MADISON, J., JAY, J., &amp; SHAPIRO, I. (2009). The Federalist papers: Alexander Hamilton, James Madison, John Jay. New Haven, Yale University Press.</dd>
+
+        <dt>TURABIAN</dt>
+        <dd>Hamilton, Alexander, James Madison, John Jay, and Ian Shapiro. The Federalist Papers: Alexander Hamilton, James Madison, John Jay. New Haven: Yale University Press, 2009.</dd>
+      </dl>
+    </div>
+
+  </div>
+
+
+
+  <div class="feedback">
+    This is a <strong>rough mock-up</strong> of the <strong>monograph item page</strong> of the new research discovery system. <a href="javascript: alert('Coming soon!');">Visit this document for a description of this page or to contribute feedback</a>. <a href="../index.html">Table of contents</a> | <a href="http://catalog.nypl.org/record=18027465">classic</a> | <a href="https://browse.nypl.org/iii/encore/record/C__Rb18027465__S">encore</a>
+  </div>
+
+  <a href="#" class="saved-items button">0 saved items</a>
+
+  <script src="../js/item.js"></script>
+
+</body>
+</html>
