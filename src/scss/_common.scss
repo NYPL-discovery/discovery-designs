@@ -1,0 +1,22 @@
+@import "mixins";
+@import "variables";
+
+.status {
+  font-weight: bold;
+  color: $darkorange;
+
+  &.available {
+    color: $darkgreen;
+  }
+}
+
+.saved-items {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+
+  &.active {
+    display: block;
+  }
+}

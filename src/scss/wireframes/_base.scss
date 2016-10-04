@@ -12,6 +12,7 @@ body {
 
 h2, h3 {
   font-size: 1.2rem;
+  margin-bottom: 0;
 }
 
 a {
@@ -55,7 +56,7 @@ select {
   background-color: $white;
   color: $black;
   width: 220px;
-  padding: 0.05rem 0.35rem;
+  // padding: 0.05rem 0.35rem;
   padding-right: 20px;
 }
 
