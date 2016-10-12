@@ -114,9 +114,21 @@ dt {
   width: 25%;
   clear: left;
   font-weight: bold;
+  &.inline {
+    width: auto;
+    margin-right: 1rem;
+    display: inline-block;
+    float: none;
+  }
 }
 dd {
   width: 75%;
+  &.inline {
+    width: auto;
+    margin-right: 1rem;
+    display: inline-block;
+    float: none;
+  }
   ul {
     list-style: none;
     margin: 0;
