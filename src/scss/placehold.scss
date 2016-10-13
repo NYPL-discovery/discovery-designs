@@ -51,17 +51,35 @@
   }
 }
 
+.select-location-fieldset {
+  border: 0;
+  padding: 0;
+  display: table;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
 label.group {
-  display: block;
-  padding: 1rem 0.5rem;
-  
-  input,
-  .text-block {
-    display: inline-block;
-    vertical-align: middle;
+  display: table-row;
+  cursor: pointer;
+
+  &.selected {
+    background: $highlightcolor;
   }
-  .text-block {
-    padding-left: 1rem;
+
+  &:first-child .col {
+    border-top: 1px solid $lightgray;
+  }
+
+  .col {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0.35rem 1rem;
+    border-bottom: 1px solid $lightgray;
+  }
+
+  small {
+    white-space: nowrap;
   }
 
 }
