@@ -81,6 +81,12 @@ li {
   margin-bottom: 1rem;
   margin-top: 0;
 }
+p {
+  &.lead {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+  }
+}
 
 a, input, select, button {
   border-radius: 0;
@@ -200,6 +206,12 @@ table.generic-table {
     padding-right: 1rem;
     padding-left: 1rem;
     @include box-sizing();
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
   }
   .span-1-4 {
     width: 25%;

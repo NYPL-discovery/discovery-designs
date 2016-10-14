@@ -107,7 +107,8 @@ a.site-title {
     padding: 0 1rem;
     position: relative;
 
-    &:hover {
+    &:hover,
+    &.active {
       box-shadow: inset 0 -4px 0 $linkcolor;
     }
 
