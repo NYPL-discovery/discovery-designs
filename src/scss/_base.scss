@@ -177,6 +177,15 @@ iframe {
   }
 }
 
+.inline-form {
+  input {
+    border: 1px solid $gray;
+    padding: 0.2rem 0;
+    text-indent: 0.2rem;
+    width: 12rem;
+  }
+}
+
 table.generic-table {
   width: 100%;
   th {

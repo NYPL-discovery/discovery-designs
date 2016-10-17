@@ -1,0 +1,38 @@
+@import "mixins";
+@import "variables";
+@import "normalize";
+@import "animations";
+
+@import "base";
+@import "common";
+@import "searchbox";
+@import "header";
+@import "pageheader";
+
+table.generic-table {
+  border-top: 2px solid $lightgray;
+  margin-top: 1rem;
+  th {
+    white-space: nowrap;
+    padding-right: 1rem;
+    color: $linkcolor;
+    text-decoration: underline;
+    cursor: pointer;
+    &:hover, &:visited:hover {
+      color: $linkhovercolor;
+    }
+  }
+}
+
+.status {
+  &.ready {
+    color: $darkgreen;
+  }
+  &.requested {
+    color: $darkblue;
+  }
+  &.cancelled,
+  &.completed {
+    color: $gray;
+  }
+}
