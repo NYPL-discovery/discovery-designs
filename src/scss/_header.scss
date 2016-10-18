@@ -72,13 +72,20 @@ a.site-title {
     }
   }
 
+  ul ul a {
+    color: $linkcolor;
+    &:hover {
+      color: $linkhovercolor;
+    }
+  }
+
   .container {
     padding-top: 0;
     padding-bottom: 0;
   }
 
   .top-nav {
-    ul {
+    > ul {
       display: flex;
       flex-direction: row;
       align-items: flex-end;
@@ -90,7 +97,7 @@ a.site-title {
         margin-left: -0.5rem;
       }
     }
-    li:last-child a {
+    > ul > li:last-child a {
       margin-right: -0.5rem;
     }
   }
@@ -129,31 +136,45 @@ a.site-title {
       color: $linkcolor;
     }
 
-    &.has-children:after {
-      content: "▾";
-      display: inline-block;
-      margin: 0 0 0 0.3rem;
-    }
-
     // &.has-children:focus + ul {
     //   display: block;
     // }
   }
 
   ul ul {
+    top: $headerComponentHeight + 20px;
+
+    .nav-link {
+      padding: 0.35em;
+      display: block;
+    }
+  }
+}
+
+header nav {
+
+  .has-children:after {
+    content: "▾";
+    display: inline-block;
+    margin: 0 0 0 0.3rem;
+  }
+
+  li {
+    position: relative;
+  }
+
+  ul ul {
     display: none;
     position: absolute;
-    top: $headerComponentHeight + 20px;
     left: 0;
     width: auto;
     background: $white;
     border: 1px solid $lightgray;
     border-top: 0;
     line-height: normal;
-
-    .nav-link {
-      padding: 0.35em;
-      display: block;
+    z-index: 100;
+    a {
+      white-space: nowrap;
     }
   }
 

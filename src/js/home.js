@@ -6,6 +6,6 @@
 //=include views/home.js
 
 $(function() {
-  // var headerView = new Header({});
+  var headerView = new Header({});
   var homeView = new Home({});
 });

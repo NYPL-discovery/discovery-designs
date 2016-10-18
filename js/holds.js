@@ -2790,7 +2790,7 @@ var Header = (function() {
   Header.prototype.loadListeners = function(){
     var _this = this;
 
-    $('.nav-link.has-children').on('click', function(){
+    $('.nav-link.has-children').on('click', function(e){
       $(this).closest('li').toggleClass('active');
     });
 
@@ -2824,7 +2824,7 @@ var Header = (function() {
     if (!$search.length) $('.search').removeClass('active');
 
     var $li = $(el).closest('li.active');
-    if (!$li.length) $('.main-nav li').removeClass('active');
+    if (!$li.length) $('header nav li').removeClass('active');
   };
 
   return Header;
