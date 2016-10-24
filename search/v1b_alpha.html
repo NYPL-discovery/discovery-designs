@@ -1,0 +1,357 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Discovery Designs - Search Alpha</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../css/search.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="top-nav-container">
+      <div class="container">
+        <nav class="top-nav">
+          <ul>
+            <li class="nypl-item"><a href="http://nypl.org">Visit NYPL.org</a></li>
+            <li><a href="#" class="nav-link has-children">Account</a>
+              <ul>
+                <li><a href="#account">Settings</a></li>
+                <li><a href="../holds/v1b_alpha.html">Research item holds</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Get a library card</a></li>
+            <li><a href="#">Get email updates</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="main-nav-container container">
+      <div class="site-title-container">
+        <a href="../home/v1b_alpha.html" class="site-title">
+          <span class="site-title-org">The New York Public Library</span>
+          <span class="site-title-name">Research Catalog</span>
+        </a>
+      </div>
+      <div class="search">
+        <form action="" class="search-form" method="GET">
+          <label for="search-by-field" class="visuallyhidden">Search by field</label>
+          <select id="search-by-field" class="search-select">
+            <option value="all">All fields</option>
+            <option value="title">Title</option>
+            <option value="contributor">Author/Contributor</option>
+            <option value="subject">Subject</option>
+            <option value="series">Series</option>
+            <option value="call_number">Call number</option>
+          </select>
+          <label for="search-query" class="visuallyhidden">Search keyword</label>
+          <input id="search-query" class="search-input" name="q" placeholder="Keyword, title, name, or id" value="Locofoco" />
+          <button type="submit" class="search-button">Search</button>
+        </form>
+        <!-- <div class="autosearch">
+          <div class="autosearch-item">
+            <div class="image">
+              <img src="../img/alexander_hamilton.png" alt="Alexander Hamilton" />
+            </div>
+            <a href="#alexander-hamilton" class="link">
+              <span class="type">Person</span>
+              <span class="title">Hamilton, Alexander, 1757-1804</span>
+              <span class="description">Founding Father of the United States</span>
+            </a>
+          </div>
+          <div class="autosearch-item">
+            <div class="image">
+              <img src="../img/federalist_papers.jpg" alt="The Federalist papers"/>
+            </div>
+            <a href="#federalist_papers" class="link">
+              <span class="type">Book</span>
+              <span class="title">The Federalist papers: Alexander Hamilton, James Madison, John Jay</span>
+              <span class="description">New Haven: Yale University Press, 2009</span>
+            </a>
+          </div>
+          <div class="autosearch-item">
+            <div class="image">
+              <img src="../img/alexander_hamilton_papers.jpg" alt="Alexander Hamilton papers"/>
+            </div>
+            <a href="#alexander_hamilton_papers" class="link">
+              <span class="type">Collection / Legal documents</span>
+              <span class="title">Alexander Hamilton papers</span>
+              <span class="description">Primary source</span>
+            </a>
+          </div>
+          <div class="autosearch-item">
+            <div class="image">
+              <img src="../img/alexander_hamilton_chernow.jpg" alt="Alexander Hamilton" />
+            </div>
+            <a href="#alexander_hamilton_chernow" class="link">
+              <span class="type">Book / Biography</span>
+              <span class="title">Alexander Hamilton</span>
+              <span class="description">Chernow, Ron <span class="divider"></span> New York: Penguin Press, 2004</span>
+            </a>
+          </div>
+          <div class="autosearch-item">
+            <div class="image">
+              <img src="../img/alexander_hamilton_american.jpg" alt="Alexander Hamilton, American" />
+            </div>
+            <a href="#alexander_hamilton_american" class="link">
+              <span class="type">Book / Biography</span>
+              <span class="title">Alexander Hamilton, American</span>
+              <span class="description">Brookhiser, Richard <span class="divider"></span> New York: Free Press, 1999</span>
+            </a>
+          </div>
+          <a href="#full-results" class="link-full">See all 59,411 results</a>
+        </div> -->
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../advanced/v1b_alpha.html" class="nav-link">Advanced search</a></li>
+          <li>
+            <a href="#browse" class="nav-link has-children">Browse</a>
+            <ul>
+              <li><a href="#browse-people" class="nav-link">People</a></li>
+              <li><a href="#browse-subjects" class="nav-link">Subjects</a></li>
+              <li><a href="#browse-resources" class="nav-link">Resources</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="http://nypl.org" class="breadcrumb">NYPL home</a>
+        <a href="#research" class="breadcrumb">Research</a>
+        <a href="../home/v1b_alpha.html" class="breadcrumb">Research catalog</a>
+        <span class="breadcrumb">Search results for "Locofoco"</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container search-results-container alpha">
+    <div class="facets">
+      <form class="facets-form">
+        <h2>Filter results by</h2>
+        <fieldset>
+          <label for="select-keywords">Keyword</label>
+          <button id="select-keywords" class="button-selected" title="Remove keyword filter: Locofoco">"Locofoco"</button>
+        </fieldset>
+        <fieldset>
+          <label for="select-access">Where you can use</label>
+          <select id="select-access" name="access">
+            <option value="All">All</option>
+            <option value="Item">At the library (11)</option>
+            <option value="Component">Online (3)</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="select-status">Availability</label>
+          <select id="select-status" name="status">
+            <option value="All">All</option>
+            <option value="Item">Available (11)</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="select-resource">Format</label>
+          <select id="select-resource" name="resource-type">
+            <option value="All">All</option>
+            <option value="Item">Book/text (7)</option>
+            <option value="Component">Web resource (3)</option>
+            <option value="Collection">Microform (1)</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="select-language">Language</label>
+          <select id="select-language" name="language">
+            <option value="all">All</option>
+            <option value="English">English (10)</option>
+            <option value="English">Unknown (0)</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="select-location">Library location</label>
+          <select id="select-location" name="location">
+            <option value="all">All</option>
+            <option value="Stephen A. Schwarzman Building">Stephen A. Schwarzman Building (3)</option>
+            <option value="New York Public Library for the Performing Arts">New York Public Library for the Performing Arts, Dorothy and Lewis B. Cullman Center (1)</option>
+            <option value="Science, Industry and Business Library">Science, Industry and Business Library (SIBL) (1)</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="select-date">Date published</label>
+          <select id="select-date" name="date">
+            <option value="all">All</option>
+            <option value="2009">2009 (1)</option>
+            <option value="1971">1971 (1)</option>
+            <option value="1846">1846 (1)</option>
+            <option value="1844">1844 (7)</option>
+            <option value="unknown">Unknown (1)</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="select-subject">Subject</label>
+          <select id="select-subject" name="subject">
+            <option value="all">All</option>
+            <option value="United States">United States (5)</option>
+            <option value="Politics and government">Politics and government (5)</option>
+            <option value="Political science">Political science (5)</option>
+            <option value="1841-1845.">1841-1845. (5)</option>
+            <option value="Campaign literature, 1844-">Campaign literature, 1844- (4)</option>
+            <option value="Whig">Whig (4)</option>
+            <option value="Clay, Henry, 1777-1852">Clay, Henry, 1777-1852 (3)</option>
+            <option value="Whig Party (U.S.)">Whig Party (U.S.) (3)</option>
+            <option value="Biography">Biography (3)</option>
+            <option value="Tariff">Tariff (2)</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <label for="select-contributor">Author/Contributor</label>
+          <select id="select-contributor" name="contributor">
+            <option value="all">All</option>
+            <option value="Brownlow, William Gannaway, 1805-1877">Brownlow, William Gannaway, 1805-1877 (3)</option>
+            <option value="Whig Congressional Executive Committee">Whig Congressional Executive Committee (2)</option>
+            <option value="Imprint Society (Barre, Mass.)">Imprint Society (Barre, Mass.) (1)</option>
+            <option value="A. Colish (Firm)">A. Colish (Firm) (1)</option>
+            <option value="Johnson, Malcolm Lewis">Johnson, Malcolm Lewis (1)</option>
+            <option value="Whig Congressional Committee, 1843-1845.">Whig Congressional Committee, 1843-1845. (1)</option>
+          </select>
+        </fieldset>
+      </form>
+    </div>
+    <main class="results">
+      <!-- <div id="tabs" role="tablist" class="tabs results-tabs">
+        <a class="tab" href="#everything" role="tab" aria-controls="everything-panel" aria-selected="true">Everything <small>59,411</small></a>
+        <a class="tab" href="#resources" role="tab">Resources <small>59,144</small></a>
+        <a class="tab" href="#people" role="tab">People <small>173</small></a>
+        <a class="tab" href="#subjects" role="tab">Subjects <small>94</small></a>
+      </div> -->
+      <div class="results-message">
+        <p>Found <strong>11</strong> results with keyword <strong>"Locofoco"</strong>.</p>
+      </div>
+      <div class="results-nav">
+        <div class="pagination">
+          <!-- <a href="#prev" class="paginate prev">Previous page</a> -->
+          <span class="pagination-total">1 - 11 of 11</span>
+          <!-- <a href="#next" class="paginate next">Next page</a> -->
+        </div>
+        <div class="sort">
+          <form class="sort-form">
+            <label for="sort-by">Sort by</label>
+            <select id="sort-by" name="sort">
+              <option value="relevance">Relevance</option>
+              <option value="title_asc">Title (a - z)</option>
+              <option value="title_desc">Title (z - a)</option>
+              <option value="author_asc">Contributor (a - z)</option>
+              <option value="author_desc">Contributor (z - a)</option>
+              <option value="author_asc">Location (a - z)</option>
+              <option value="author_desc">Location (z - a)</option>
+              <option value="date_asc">Date (old to new)</option>
+              <option value="date_desc">Date (new to old)</option>
+            </select>
+          </form>
+        </div>
+      </div>
+      <div class="results-list">
+
+        <div class="result-item">
+          <a href="../item/v1b_alpha.html"  class="title">Locofoco Platform.</a>
+          <div class="description">[S.l.] : Great Neck Publishing, 2009</div>
+          <div class="sub-items">
+            <div class="sub-item">
+              <div><span class="status available">Available</span> to view online at NYPL or at home with valid library card</div>
+              <div><a href="http://tm9qt7lg9g.search.serialssolutions.com/?V=1.0&L=TM9QT7LG9G&S=JCs&C=TC_005111077&T=marc&tab=BOOKS" class="button">View online</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="result-item">
+          <a href="../item/v1b_alpha.html"  class="title">Great Locofoco juggernaut, a new console-a-tory sub-treasury rag-monster: a cartoon bank note by D.C. Johnston.</a>
+          <div class="description">Johnson, Malcolm, 1939-<span class="divider"></span>Barre, Mass., Imprint Society, 1971</div>
+          <div class="sub-items">
+            <div class="sub-item">
+              <div><span class="status available">Available</span> to use in <a href="https://www.nypl.org/locations/schwarzman">Schwarzman Building</a>, Rare Book Collection Rm 328 with call no. <span class="call-no">*KP (Imprint, Barre) (Johnson, M. Great Locofoco juggernaut)</span></div>
+              <div><a href="../placehold/v1b_alpha.html" class="button">Place a hold</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="result-item">
+          <a href="../item/v1b_alpha.html"  class="title">The prospect before us, or, Locofoco impositions exposed : to the people of the United States.</a>
+          <div class="description">Whig Congressional Committee, 1843-1845.<span class="divider"></span>Washington, D.C. : Printed at Gideon's office, 1844</div>
+          <div class="sub-items">
+            <div class="sub-item">
+              <div><span class="status available">Available</span> to view online</div>
+              <div><a href="http://galenet.galegroup.com/servlet/Sabin?af=RN&ae=CY108322122&srchtp=a&ste=14&q=nypl" class="button">View online</a></div>
+            </div>
+            <div class="sub-item">
+              <div><span class="status available">Available</span> for use in <a href="https://www.nypl.org/locations/sibl" class="location">SIBL</a>, B. Altman Desk with call no. <span class="call-no">TIE p.v. 358  no. 1-7</span></div>
+              <div><a href="../placehold/v1b_alpha.html" class="button">Place a hold</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="result-item">
+          <a href="../item/v1b_alpha.html"  class="title">Locofoco, 1996 / Susan Mosakowski.</a>
+          <div class="sub-items">
+            <div class="sub-item">
+              <div><span class="status available">Available</span> to use in <a href="https://www.nypl.org/locations/lpa">Performing Arts Research Collections</a> with call no. <span class="call-no">*T-NBL+ Collection 1995/96</span></div>
+              <div><a href="../placehold/v1b_alpha.html" class="button">Place a hold</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="result-item">
+          <a href="../item/v1b_alpha.html"  class="title">A political register, setting forth the principles of the Whig and Locofoco Parties in the United States, with the life and public services of Henry Clay</a>
+          <div class="description">Brownlow, William Gannaway, 1805-1877.<span class="divider"></span>Jonesborough, Tenn. : Pub. at the Office of the "Jonesborough Whig", 1844</div>
+          <div class="sub-items">
+            <div class="sub-item">
+              <div><span class="status available">Available</span> to view online</div>
+              <div><a href="http://find.galegroup.com/sas/infomark.do?docType=ECCO&contentSet=ECCO&type=getFullCitation&tabID=T001&prodId=SAS&version=1.0&docLevel=TEXT_GRAPHICS&resultListType=RESULT_LIST&bookId=SABCP00042400&source=library&userGroupName=nypl" class="button">View online</a></div>
+            </div>
+            <div class="sub-item">
+              <div><span class="status available">Available</span> for use in <a href="https://www.nypl.org/locations/schwarzman" class="location">Schwarzman Building</a> (requested from offsite storage), Milstein Division Rm 120 with call no. <span class="call-no">IO (1844) (Brownlow, W. G. Political register)</span></div>
+              <div><a href="../placehold/v1b_alpha.html" class="button">Place a hold</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="result-item">
+          <a href="../item/v1b_alpha.html"  class="title">Important news!!! : Late election returns!!!! A slip from New York, by this morning's mail, gives the following returns from the election for the sheriffalty in Clark County.</a>
+          <div class="description">Clark County, Ohio : s.n., 1846</div>
+          <div class="sub-items">
+            <div class="sub-item">
+              <div><span class="status available">Available</span> to view online at American Broadsides and Ephemera</div>
+              <div><a href="http://opac.newsbank.com/select/broadsides1/6710" class="button">View online</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="result-item">
+          <a href="../item/v1b_alpha.html"  class="title">The South in danger : read before you vote : address of the Democratic Association of Washington, D.C</a>
+          <div class="description">Democratic Association (Washington, D.C.)<span class="divider"></span>Washington, D.C. : J. Heart, printer, 1844</div>
+          <div class="sub-items">
+            <div class="sub-item">
+              <div><span class="status available">Available</span> to view online at NYPL or at home with valid library card</div>
+              <div><a href="http://galenet.galegroup.com/servlet/Sabin?af=RN&ae=CY106298227&srchtp=a&ste=14&q=nypl" class="button">View online</a></div>
+            </div>
+            <div class="sub-item">
+              <div><span class="status available">Available</span> in <span class="format">microfilm format</span> for use in <a href="https://www.nypl.org/locations/schwarzman" class="location">Schwarzman Building</a>, Periodicals and Microforms Rm 100 with call no. <span class="call-no">*ZH-619 (1844)</span></div>
+              <div><a href="../placehold/v1b_alpha.html" class="button">Place a hold</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div class="feedback">
+    This is a <strong>rough mock-up</strong> of the <strong>search results page</strong> of the research discovery system (<a href="https://docs.google.com/document/d/1dvlR-2hTIpBRGYThlHhYfs4pLpyqyJpqSZE2tuMbaM8/edit#heading=h.b52h9t5zpvq6">alpha</a>). <a href="https://docs.google.com/a/nypl.org/document/d/17NfRC4o4xeMGIC4Iw5UwrQioO3SrJHfFPR45291eJl0/edit?usp=sharing">Visit this document for a description of this page or to contribute feedback</a>. <a href="../index.html">Table of contents</a> | <a href="http://catalog.nypl.org/search~S1/?searchtype=X&searcharg=alexander+hamilton&searchscope=98&sortdropdown=-&SORT=DZ&extended=0&SUBMIT=Search&searchlimits=&searchorigarg=Xalexander+hamilton%26SORT%3DD">classic</a> | <a href="https://browse.nypl.org/iii/encore/search/C__Salexander%20hamilton__Orightresult__U?lang=eng&suite=def">encore</a>
+  </div>
+
+  <a href="#" class="saved-items button">0 saved items</a>
+
+  <script src="../js/search.js"></script>
+
+</body>
+</html>

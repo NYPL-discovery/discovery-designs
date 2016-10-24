@@ -45,108 +45,108 @@
     flex-grow: 1;
     padding: 0 1rem;
     position: relative;
+  }
 
-    .type,
-    .title,
-    .description {
-      display: block;
+  .type,
+  .title,
+  .description {
+    display: block;
+  }
+
+  .type,
+  .description,
+  .sub-item {
+    // color: $gray;
+    font-size: 0.95rem;
+  }
+
+  .type {
+    text-transform: uppercase;
+  }
+
+  .title {
+    font-size: 1rem;
+    line-height: 1.35;
+    font-weight: bold;
+  }
+
+  .description {
+    color: $textcolor;
+  }
+
+  .label {
+    color: $gray;
+  }
+
+  .sub-items {
+    padding: 0.35rem 0 0.35rem 0.35rem;
+  }
+
+  .sub-item {
+
+    line-height: 1.2;
+    padding: 0.2rem 0;
+
+    &.more {
+      display: none;
     }
 
-    .type,
-    .description,
-    .sub-item {
-      // color: $gray;
-      font-size: 0.95rem;
-    }
-
-    .type {
-      text-transform: uppercase;
-    }
-
-    .title {
-      font-size: 1rem;
-      line-height: 1.35;
+    span {
       font-weight: bold;
     }
 
-    .description {
-      color: $textcolor;
+    .call-no {
+      white-space: nowrap;
     }
 
-    .label {
-      color: $gray;
-    }
+    .view-online {
+      background: $linkcolor;
+      color: $white;
+      text-decoration: none;
+      padding: 0.1rem 0.35rem;
+      margin-right: 0.35rem;
 
-    .sub-items {
-      padding: 0.35rem 0 0.35rem 0.35rem;
-    }
-
-    .sub-item {
-
-      line-height: 1.2;
-      padding: 0.2rem 0;
-
-      &.more {
-        display: none;
-      }
-
-      span {
-        font-weight: bold;
-      }
-
-      .call-no {
-        white-space: nowrap;
-      }
-
-      .view-online {
-        background: $linkcolor;
+      &:hover {
+        background: $linkhovercolor;
         color: $white;
-        text-decoration: none;
-        padding: 0.1rem 0.35rem;
-        margin-right: 0.35rem;
-
-        &:hover {
-          background: $linkhovercolor;
-          color: $white;
-        }
-      }
-
-      .message {
-        white-space: nowrap;
-        font-weight: normal;
-        color: $gray;
       }
     }
 
-    .divider {
-      display: inline-block;
-      margin: 0 0.35rem;
-      font-size: 2rem;
-      line-height: 0.8rem;
-      vertical-align: middle;
+    .message {
+      white-space: nowrap;
+      font-weight: normal;
       color: $gray;
-
-      &:before {
-        content: "·";
-      }
     }
+  }
 
-    .select-label {
-      position: absolute;
-      top: 0;
-      right: 0;
-      font-size: 0.8rem;
-      display: block;
+  .divider {
+    display: inline-block;
+    margin: 0 0.35rem;
+    font-size: 2rem;
+    line-height: 0.8rem;
+    vertical-align: middle;
+    color: $gray;
 
-      input,
-      span {
-        display: inline-block;
-        vertical-align: middle;
-      }
-      span {
-        padding-left: 0.35rem;
-        color: $gray;
-      }
+    &:before {
+      content: "·";
+    }
+  }
+
+  .select-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 0.8rem;
+    display: block;
+
+    input,
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    span {
+      padding-left: 0.35rem;
+      color: $gray;
     }
   }
 
