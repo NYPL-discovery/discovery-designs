@@ -80,6 +80,7 @@ a.site-title {
 }
 
 .browse-box {
+  margin-bottom: 1.5rem;
   h3 {
     color: $darkgray;
   }
@@ -87,11 +88,13 @@ a.site-title {
 
 .browse-list {
   list-style: none;
-  margin: 0 0 2rem;
+  margin: 0;
   padding: 0;
+  display: table;
+  width: 90%;
 
   li {
-    margin: 0 0 0.2rem;
+    display: table-row;
 
     &.more {
       display: none;
@@ -99,15 +102,13 @@ a.site-title {
   }
 
   a, .count {
-    display: inline-block;
+    display: table-cell;
     vertical-align: middle;
+    padding: 0.35rem 0;
   }
 
   a {
-    width: 60%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    // width: 60%;
   }
 
   .more-link {
@@ -116,6 +117,13 @@ a.site-title {
 
   .count {
     color: $gray;
+    text-align: right;
+  }
+
+  small {
+    white-space: nowrap;
+    color: black;
+    text-decoration: none;
   }
 
   &.item-list  {
