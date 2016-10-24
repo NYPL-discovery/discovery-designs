@@ -96,3 +96,28 @@
     }
   }
 }
+
+.holdings-table {
+  tr:last-child {
+    border-bottom: 0;
+  }
+  td {
+    vertical-align: middle;
+  }
+  .button {
+    display: inline-block;
+    min-width: 100px;
+    text-align: center;
+    padding: 0.35rem 0.5rem;
+    margin-left: 1rem;
+  }
+  small {
+    white-space: nowrap;
+  }
+}
+
+.alpha {
+  .item-info {
+    padding: 0;
+  }
+}

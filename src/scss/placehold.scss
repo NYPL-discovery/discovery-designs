@@ -100,3 +100,22 @@ label.group {
     font-size: 1rem;
   }
 }
+
+.alpha {
+  .item-summary {
+    h2 {
+      margin-bottom: 0.2rem;
+    }
+    .item-details {
+      width: auto;
+      float: none;
+      padding: 0;
+    }
+  }
+
+  label.group {
+    .col {
+      border: 0;
+    }
+  }
+}

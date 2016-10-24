@@ -20,13 +20,17 @@
 
   .breadcrumb {
     display: inline-block;
-    &:after {
+    max-width: 500px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &:before {
       content: "»";
       display: inline-block;
       margin: 0 0.5rem;
       color: $darkgray;
     }
-    &:last-child:after {
+    &:first-child:before {
       content: none;
     }
   }
