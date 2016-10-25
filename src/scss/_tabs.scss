@@ -8,25 +8,29 @@
   .tab {
     flex-grow: 1;
     text-align: center;
-    background: $linkcolor;
-    color: $white;
+    color: $darkgray;
     text-decoration: none;
     height: auto;
     line-height: normal;
     padding: 0.35rem 0;
-    border: 1px solid darken($linkcolor, 5%);
+    border: 1px solid transparent;
     border-bottom: 0;
+    border-top-left-radius: 0.35rem;
+    border-top-right-radius: 0.35rem;
+    margin-right: 0.35rem;
 
     &:hover {
-      background: $linkhovercolor;
+      background: $linkcolor;
       color: $white;
     }
 
     &[aria-selected="true"] {
       background: $white;
-      color: $darkgray;
+      color: $textcolor;
       cursor: default;
-      border-color: $lightgray;
+      border-color: $gray;
+      border-bottom: 2px solid $white;
+      margin-bottom: -2px;
     }
   }
 }
@@ -34,6 +38,12 @@
 .tabpanel {
   display: none;
   min-height: 60px;
+  border: 1px solid $gray;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 
   &.active {
     display: block;

@@ -51,7 +51,7 @@
             <option value="call_number">Call number</option>
           </select>
           <label for="search-query" class="visuallyhidden">Search keyword</label>
-          <input id="search-query" class="search-input" name="q" placeholder="Keyword, title, name, or id" value="Locofoco" />
+          <input id="search-query" class="search-input" name="q" placeholder="Keyword, title, name, or id" value="Locofocos" />
           <button type="submit" class="search-button">Search</button>
         </form>
         <!-- <div class="autosearch">
@@ -130,7 +130,7 @@
         <a href="http://nypl.org" class="breadcrumb">NYPL home</a>
         <a href="#research" class="breadcrumb">Research</a>
         <a href="../home/v1b_alpha.html" class="breadcrumb">Research catalog</a>
-        <span class="breadcrumb">Search results for "Locofoco"</span>
+        <span class="breadcrumb">Search results for "Locofocos"</span>
       </div>
     </div>
   </div>
@@ -141,31 +141,31 @@
         <h2>Filter results by</h2>
         <fieldset>
           <label for="select-keywords">Keyword</label>
-          <button id="select-keywords" class="button-selected" title="Remove keyword filter: Locofoco">"Locofoco"</button>
+          <button id="select-keywords" class="button-selected" title="Remove keyword filter: Locofocos">"Locofocos"</button>
         </fieldset>
         <fieldset>
-          <label for="select-access">Where you can use</label>
-          <select id="select-access" name="access">
-            <option value="All">All</option>
-            <option value="Item">At the library (11)</option>
-            <option value="Component">Online (3)</option>
-          </select>
+          <label for="select-access">Access method</label>
+          <div class="radio-group">
+            <label for="select-access-1" class="radio-label"><input id="select-access-1" type="radio" value="All" name="access" checked /> All</label>
+            <label for="select-access-2" class="radio-label"><input id="select-access-2" type="radio" value="At the library" name="access" /> At the library (11)</label>
+            <label for="select-access-3" class="radio-label"><input id="select-access-3" type="radio" value="Online" name="access" /> Online (3)</label>
+          </div>
         </fieldset>
-        <fieldset>
+        <!-- <fieldset>
           <label for="select-status">Availability</label>
           <select id="select-status" name="status">
             <option value="All">All</option>
             <option value="Item">Available (11)</option>
           </select>
-        </fieldset>
+        </fieldset> -->
         <fieldset>
           <label for="select-resource">Format</label>
-          <select id="select-resource" name="resource-type">
-            <option value="All">All</option>
-            <option value="Item">Book/text (7)</option>
-            <option value="Component">Web resource (3)</option>
-            <option value="Collection">Microform (1)</option>
-          </select>
+          <div class="radio-group">
+            <label for="select-resource-1" class="radio-label"><input id="select-resource-1" type="radio" value="All" name="resource" checked /> All</label>
+            <label for="select-resource-2" class="radio-label"><input id="select-resource-2" type="radio" value="Book/text" name="resource" /> Book/text (11)</label>
+            <label for="select-resource-3" class="radio-label"><input id="select-resource-3" type="radio" value="Web resource" name="resource" /> Web resource (3)</label>
+            <label for="select-resource-4" class="radio-label"><input id="select-resource-4" type="radio" value="Microform" name="resource" /> Microform (1)</label>
+          </div>
         </fieldset>
         <fieldset>
           <label for="select-language">Language</label>
@@ -201,7 +201,7 @@
             <option value="all">All</option>
             <option value="United States">United States (5)</option>
             <option value="Politics and government">Politics and government (5)</option>
-            <option value="Political science">Political science (5)</option>
+            <option value="Political science">Political science (6)</option>
             <option value="1841-1845.">1841-1845. (5)</option>
             <option value="Campaign literature, 1844-">Campaign literature, 1844- (4)</option>
             <option value="Whig">Whig (4)</option>
@@ -233,12 +233,12 @@
         <a class="tab" href="#subjects" role="tab">Subjects <small>94</small></a>
       </div> -->
       <div class="results-message">
-        <p>Found <strong>11</strong> results with keyword <strong>"Locofoco"</strong>.</p>
+        <p>Found <strong>12</strong> results with keyword <strong>"Locofocos"</strong>.</p>
       </div>
       <div class="results-nav">
         <div class="pagination">
           <!-- <a href="#prev" class="paginate prev">Previous page</a> -->
-          <span class="pagination-total">1 - 11 of 11</span>
+          <span class="pagination-total">1 - 12 of 12</span>
           <!-- <a href="#next" class="paginate next">Next page</a> -->
         </div>
         <div class="sort">
@@ -295,6 +295,16 @@
           </div>
         </div>
         <div class="result-item">
+          <a href="http://uat-recap.htcinc.com:9090/openMarcRecord?bibId=7428117"  class="title">An inquiry into the Locofoco party.</a>
+          <div class="description">Degler, Carl N., 1844</div>
+          <div class="sub-items">
+            <div class="sub-item">
+              <div><span class="status available">Available</span> for use in <a href="https://www.nypl.org/locations/schwarzman" class="location">Schwarzman Building</a> (requested from offsite storage), Milstein Division Rm 120 with call no. <span class="call-no">MA 1947 DEGLC</span></div>
+              <div><a href="../placehold/v1b_alpha.html" class="button">Place a hold</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="result-item">
           <a href="../item/v1b_alpha.html"  class="title">Locofoco, 1996 / Susan Mosakowski.</a>
           <div class="sub-items">
             <div class="sub-item">
@@ -306,14 +316,23 @@
         <div class="result-item">
           <a href="../item/v1b_alpha.html"  class="title">A political register, setting forth the principles of the Whig and Locofoco Parties in the United States, with the life and public services of Henry Clay</a>
           <div class="description">Brownlow, William Gannaway, 1805-1877.<span class="divider"></span>Jonesborough, Tenn. : Pub. at the Office of the "Jonesborough Whig", 1844</div>
+          <div class="description"></div>
           <div class="sub-items">
-            <div class="sub-item">
-              <div><span class="status available">Available</span> to view online</div>
-              <div><a href="http://find.galegroup.com/sas/infomark.do?docType=ECCO&contentSet=ECCO&type=getFullCitation&tabID=T001&prodId=SAS&version=1.0&docLevel=TEXT_GRAPHICS&resultListType=RESULT_LIST&bookId=SABCP00042400&source=library&userGroupName=nypl" class="button">View online</a></div>
-            </div>
             <div class="sub-item">
               <div><span class="status available">Available</span> for use in <a href="https://www.nypl.org/locations/schwarzman" class="location">Schwarzman Building</a> (requested from offsite storage), Milstein Division Rm 120 with call no. <span class="call-no">IO (1844) (Brownlow, W. G. Political register)</span></div>
               <div><a href="../placehold/v1b_alpha.html" class="button">Place a hold</a></div>
+            </div>
+            <div class="sub-item">
+              <div><span class="status available">Available</span> to view on this website<br /><span class="call-no">Hathi Trust document viewer</span></div>
+              <div><a href="../item/v1b_alpha.html#view-document" class="button">View now</a></div>
+            </div>
+            <div class="sub-item">
+              <div><span class="status available">Available</span> to view online<br /><span class="call-no">Slavery and Anti-Slavery: A Transnational Archive</span></div>
+              <div><a href="http://find.galegroup.com/sas/infomark.do?docType=ECCO&contentSet=ECCO&type=getFullCitation&tabID=T001&prodId=SAS&version=1.0&docLevel=TEXT_GRAPHICS&resultListType=RESULT_LIST&bookId=SABCP00042400&source=library&userGroupName=nypl" class="button">View online</a></div>
+            </div>
+            <div class="sub-item">
+              <div><span class="status available">Available</span> to view online at NYPL or at home with valid library card<br /><span class="call-no">Sabin Americana Digital Archive (1500-1926)</span></div>
+              <div><a href="http://galenet.galegroup.com/servlet/Sabin?af=RN&ae=CY104080970&srchtp=a&ste=14&q=nypl" class="button">View online</a></div>
             </div>
           </div>
         </div>

@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Discovery Designs - Holds Alpha</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../css/holds.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="top-nav-container">
+      <div class="container">
+        <nav class="top-nav">
+          <ul>
+            <li class="nypl-item"><a href="http://nypl.org">Visit NYPL.org</a></li>
+            <li><a href="#" class="nav-link has-children">Account</a>
+              <ul>
+                <li><a href="#account">Settings</a></li>
+                <li><a href="../holds/v1b_alpha.html">Research item holds</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Locations</a></li>
+            <li><a href="#">Get a library card</a></li>
+            <li><a href="#">Get email updates</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Shop</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="main-nav-container container">
+      <div class="site-title-container">
+        <a href="../home/v1b_alpha.html" class="site-title">
+          <span class="site-title-org">The New York Public Library</span>
+          <span class="site-title-name">Research Catalog</span>
+        </a>
+      </div>
+      <div class="search">
+        <form action="../search/v1b_alpha.html" class="search-form" method="GET">
+          <label for="search-by-field" class="visuallyhidden">Search by field</label>
+          <select id="search-by-field" class="search-select">
+            <option value="all">All fields</option>
+            <option value="title">Title</option>
+            <option value="contributor">Author/Contributor</option>
+            <option value="subject">Subject</option>
+            <option value="series">Series</option>
+            <option value="call_number">Call number</option>
+          </select>
+          <label for="search-query" class="visuallyhidden">Search keyword</label>
+          <input id="search-query" class="search-input" name="q" placeholder="Keyword, title, name, or id" />
+          <button type="submit" class="search-button">Search</button>
+        </form>
+        <div class="autosearch">
+          <div class="autosearch-item">
+            <div class="image">
+              <img src="../img/alexander_hamilton.png" alt="Alexander Hamilton" />
+            </div>
+            <a href="#alexander-hamilton" class="link">
+              <span class="type">Person</span>
+              <span class="title">Hamilton, Alexander, 1757-1804</span>
+              <span class="description">Founding Father of the United States</span>
+            </a>
+          </div>
+          <div class="autosearch-item">
+            <div class="image">
+              <img src="../img/federalist_papers.jpg" alt="The Federalist papers"/>
+            </div>
+            <a href="#federalist_papers" class="link">
+              <span class="type">Book</span>
+              <span class="title">The Federalist papers: Alexander Hamilton, James Madison, John Jay</span>
+              <span class="description">New Haven: Yale University Press, 2009</span>
+            </a>
+          </div>
+          <div class="autosearch-item">
+            <div class="image">
+              <img src="../img/alexander_hamilton_papers.jpg" alt="Alexander Hamilton papers"/>
+            </div>
+            <a href="#alexander_hamilton_papers" class="link">
+              <span class="type">Collection / Legal documents</span>
+              <span class="title">Alexander Hamilton papers</span>
+              <span class="description">Primary source</span>
+            </a>
+          </div>
+          <div class="autosearch-item">
+            <div class="image">
+              <img src="../img/alexander_hamilton_chernow.jpg" alt="Alexander Hamilton" />
+            </div>
+            <a href="#alexander_hamilton_chernow" class="link">
+              <span class="type">Book / Biography</span>
+              <span class="title">Alexander Hamilton</span>
+              <span class="description">Chernow, Ron <span class="divider"></span> New York: Penguin Press, 2004</span>
+            </a>
+          </div>
+          <div class="autosearch-item">
+            <div class="image">
+              <img src="../img/alexander_hamilton_american.jpg" alt="Alexander Hamilton, American" />
+            </div>
+            <a href="#alexander_hamilton_american" class="link">
+              <span class="type">Book / Biography</span>
+              <span class="title">Alexander Hamilton, American</span>
+              <span class="description">Brookhiser, Richard <span class="divider"></span> New York: Free Press, 1999</span>
+            </a>
+          </div>
+          <a href="#full-results" class="link-full">See all 59,411 results</a>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="../advanced/v1b_alpha.html" class="nav-link">Advanced search</a></li>
+          <li>
+            <a href="#browse" class="nav-link has-children">Browse</a>
+            <ul>
+              <li><a href="#browse-people" class="nav-link">People</a></li>
+              <li><a href="#browse-subjects" class="nav-link">Subjects</a></li>
+              <li><a href="#browse-resources" class="nav-link">Resources</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="http://nypl.org" class="breadcrumb">NYPL home</a>
+        <a href="#account" class="breadcrumb">Account</a>
+        <span class="breadcrumb">Research item holds</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container placehold-container">
+    <div class="item-header">
+      <h1>Your research item holds</h1>
+    </div>
+
+    <form class="inline-form">
+      <label>Search your holds</label>
+      <input type="text" placeholder="Title, location, or status" />
+    </form>
+
+    <table id="holds-table" class="generic-table tablesorter">
+      <thead>
+        <tr>
+          <th>Date requested</th>
+          <th>Item</th>
+          <th>Location</th>
+          <th>Status</th>
+          <th>ETA</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-value="2016-09-01">Sep 1, 2016</td>
+          <td>
+            <a href="../item/v1b_alpha.html">A political register, setting forth the principles...</a><br />
+            Brownlow, William Gannaway, 1805-1877<br />
+            Call number: IO (1844)
+          </td>
+          <td>
+            <a href="https://www.nypl.org/locations/schwarzman">Stephen A. Schwarzman Building</a><br />
+            <a href="https://www.google.com/maps/place/New+York+Public+Library+-+Stephen+A.+Schwarzman+Building/@40.7536903,-73.9858051,17z/data=!3m1!5s0x89c259006f811e69:0xdf9c5a032104b840!4m13!1m7!3m6!1s0x89c259aa982c98b1:0x82f102a365e99b51!2s476+5th+Ave,+New+York,+NY+10018!3b1!8m2!3d40.7536863!4d-73.9836111!3m4!1s0x0:0x3b51df6e509a734c!8m2!3d40.7531821!4d-73.9822534">476 Fifth Avenue</a> at 42nd St<br />
+            <!-- New York, NY 10018<br /> -->
+            <a href="https://www.nypl.org/locations/divisions/milstein">Milstein Division</a>, 1st Floor, Room 121
+          </td>
+          <td class="centered" data-value="1">
+            <span class="status requested">Requested from offsite storage</span>
+          </td>
+          <td data-value="2016-09-05">
+            Oct 27, 2016
+            <a href="#help" title="For offsite materials, requests made before 2:30 PM will be delivered the following business day. Requests made after 2:30 PM on Fridays or over the weekend will be delivered the following Tuesday.">(?)</a>
+          </td>
+          <td>
+            <a href="../holdconfirmation/v1b_alpha.html" class="button">View hold</a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+  <div class="feedback">
+    This is a <strong>rough mock-up</strong> of a <strong>patron's holds page</strong> of the new research discovery system. <a href="javascript: alert('Coming soon!');">Visit this document for a description of this page or to contribute feedback</a>. <a href="../index.html">Table of contents</a>
+  </div>
+
+  <a href="#" class="saved-items button">0 saved items</a>
+
+  <script src="../js/holds.js"></script>
+
+</body>
+</html>

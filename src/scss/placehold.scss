@@ -8,6 +8,7 @@
 @import "searchbox";
 @import "header";
 @import "pageheader";
+@import "tabs";
 
 .item-header {
   h1 {
@@ -98,6 +99,9 @@ label.group {
   }
   table {
     font-size: 1rem;
+  }
+  .tabs {
+    width: 70%;
   }
 }
 
