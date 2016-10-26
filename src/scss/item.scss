@@ -10,6 +10,18 @@
 @import "pageheader";
 @import "searchresults";
 
+.item-container {
+  a {
+    color: $textcolor;
+    &:hover {
+      color: $linkcolor;
+    }
+    &.button {
+      color: $white;
+    }
+  }
+}
+
 .item-header {
   padding: 1rem 0;
   @include clearfix();
@@ -48,9 +60,7 @@
   }
 }
 
-.item-holdings,
-.item-details,
-.item-document-viewer {
+.item-subcontainer {
   border-top: 1px solid darken($lightgray, 10%);
   padding-top: 0.5rem;
   margin-top: 2rem;
@@ -114,6 +124,23 @@
   }
   small {
     white-space: nowrap;
+  }
+}
+
+
+.results-list {
+  // max-width: 800px;
+  margin-bottom: 2rem;
+  a.title {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .result-item {
+    padding-bottom: 1.5rem;
+  }
+  .result-item .sub-items {
+    max-width: 960px;
   }
 }
 
