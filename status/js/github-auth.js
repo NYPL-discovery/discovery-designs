@@ -1,0 +1,4 @@
+var gitHubAuth = {
+  user: '',
+  key: ''
+}

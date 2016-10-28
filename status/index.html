@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Discovery/ReCAP Alpha Status</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/popup.css">
+  <script src="js/jquery-3.1.1.slim.min.js" charset="utf-8"></script>
+  <script src="js/d3.v3.min.js" charset="utf-8"></script>
+  <link rel="shortcut icon" href="img/favicon.png">
+</head>
+<body>
+  <header></header>
+  <div class="container" id="contents">
+    <p>Return to the <a href="../index.html">Table of Contents</a></p>
+    <h1>Discovery Website Status</h1>
+    <p>
+      This diagram shows the current state of patron-facing Discovery website. Visit the <a href="https://nypl-discovery.github.io/architecture-alpha/">Discovery Project Status</a> for the state of the overall architecture. Links are also provided to the respective component in various states.
+    </p>
+    <ul>
+      <li>
+        Pages in the <strong>functional</strong> state are <span class='legend-block finished-color5'>green</span>.
+        This means this page has been implemented and is usable by actual users. Note that <strong>this does not mean complete</strong>, but functional.
+      </li>
+      <li>
+        Components in the <strong>design</strong> state are <span class='legend-block inprogress-color'>yellow</span>.
+        This means this page has been "mocked-up" visually using real data and design components, but not yet implemented.
+      </li>
+      <li>
+        Components in the <strong>wireframe</strong> state are <span class='legend-block todo-color'>red</span>. This means the content and functionality of this page has been defined and visually represented, but not yet designed.
+      </li>
+    </ul>
+    <hr>
+    <div id='architecture'>
+    </div>
+    <div id="popup" class="arrow-box hidden">
+      <div id="popup-link">
+        <a href="" target="_blank"></a>
+      </div>
+      <div id="popup-contents" class="markdown-body">
+      </div>
+    </div>
+  </div>
+  <footer></footer>
+  <script src="js/github-auth.js" charset="utf-8"></script>
+  <script src="js/diagram.js" charset="utf-8"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+{
+    "homepage": {
+        "color": "rgba(144,211,50,0.55)",
+        "desc": "",
+        "links": [
+          {"label": "Alpha prototype link", "href": "https://nypl-discovery-prototype.herokuapp.com/", "className": "finished-color"},
+          {"label": "Design mock-up link (Alpha)", "href": "https://nypl-discovery.github.io/discovery-designs/home/v1b_alpha.html", "className": "inprogress-color"},
+          {"label": "Design mock-up link", "href": "https://nypl-discovery.github.io/discovery-designs/home/v1a.html", "className": "inprogress-color"},
+          {"label": "Wireframe link", "href": "https://nypl-discovery.github.io/discovery-designs/wireframes/home.html", "className": "todo-color"}
+        ],
+        "opacity" : 1
+    },
+    "search-results": {
+        "color": "rgba(144,211,50,0.55)",
+        "desc": "",
+        "links": [
+          {"label": "Alpha prototype link", "href": "https://nypl-discovery-prototype.herokuapp.com/search/alexander%20hamilton", "className": "finished-color"},
+          {"label": "Design mock-up link (Alpha)", "href": "https://nypl-discovery.github.io/discovery-designs/search/v1b_alpha.html", "className": "inprogress-color"},
+          {"label": "Design mock-up link (Hamilton)", "href": "https://nypl-discovery.github.io/discovery-designs/search/v1a.html", "className": "inprogress-color"},
+          {"label": "Wireframe link", "href": "https://nypl-discovery.github.io/discovery-designs/wireframes/searchresults.html", "className": "todo-color"}
+        ],
+        "opacity" : 1
+    },
+    "item": {
+        "color": "rgba(144,211,50,0.55)",
+        "desc": "",
+        "links": [
+          {"label": "Alpha prototype link", "href": "https://nypl-discovery-prototype.herokuapp.com/item?an=9509070594&dbid=aph&q=alexander%20hamilton", "className": "finished-color"},
+          {"label": "Design mock-up link (Alpha)", "href": "https://nypl-discovery.github.io/discovery-designs/item/v1b_alpha.html", "className": "inprogress-color"},
+          {"label": "Design mock-up link (Federalist)", "href": "https://nypl-discovery.github.io/discovery-designs/item/v1a_monograph.html", "className": "inprogress-color"},
+          {"label": "Wireframe link", "href": "https://nypl-discovery.github.io/discovery-designs/wireframes/item-federalist.html", "className": "todo-color"}
+        ],
+        "opacity" : 1
+    },
+    "place-hold": {
+        "color": "rgba(255,221,0,0.55)",
+        "desc": "",
+        "links": [
+          {"label": "Design mock-up link (Alpha)", "href": "https://nypl-discovery.github.io/discovery-designs/placehold/v1b_alpha.html", "className": "inprogress-color"},
+          {"label": "Design mock-up link (Federalist)", "href": "https://nypl-discovery.github.io/discovery-designs/placehold/v1a.html", "className": "inprogress-color"},
+          {"label": "Wireframe link", "href": "https://nypl-discovery.github.io/discovery-designs/wireframes/placehold.html", "className": "todo-color"}
+        ],
+        "opacity" : 1
+    },
+    "hold": {
+        "color": "rgba(255,221,0,0.55)",
+        "desc": "",
+        "links": [
+          {"label": "Design mock-up link (Alpha)", "href": "https://nypl-discovery.github.io/discovery-designs/holdconfirmation/v1b_alpha.html", "className": "inprogress-color"},
+          {"label": "Design mock-up link (Federalist)", "href": "https://nypl-discovery.github.io/discovery-designs/holdconfirmation/v1a.html", "className": "inprogress-color"},
+          {"label": "Wireframe link", "href": "https://nypl-discovery.github.io/discovery-designs/wireframes/holdconfirmation.html", "className": "todo-color"}
+        ],
+        "opacity" : 1
+    },
+    "modify-hold": {
+        "color": "rgba(232,104,104,0.55)",
+        "desc": "",
+        "links": [
+          {"label": "Wireframe link", "href": "https://nypl-discovery.github.io/discovery-designs/wireframes/managehold.html", "className": "todo-color"}
+        ],
+        "opacity" : 1
+    },
+    "holds": {
+        "color": "rgba(255,221,0,0.55)",
+        "desc": "",
+        "links": [
+          {"label": "Design mock-up link", "href": "https://nypl-discovery.github.io/discovery-designs/holds/v1a.html", "className": "inprogress-color"},
+          {"label": "Wireframe link", "href": "https://nypl-discovery.github.io/discovery-designs/wireframes/account.html", "className": "todo-color"}
+        ],
+        "opacity" : 1
+    },
+    "advanced-search": {
+        "color": "rgba(255,221,0,0.55)",
+        "desc": "",
+        "links": [
+          {"label": "Design mock-up link", "href": "https://nypl-discovery.github.io/discovery-designs/advanced/v1a.html", "className": "inprogress-color"},
+          {"label": "Wireframe link", "href": "https://nypl-discovery.github.io/discovery-designs/wireframes/advancedsearch.html", "className": "todo-color"}
+        ],
+        "opacity" : 1
+    },
+    "serial": {
+        "color": "rgba(232,104,104,0.55)",
+        "desc": "",
+        "links": [
+          {"label": "Wireframe link", "href": "https://nypl-discovery.github.io/discovery-designs/wireframes/serial-paris-review.html", "className": "todo-color"}
+        ],
+        "opacity" : 1
+    },
+    "agent": {
+        "color": "rgba(232,104,104,0.55)",
+        "desc": "",
+        "links": [
+          {"label": "Wireframe link", "href": "https://nypl-discovery.github.io/discovery-designs/wireframes/agent.html", "className": "todo-color"}
+        ],
+        "opacity" : 1
+    },
+    "browse": {
+        "color": "rgba(232,104,104,0.55)",
+        "desc": "",
+        "links": [
+          {"label": "Wireframe link", "href": "https://nypl-discovery.github.io/discovery-designs/wireframes/browse.html", "className": "todo-color"}
+        ],
+        "opacity" : 1
+    },
+    "login": {
+        "color": "gray",
+        "desc": "Login is owned by Accounts team",
+        "opacity" : 0.5
+    },
+    "register": {
+        "color": "gray",
+        "desc": "Account creation is owned by Accounts team",
+        "opacity" : 0.5
+    },
+    "email-notification": {
+        "color": "gray",
+        "desc": "Emails are not designed by Discovery team",
+        "opacity" : 0.5
+    }
+}

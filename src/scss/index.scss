@@ -18,6 +18,15 @@ body {
   float: left;
   width: 60%;
   @include box-sizing();
+
+  img {
+    width: 100%;
+    height: auto;
+
+    &.status {
+      width: 200px;
+    }
+  }
 }
 
 .toc {
