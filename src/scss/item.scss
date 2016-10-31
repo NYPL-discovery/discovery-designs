@@ -10,18 +10,6 @@
 @import "pageheader";
 @import "searchresults";
 
-.item-container {
-  a {
-    color: $textcolor;
-    &:hover {
-      color: $linkcolor;
-    }
-    &.button {
-      color: $white;
-    }
-  }
-}
-
 .item-header {
   padding: 1rem 0;
   @include clearfix();

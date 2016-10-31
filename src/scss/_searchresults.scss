@@ -181,7 +181,7 @@
   border-left: 4px solid $lightergray;
   padding-left: 1rem;
   margin: 1rem 2rem 0 0.5rem;
-  max-width: 800px;
+  max-width: 772px;
 
   h4 {
     margin-top: 0;
@@ -210,16 +210,6 @@
     padding: 0.5rem 0 3rem;
     border-color: $lightergray;
     // border: 0;
-
-    a {
-      color: $textcolor;
-      &:hover {
-        color: $linkcolor;
-      }
-      &.button {
-        color: $white;
-      }
-    }
 
     .sub-items {
       display: table;
