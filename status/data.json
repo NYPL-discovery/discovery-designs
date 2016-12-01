@@ -3,7 +3,7 @@
         "color": "rgba(144,211,50,0.55)",
         "desc": "",
         "links": [
-          {"label": "Alpha prototype link", "href": "https://nypl-discovery-prototype.herokuapp.com/", "className": "finished-color"},
+          {"label": "Alpha prototype link", "href": "http://dev-discovery.nypl.org/", "className": "finished-color"},
           {"label": "Design mock-up link (Alpha)", "href": "https://nypl-discovery.github.io/discovery-designs/home/v1b_alpha.html", "className": "inprogress-color"},
           {"label": "Design mock-up link", "href": "https://nypl-discovery.github.io/discovery-designs/home/v1a.html", "className": "inprogress-color"},
           {"label": "Wireframe link", "href": "https://nypl-discovery.github.io/discovery-designs/wireframes/home.html", "className": "todo-color"}
@@ -14,7 +14,7 @@
         "color": "rgba(144,211,50,0.55)",
         "desc": "",
         "links": [
-          {"label": "Alpha prototype link", "href": "https://nypl-discovery-prototype.herokuapp.com/search/alexander%20hamilton", "className": "finished-color"},
+          {"label": "Alpha prototype link", "href": "http://dev-discovery.nypl.org/search/alexander%20hamilton", "className": "finished-color"},
           {"label": "Design mock-up link (Alpha)", "href": "https://nypl-discovery.github.io/discovery-designs/search/v1b_alpha.html", "className": "inprogress-color"},
           {"label": "Design mock-up link (Hamilton)", "href": "https://nypl-discovery.github.io/discovery-designs/search/v1a.html", "className": "inprogress-color"},
           {"label": "Wireframe link", "href": "https://nypl-discovery.github.io/discovery-designs/wireframes/searchresults.html", "className": "todo-color"}
@@ -25,7 +25,7 @@
         "color": "rgba(144,211,50,0.55)",
         "desc": "",
         "links": [
-          {"label": "Alpha prototype link", "href": "https://nypl-discovery-prototype.herokuapp.com/item?an=9509070594&dbid=aph&q=alexander%20hamilton", "className": "finished-color"},
+          {"label": "Alpha prototype link", "href": "http://dev-discovery.nypl.org/item?an=9509070594&dbid=aph&q=alexander%20hamilton", "className": "finished-color"},
           {"label": "Design mock-up link (Alpha)", "href": "https://nypl-discovery.github.io/discovery-designs/item/v1b_alpha.html", "className": "inprogress-color"},
           {"label": "Design mock-up link (Federalist)", "href": "https://nypl-discovery.github.io/discovery-designs/item/v1a_monograph.html", "className": "inprogress-color"},
           {"label": "Wireframe link", "href": "https://nypl-discovery.github.io/discovery-designs/wireframes/item-federalist.html", "className": "todo-color"}
@@ -33,9 +33,10 @@
         "opacity" : 1
     },
     "place-hold": {
-        "color": "rgba(255,221,0,0.55)",
+        "color": "rgba(144,211,50,0.55)",
         "desc": "",
         "links": [
+          {"label": "Alpha prototype link", "href": "http://dev-discovery.nypl.org/hold/request/b12818088-i13463904", "className": "finished-color"},
           {"label": "Design mock-up link (Alpha)", "href": "https://nypl-discovery.github.io/discovery-designs/placehold/v1b_alpha.html", "className": "inprogress-color"},
           {"label": "Design mock-up link (Federalist)", "href": "https://nypl-discovery.github.io/discovery-designs/placehold/v1a.html", "className": "inprogress-color"},
           {"label": "Wireframe link", "href": "https://nypl-discovery.github.io/discovery-designs/wireframes/placehold.html", "className": "todo-color"}
@@ -43,9 +44,10 @@
         "opacity" : 1
     },
     "hold": {
-        "color": "rgba(255,221,0,0.55)",
+        "color": "rgba(144,211,50,0.55)",
         "desc": "",
         "links": [
+          {"label": "Alpha prototype link", "href": "http://dev-discovery.nypl.org/hold/confirmation/b12818088-i13463904", "className": "finished-color"},
           {"label": "Design mock-up link (Alpha)", "href": "https://nypl-discovery.github.io/discovery-designs/holdconfirmation/v1b_alpha.html", "className": "inprogress-color"},
           {"label": "Design mock-up link (Federalist)", "href": "https://nypl-discovery.github.io/discovery-designs/holdconfirmation/v1a.html", "className": "inprogress-color"},
           {"label": "Wireframe link", "href": "https://nypl-discovery.github.io/discovery-designs/wireframes/holdconfirmation.html", "className": "todo-color"}
